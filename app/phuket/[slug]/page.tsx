@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { districts, getDistrict, unsplash } from "@/lib/districts";
 import { DistrictTabs } from "@/components/district-tabs";
 import { FeedbackForm } from "@/components/feedback-form";
+import { TELEGRAM_URL } from "@/lib/config";
 
 export function generateStaticParams() {
   return districts.map((d) => ({ slug: d.slug }));
@@ -34,7 +35,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
         <div className="dk-cta" id="vip">
           <h2>✈️ Нужен персональный маршрут по району {d.name}?</h2>
           <p>Составим индивидуальный план под ваш бюджет. Напишите нашему консьержу.</p>
-          <a className="dk-btn" href="#feedback">Заказать консьержа</a>
+          <a className="dk-btn" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">Заказать консьержа</a>
         </div>
       </section>
       <section className="dk-wrap dk-section" id="feedback"><h2 className="dk-h2">Связаться</h2><FeedbackForm /></section>

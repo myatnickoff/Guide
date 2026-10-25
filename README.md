@@ -23,4 +23,11 @@ API `/api/feedback` проверяет поля и длины, использу�
 
 ## Контент и изображения
 
+## Деплой на Vercel
+
+1. Vercel → Add New Project → импортировать `myatnickoff/Guide` (Framework: Next.js, автоопределение).
+2. Settings → Environment Variables (Production/Preview): `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`.
+3. Deploy. Команды по умолчанию: `npm install`, `npm run build`.
+4. `.env.local` в Git не попадает — переменные задаются только в Vercel.
+
 Партнёрские ссылки и контакты оставлены обозначенными слотами в `app/page.tsx`. Внешние фотографии подгружаются с Unsplash; перед коммерческим запуском замените их на свои либо на изображения с подходящей лицензией и оптимизируйте локально.
