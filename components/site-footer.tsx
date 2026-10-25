@@ -1,1 +1,8 @@
-export function SiteFooter() { return <footer className="site-footer"><a className="brand footer-brand" href="#top"><span className="brand-mark">P.</span><span>PHUKET <i>AFTER DARK</i></span></a><p>Практичный гид по вечеру на Пхукете.<br/>Информация о заведениях и правилах меняется — сверяйте детали перед выходом.</p><div className="footer-bottom"><span>Материал 21+. Пейте ответственно. После алкоголя не садитесь за руль.</span><a href="#feedback">Обратная связь</a></div></footer>; }
+export function SiteFooter() {
+  return (
+    <footer className="site-footer">
+      <p>MoveExploreGrow · Материал 21+. Пейте ответственно, после алкоголя не садитесь за руль.</p>
+      <p>Цены, часы работы и законы меняются — проверяйте актуальные данные.</p>
+    </footer>
+  );
+}
