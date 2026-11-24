@@ -1,99 +1,122 @@
-import Image from "next/image";
 import Link from "next/link";
-import { districts, unsplash } from "@/lib/districts";
-import { TELEGRAM_URL, VAPE_TEXT, gmaps } from "@/lib/config";
 import { FeedbackForm } from "@/components/feedback-form";
+import { SosBlock } from "@/components/sos-block";
+import { CatIcon } from "@/components/icons";
+import { gmaps } from "@/lib/config";
+import { districts, placesIn, practical, routes, top5, ui, fmtDate } from "@/lib/content";
 
-const basics = [
-  { icon: "🌦", title: "Погода и сезонность", text: "Высокий сезон: декабрь–май, на западном побережье можно купаться. Низкий: июнь–ноябрь — волны и обратное течение; всепогодные пляжи — восточное побережье (например, Панва)." },
-  { icon: "💱", title: "Деньги и обмен", text: "Не меняйте деньги в аэропорту. Обменники (SuperRich), карты UnionPay, зарубежные карты, USDT. Подробности: [Уточнить актуальные данные]" },
-  { icon: "📶", title: "Связь и интернет", text: "eSIM (Airalo / Dtac), мобильный интернет, навигация. Подробности: [Уточнить актуальные данные]" },
-  { icon: "🚫", title: "Вейпы", text: VAPE_TEXT },
-  { icon: "🌿", title: "Каннабис", text: "С июня 2025 цветки — только по медрецепту (PT33). Рекреационная покупка и употребление без рецепта незаконны; курение в общественных местах запрещено. Продукты с THC < 0,2% легальны." },
-  { icon: "💨", title: "Кальяны", text: "[Уточнить актуальные данные]" },
-];
-
+// v1 clinics kept from the original SOS block (MUST-KEEP F5); addresses still need verification.
 const clinics = [
   { name: "PULSE Clinic Patong", addr: "127/2 Rat Uthit Road", url: gmaps("PULSE Clinic Patong") },
   { name: "PULSE Clinic Phuket Town", addr: "218/1 Phuket Road", url: gmaps("PULSE Clinic Phuket Town") },
 ];
 
 export default function Home() {
+  const ds = districts();
+  const rs = routes().slice(0, 3);
+  const pt = practical();
   return (
-    <main className="dk">
-      <div className="dk-banner">
-        🔥 VIP-Гайд 21+ и Консьерж-сервис —{" "}
-        <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">подробнее в Telegram</a>
-      </div>
-      <section className="dk-hero">
-        <Image src={unsplash("photo-1530789253388-582c481c54b0", 1800)} alt="Ночной Пхукет" fill sizes="100vw" unoptimized priority />
-        <div className="dk-shade" />
-        <div className="dk-wrap dk-hero-in">
-          <p className="dk-eyebrow">21+ · THAILAND · PHUKET</p>
-          <h1>MoveExploreGrow | Неприлизанный путеводитель по Таиланду и Пхукету 21+</h1>
-          <p>Личный опыт 50+ стран. Секретные локации, честные обзоры районов, ночная жизнь без скама и персональный консьерж-сервис.</p>
-          <div className="dk-actions">
-            <a className="dk-btn" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">Получить VIP-Гайд 21+</a>
-            <a className="dk-btn ghost" href="#districts">Выбрать район</a>
+    <main>
+      <section className="hero">
+        <div className="wrap">
+          <p className="eyebrow">Пхукет · Таиланд · 16+</p>
+          <h1 className="display">{ui("hero_title")}</h1>
+          <p className="lead">{ui("hero_subtitle")}</p>
+          <div className="actions">
+            <a className="btn" href="#districts">{ui("cta_choose_district")}</a>
+            <Link className="btn ghost" href="/top-5">{ui("cta_top5")}</Link>
           </div>
         </div>
       </section>
+      {/* #vip anchor kept (MUST-KEEP); 21+ promo blocks are off until the 21+ stage */}
+      <div id="vip" />
 
-      <section className="dk-wrap dk-section" id="vip">
-        <div className="dk-cta">
-          <h2>VIP-Гайд 21+</h2>
-          <p>Устали от туристических разводов на Бангла-роуд и переплат? Получите доступ к закрытой интерактивной Google-карте 21+, андеграундным барам, кинки-ивентам и правилам безопасности.</p>
-          <a className="dk-btn" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">Получить доступ</a>
-        </div>
-      </section>
-
-      <section className="dk-wrap dk-section">
-        <h2 className="dk-h2">Таиланд: практический хаб</h2>
-        <div className="dk-bento">
-          {basics.map((b) => (
-            <article className="dk-card" key={b.title}><span className="dk-ico">{b.icon}</span><h3>{b.title}</h3><p>{b.text}</p></article>
-          ))}
-        </div>
-      </section>
-
-      <section className="dk-wrap dk-section">
-        <h2 className="dk-h2">Карта Пхукета</h2>
-        <article className="dk-card wide">
-          <p><a className="dk-map" href={gmaps("Phuket Thailand")} target="_blank" rel="noopener noreferrer">Открыть Пхукет в Google Картах 📍</a></p>
-        </article>
-      </section>
-
-      <section className="dk-wrap dk-section" id="districts">
-        <h2 className="dk-h2">Районы Пхукета</h2>
-        <div className="dk-grid">
-          {districts.map((d) => (
-            <Link href={`/phuket/${d.slug}`} className="dk-district" key={d.slug}>
-              <Image src={unsplash(d.image, 900)} alt={d.name} fill sizes="(max-width:760px) 100vw, 33vw" unoptimized />
-              <div className="dk-shade" />
-              <div className="dk-district-in"><h3>{d.name}</h3><p>{d.tagline}</p></div>
+      <section className="wrap section" id="districts">
+        <h2>Районы Пхукета</h2>
+        {ds.length === 0 ? <p className="muted">Раздел скоро откроется.</p> : (
+          <div className="grid3">
+            <Link href="/top-5" className="dcard dcard-top5">
+              <span className="caption">{ui("top5_label")}</span>
+              <h3>Топ-5 по районам</h3>
+              <p>{ui("top5_disclaimer")}</p>
             </Link>
-          ))}
-        </div>
+            {ds.map((d) => (
+              <Link href={`/phuket/${d.slug}`} className="dcard" key={d.slug}>
+                <span className="caption">{d.name}</span>
+                <h3>{d.name_ru}</h3>
+                <p>{d.tagline}</p>
+                <span className="small muted">{placesIn(d.slug).length} мест</span>
+              </Link>
+            ))}
+          </div>
+        )}
       </section>
 
-      <section className="dk-wrap dk-section" id="sos">
-        <h2 className="dk-h2">🆘 SOS / Здоровье</h2>
-        <div className="dk-bento">
+      {top5().length > 0 && (
+        <section className="wrap section">
+          <h2>Топ-5 · MEG Selection</h2>
+          <div className="hscroll">
+            {top5().map((t) => (
+              <Link key={t.title} href={`/phuket/${t.district}#top5`} className="chip"><CatIcon slug="attractions" size={16} /> {t.title}</Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {rs.length > 0 && (
+        <section className="wrap section">
+          <h2>Маршруты</h2>
+          <div className="grid3">
+            {rs.map((r) => (
+              <Link key={r.slug} href={`/routes/${r.slug}`} className="rcard">
+                <span className="caption">{ui("route_stops", { count: r.stops.length })}</span>
+                <h3>{r.title}</h3>
+                <p className="clamp">{r.summary}</p>
+              </Link>
+            ))}
+          </div>
+          <p><Link href="/routes">Все маршруты →</Link></p>
+        </section>
+      )}
+
+      {pt.length > 0 && (
+        <section className="wrap section">
+          <h2>Практика: Таиланд и Пхукет</h2>
+          <div className="grid3">
+            {pt.map((t) => (
+              <Link key={t.slug} href={`/practical/${t.slug}`} className="tile">
+                <h3>{t.title}</h3>
+                <p className="clamp small">{t.summary}</p>
+                {t.verified_at && <span className="caption ok">{ui("practical_checked", { date: fmtDate(t.verified_at) })}</span>}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="wrap section">
+        <h2>Карта Пхукета</h2>
+        <p><a href={gmaps("Phuket Thailand")} target="_blank" rel="noopener noreferrer">Открыть Пхукет в Google Картах</a></p>
+      </section>
+
+      <section className="wrap section" id="sos">
+        <h2>SOS и здоровье</h2>
+        <SosBlock />
+        <div className="grid3 mt">
           {clinics.map((c) => (
-            <article className="dk-card" key={c.name}>
+            <article className="card" key={c.name}>
               <h3>{c.name}</h3>
-              <p>{c.addr}<br />STI/HIV тесты, PEP, PrEP</p>
-              <p><a className="dk-map" href={c.url} target="_blank" rel="noopener noreferrer">Открыть в Google Картах 📍</a></p>
+              <p className="small">{c.addr}. Тесты STI/HIV, PEP, PrEP. <span className="muted">Адрес требует проверки.</span></p>
+              <p><a href={c.url} target="_blank" rel="noopener noreferrer">Открыть в Google Картах</a></p>
             </article>
           ))}
-          <article className="dk-card hot">
-            <h3>Экстренные номера</h3>
-            <p><a href="tel:191">Полиция 191</a><br /><a href="tel:1669">Скорая 1669</a><br /><a href="tel:1155">Туристическая полиция 1155</a></p>
-          </article>
         </div>
       </section>
 
-      <section className="dk-wrap dk-section" id="feedback"><h2 className="dk-h2">Консьерж и обратная связь</h2><FeedbackForm /></section>
+      <section className="wrap section" id="feedback">
+        <h2>{ui("form_feedback_title")}</h2>
+        <FeedbackForm />
+      </section>
     </main>
   );
 }

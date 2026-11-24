@@ -1,0 +1,5147 @@
+{
+ "meta": {
+  "generated_at": "2026-11-24",
+  "source": "stage-9 seeds (schema 4.7, local PG17 export)",
+  "schema_version": 1,
+  "includes_unpublished": true,
+  "counts": {
+   "districts": 8,
+   "categories": 20,
+   "places": 60,
+   "routes": 10,
+   "top5": 8,
+   "practical": 12,
+   "placements": 18
+  }
+ },
+ "districts": [
+  {
+   "slug": "mai-khao-nai-yang",
+   "name": "Север: Mai Khao / Nai Yang",
+   "sort_order": 1,
+   "is_published": false,
+   "neighbors": [
+    "bangtao",
+    "kamala-surin"
+   ],
+   "name_ru": "Май Кхао и Най Янг",
+   "tagline": "Тихий север Пхукета с национальным парком и длинными пляжами",
+   "intro": "Mai Khao Beach — это длинный тихий пляж на самом севере Пхукета. Рядом находится Sirinat National Park — это прибрежный национальный парк на севере.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  },
+  {
+   "slug": "bangtao",
+   "name": "Bangtao / Cherngtalay",
+   "sort_order": 2,
+   "is_published": false,
+   "neighbors": [
+    "kamala-surin",
+    "mai-khao-nai-yang"
+   ],
+   "name_ru": "Банг Тао",
+   "tagline": "Длинные пляжи, торговые улицы и просторные курортные зоны",
+   "intro": "Bang Tao Beach — это длинный песчаный пляж на западном побережье. Porto de Phuket — это открытый торговый комплекс в районе Чернгталай.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  },
+  {
+   "slug": "kamala-surin",
+   "name": "Kamala / Surin",
+   "sort_order": 3,
+   "is_published": false,
+   "neighbors": [
+    "patong",
+    "bangtao"
+   ],
+   "name_ru": "Камала и Сурин",
+   "tagline": "Пляжи среди зелёных холмов и тематические парки",
+   "intro": "Surin Beach — это песчаный пляж на западном побережье. Kamala Beach — это тихий и спокойный пляж на западном побережье среди зеленых холмов.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  },
+  {
+   "slug": "patong",
+   "name": "Patong",
+   "sort_order": 4,
+   "is_published": false,
+   "neighbors": [
+    "kamala-surin",
+    "karon-kata",
+    "phuket-town"
+   ],
+   "name_ru": "Патонг",
+   "tagline": "Оживленный центр развлечений, магазинов и пляжного отдыха",
+   "intro": "Patong Beach — это главный пляж Патонга с длинной песчаной бухтой и оживленным городом позади. Jungceylon — это большой торговый центр в сердце Патонга рядом с пляжем.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  },
+  {
+   "slug": "karon-kata",
+   "name": "Karon & Kata",
+   "sort_order": 5,
+   "is_published": false,
+   "neighbors": [
+    "patong",
+    "rawai-nai-harn",
+    "chalong"
+   ],
+   "name_ru": "Карон и Ката",
+   "tagline": "Широкие пляжи, семейные бухты и панорамные смотровые площадки",
+   "intro": "Karon Beach — это длинный широкий песчаный пляж с расслабленной атмосферой. Kata Beach — это популярная семейная бухта с возможностью заняться серфингом.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  },
+  {
+   "slug": "rawai-nai-harn",
+   "name": "Rawai & Nai Harn",
+   "sort_order": 6,
+   "is_published": false,
+   "neighbors": [
+    "karon-kata",
+    "chalong"
+   ],
+   "name_ru": "Раваи и Най Харн",
+   "tagline": "Живописные южные бухты, озера и атмосферные мысы",
+   "intro": "Nai Harn Beach — это пляж на юге Пхукета среди холмов. Promthep Cape — южная оконечность Пхукета со смотровой площадкой, маяком и святилищем.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  },
+  {
+   "slug": "chalong",
+   "name": "Chalong & Big Buddha",
+   "sort_order": 7,
+   "is_published": false,
+   "neighbors": [
+    "rawai-nai-harn",
+    "phuket-town",
+    "karon-kata"
+   ],
+   "name_ru": "Чалонг",
+   "tagline": "Культурные достопримечательности, храмы и спортивные лагеря",
+   "intro": "Wat Chalong — один из главных буддийских храмовых комплексов острова. Phuket Big Buddha — это гигантская статуя Будды на холме Наккерд.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  },
+  {
+   "slug": "phuket-town",
+   "name": "Phuket Town",
+   "sort_order": 8,
+   "is_published": false,
+   "neighbors": [
+    "chalong",
+    "patong"
+   ],
+   "name_ru": "Пхукет-Таун",
+   "tagline": "Историческая архитектура, музеи и колоритные городские рынки",
+   "intro": "Phuket Old Town — это исторический центр города с цветными домами. Chinpracha House — это исторический китайско-португальский особняк-музей.",
+   "text_origin": "gemini-flash-lite-latest + editor"
+  }
+ ],
+ "categories": [
+  {
+   "slug": "beaches",
+   "label_ru": "Пляжи",
+   "icon": null,
+   "sort_order": 1,
+   "is_published": true
+  },
+  {
+   "slug": "food",
+   "label_ru": "Рестораны и кафе",
+   "icon": null,
+   "sort_order": 2,
+   "is_published": true
+  },
+  {
+   "slug": "breakfast",
+   "label_ru": "Лучшие завтраки",
+   "icon": null,
+   "sort_order": 3,
+   "is_published": true
+  },
+  {
+   "slug": "dinner",
+   "label_ru": "Лучшие ужины",
+   "icon": null,
+   "sort_order": 4,
+   "is_published": true
+  },
+  {
+   "slug": "unique-hotels",
+   "label_ru": "Отели и уникальное жильё",
+   "icon": null,
+   "sort_order": 5,
+   "is_published": true
+  },
+  {
+   "slug": "coffee",
+   "label_ru": "Кофейни",
+   "icon": null,
+   "sort_order": 6,
+   "is_published": true
+  },
+  {
+   "slug": "attractions",
+   "label_ru": "Достопримечательности",
+   "icon": null,
+   "sort_order": 7,
+   "is_published": true
+  },
+  {
+   "slug": "instagrammable",
+   "label_ru": "Инстаграм-места",
+   "icon": null,
+   "sort_order": 8,
+   "is_published": true
+  },
+  {
+   "slug": "activities",
+   "label_ru": "Активности и приключения",
+   "icon": null,
+   "sort_order": 9,
+   "is_published": true
+  },
+  {
+   "slug": "kids-family",
+   "label_ru": "Семьям и детям",
+   "icon": null,
+   "sort_order": 10,
+   "is_published": true
+  },
+  {
+   "slug": "nature-viewpoints",
+   "label_ru": "Природа и смотровые",
+   "icon": null,
+   "sort_order": 11,
+   "is_published": true
+  },
+  {
+   "slug": "sports-fitness",
+   "label_ru": "Спорт и фитнес",
+   "icon": null,
+   "sort_order": 12,
+   "is_published": true
+  },
+  {
+   "slug": "shopping",
+   "label_ru": "Шопинг",
+   "icon": null,
+   "sort_order": 13,
+   "is_published": true
+  },
+  {
+   "slug": "nightlife",
+   "label_ru": "Вечерняя жизнь (16+)",
+   "icon": null,
+   "sort_order": 14,
+   "is_published": true
+  },
+  {
+   "slug": "wellness",
+   "label_ru": "Wellness: спа, массаж, йога",
+   "icon": null,
+   "sort_order": 15,
+   "is_published": true
+  },
+  {
+   "slug": "markets",
+   "label_ru": "Рынки",
+   "icon": null,
+   "sort_order": 16,
+   "is_published": true
+  },
+  {
+   "slug": "services",
+   "label_ru": "Полезные сервисы",
+   "icon": null,
+   "sort_order": 17,
+   "is_published": true
+  },
+  {
+   "slug": "routes",
+   "label_ru": "Маршруты",
+   "icon": null,
+   "sort_order": 18,
+   "is_published": true
+  },
+  {
+   "slug": "extreme",
+   "label_ru": "Экстрим",
+   "icon": null,
+   "sort_order": 19,
+   "is_published": true
+  },
+  {
+   "slug": "tours",
+   "label_ru": "Экскурсии и туры",
+   "icon": null,
+   "sort_order": 20,
+   "is_published": false
+  }
+ ],
+ "places": [
+  {
+   "slug": "black-ginger",
+   "name": "Black Ginger",
+   "district": "mai-khao-nai-yang",
+   "category": "dinner",
+   "categories": [
+    "dinner"
+   ],
+   "short_description": "Black Ginger — это тайский ресторан при отеле в Най Янг.",
+   "why_visit": "Сюда едут на вечерний ужин, добираясь к нему на плоту по лагуне.",
+   "address": "The Slate, 116 Moo 1, Sakhu, Thalang, Phuket 83110 (Nai Yang)",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Black+Ginger+Phuket",
+   "official_url": "https://www.theslatephuket.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.theslatephuket.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/black-ginger-restaurant/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "mai-khao-beach",
+   "name": "Mai Khao Beach",
+   "district": "mai-khao-nai-yang",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Mai Khao Beach — это длинный тихий пляж на самом севере Пхукета.",
+   "why_visit": "Сюда едут за тишиной длинного пляжа и видом на самолёты, заходящие на посадку.",
+   "address": "Mai Khao Beach, Mai Khao, Thalang, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mai+Khao+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/mai-khao-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "nai-yang-beach",
+   "name": "Nai Yang Beach",
+   "district": "mai-khao-nai-yang",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Nai Yang Beach — это тихий пляж на севере внутри национального парка.",
+   "why_visit": "Сюда едут отдохнуть в тени деревьев и попробовать местную еду.",
+   "address": "Nai Yang Beach, Sakhu, Thalang, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nai+Yang+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/nai-yang-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "quan-spa-marriott-nai-yang",
+   "name": "Quan Spa at Phuket Marriott Nai Yang",
+   "district": "mai-khao-nai-yang",
+   "category": "wellness",
+   "categories": [
+    "wellness"
+   ],
+   "short_description": "Quan Spa — это спа курорта Phuket Marriott Resort and Spa на пляже Най Янг с массажами и процедурами для тела.",
+   "why_visit": "Сюда идут на спа-процедуры; спа принимает и гостей не из отеля.",
+   "address": "Phuket Marriott Resort and Spa, 92, 92/1 Moo 3, Sakhu, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Quan+Spa+at+Phuket+Marriott+Nai+Yang+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/quan-spa-at-phuket-marriott-resort-and-spa-nai-yang-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://phuket-insider.com/en/places/quan-spa-2/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "sirinat-national-park",
+   "name": "Sirinat National Park",
+   "district": "mai-khao-nai-yang",
+   "category": "nature-viewpoints",
+   "categories": [
+    "nature-viewpoints"
+   ],
+   "short_description": "Sirinat National Park — это прибрежный национальный парк на севере.",
+   "why_visit": "Сюда едут на прогулки по мангровым тропам и пляжам.",
+   "address": "89 Sakhu, Thalang, Phuket 83140",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sirinat+National+Park+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/sirinat-national-park-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "good-view-nai-yang",
+   "name": "The Good View Restaurant",
+   "district": "mai-khao-nai-yang",
+   "category": "food",
+   "categories": [
+    "food"
+   ],
+   "short_description": "The Good View Restaurant — это простое заведение с тайской кухней.",
+   "why_visit": "Сюда едут перекусить с видом на море на пляже Най Янг.",
+   "address": "Nai Yang Beach, Sakhu, Thalang, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Good+View+Restaurant+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "needs_verification",
+   "verification_status": "needs_check",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/the-good-view-restaurant-nai-yang-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.myguidephuket.com/restaurants/the-good-view",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "wat-mai-khao",
+   "name": "Wat Mai Khao",
+   "district": "mai-khao-nai-yang",
+   "category": "attractions",
+   "categories": [
+    "attractions"
+   ],
+   "short_description": "Wat Mai Khao — это скромный местный храм недалеко от пляжа.",
+   "why_visit": "Сюда едут познакомиться с тихой духовной жизнью местных жителей.",
+   "address": "146/7 Mai Khao, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Mai+Khao+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/wat-mai-khao/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "bang-tao-beach",
+   "name": "Bang Tao Beach",
+   "district": "bangtao",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Bang Tao Beach — это длинный песчаный пляж на западном побережье.",
+   "why_visit": "Сюда едут ради пляжных клубов, ресторанов и близости к курортной зоне.",
+   "address": "Bang Tao Beach, Choeng Thale, Thalang, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bang+Tao+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/best-things-to-do-in-bang-tao-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "banyan-tree-spa-phuket",
+   "name": "Banyan Tree Spa Phuket",
+   "district": "bangtao",
+   "category": "wellness",
+   "categories": [
+    "wellness"
+   ],
+   "short_description": "Banyan Tree Spa Phuket — это открытый в 1994 году в Лагуне Пхукет спа-комплекс с павильонами под открытым небом и тайскими травяными процедурами.",
+   "why_visit": "Сюда едут в отмеченный наградами спа-центр, который также является учебной академией.",
+   "address": "33 Moo 4, Srisoonthorn Road, Cherngtalay, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Banyan+Tree+Spa+Phuket+Phuket",
+   "official_url": "https://www.banyantree.com/spa/banyan-tree-spa-phuket",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.banyantree.com/spa/banyan-tree-spa-phuket",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/banyan-tree-spa-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "blue-tree-phuket",
+   "name": "Blue Tree Phuket",
+   "district": "bangtao",
+   "category": "kids-family",
+   "categories": [
+    "kids-family"
+   ],
+   "short_description": "Blue Tree Phuket — это комплекс активного отдыха и водный парк.",
+   "why_visit": "Сюда едут ради лагуны и разнообразных развлечений для детей и взрослых.",
+   "address": "4/2 Srisoonthorn Rd, Cherngtalay, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blue+Tree+Phuket+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/blue-tree-phuket-water-park/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "fun-friday-avenue-market",
+   "name": "Fun Friday Avenue Market",
+   "district": "bangtao",
+   "category": "nightlife",
+   "categories": [
+    "nightlife"
+   ],
+   "short_description": "Fun Friday Avenue Market — это небольшой еженедельный пятничный вечерний рынок у Boat Avenue рядом с Лагуной Пхукет с уличной едой и торговыми рядами.",
+   "why_visit": "Сюда идут ради расслабленной вечерней атмосферы в районе Банг Тао.",
+   "address": "Boat Avenue, 1 Bandon-Cherngtalay Rd, Cherngtalay, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fun+Friday+Avenue+Market+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/fun-friday-avenue-market/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/boat-avenue-mall/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "laguna-golf-phuket",
+   "name": "Laguna Golf Phuket",
+   "district": "bangtao",
+   "category": "sports-fitness",
+   "categories": [
+    "sports-fitness"
+   ],
+   "short_description": "Laguna Golf Phuket — это курортное поле для гольфа.",
+   "why_visit": "Сюда едут играть в гольф на территории крупного комплекса.",
+   "address": "34 Moo 4, Choeng Thale, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Laguna+Golf+Phuket+Phuket",
+   "official_url": "https://www.lagunagolfphuket.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.lagunagolfphuket.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/laguna-golf-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "layan-beach",
+   "name": "Layan Beach",
+   "district": "bangtao",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Layan Beach — это небольшой тихий пляж на северной оконечности Банг Тао.",
+   "why_visit": "Сюда едут ради природы и близости к национальному парку.",
+   "address": "Layan Beach, Choeng Thale, Thalang, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Layan+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/layan-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "porto-de-phuket",
+   "name": "Porto de Phuket",
+   "district": "bangtao",
+   "category": "shopping",
+   "categories": [
+    "shopping"
+   ],
+   "short_description": "Porto de Phuket — это открытый торговый комплекс в районе Чернгталай.",
+   "why_visit": "Сюда едут погулять по магазинам, заглянуть в кафе и рестораны.",
+   "address": "19 Baan Don-Cherngtalay Road, Cherngtalay, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Porto+de+Phuket+Phuket",
+   "official_url": "https://www.portodephuket.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.portodephuket.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/porto-de-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "suay-cherngtalay",
+   "name": "Suay Restaurant Cherngtalay",
+   "district": "bangtao",
+   "category": "dinner",
+   "categories": [
+    "dinner"
+   ],
+   "short_description": "Suay Restaurant Cherngtalay — это ресторан современной тайской кухни.",
+   "why_visit": "Сюда едут на вечерний ужин в приятной обстановке.",
+   "address": "177/99 Moo 6, Si Sunthon, Thalang, Phuket 83110",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Suay+Restaurant+Cherngtalay+Phuket",
+   "official_url": "https://www.suayrestaurant.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "needs_verification",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/suay-restaurant-cherngtalay/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.suayrestaurant.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "carnival-magic",
+   "name": "Carnival Magic",
+   "district": "kamala-surin",
+   "category": "kids-family",
+   "categories": [
+    "kids-family"
+   ],
+   "short_description": "Carnival Magic — это семейный ночной тематический парк с иллюминацией.",
+   "why_visit": "Сюда едут посмотреть карнавальное шествие в выбранные дни недели.",
+   "address": "999 Moo 3, Kamala, Kathu, Phuket 83150",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Carnival+Magic+Phuket",
+   "official_url": "https://www.carnivalmagic.fun/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.carnivalmagic.fun/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/carnival-magic-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "kamala-beach",
+   "name": "Kamala Beach",
+   "district": "kamala-surin",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Kamala Beach — это тихий и спокойный пляж на западном побережье среди зеленых холмов.",
+   "why_visit": "Сюда едут отдыхать всей семьей благодаря спокойной обстановке.",
+   "address": "Kamala Beach, Kamala, Kathu, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kamala+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/kamala-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "laem-singh-viewpoint",
+   "name": "Laem Singh Viewpoint",
+   "district": "kamala-surin",
+   "category": "nature-viewpoints",
+   "categories": [
+    "nature-viewpoints"
+   ],
+   "short_description": "Laem Singh Viewpoint — это придорожная смотровая площадка на Андаманское море.",
+   "why_visit": "Сюда едут любоваться закатами над бухтой Лаем Сингх.",
+   "address": "Laem Singh, between Kamala and Surin, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Laem+Singh+Viewpoint+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://tophuket.com/laem-singh-viewpoint/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://phuket-insider.com/en/places/laem-sing-viewpoint/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "oriental-spoon-twinpalms",
+   "name": "Oriental Spoon (Twinpalms Surin)",
+   "district": "kamala-surin",
+   "category": "food",
+   "categories": [
+    "food"
+   ],
+   "short_description": "Oriental Spoon — это ресторан при отеле Twinpalms Surin Beach.",
+   "why_visit": "Сюда приходят на завтрак или ужин с меню, сочетающим восточную и западную кухню.",
+   "address": "Twinpalms Surin Beach, 106/46 Moo 3, Surin Beach Road, Choeng Thale, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Oriental+Spoon+Phuket",
+   "official_url": "https://www.twinpalmshotelsresorts.com/surin-beach-phuket/restaurant-oriental-spoon/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.twinpalmshotelsresorts.com/surin-beach-phuket/restaurant-oriental-spoon/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "phuket-fantasea",
+   "name": "Phuket FantaSea",
+   "district": "kamala-surin",
+   "category": "attractions",
+   "categories": [
+    "attractions",
+    "nightlife"
+   ],
+   "short_description": "Phuket FantaSea — это вечерний культурный тематический парк с грандиозным шоу.",
+   "why_visit": "Сюда едут ради масштабного сценического представления о культуре Таиланда и ужина-буфета.",
+   "address": "99 Moo 3, Kamala, Kathu, Phuket 83150",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+FantaSea+Phuket",
+   "official_url": "https://www.phuket-fantasea.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket-fantasea.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/phuket-fantasea/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "surin-beach",
+   "name": "Surin Beach",
+   "district": "kamala-surin",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Surin Beach — это песчаный пляж на западном побережье в престижном районе.",
+   "why_visit": "Сюда едут ради спокойной атмосферы по сравнению с Патонгом.",
+   "address": "Surin Beach, Choeng Thale, Thalang, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Surin+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/surin-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "baan-rim-pa",
+   "name": "Baan Rim Pa",
+   "district": "patong",
+   "category": "dinner",
+   "categories": [
+    "dinner"
+   ],
+   "short_description": "Baan Rim Pa — это ресторан королевской тайской кухни в тиковском доме на скалах Калима.",
+   "why_visit": "Сюда едут ради видов на море и ужина на закате.",
+   "address": "249/4-5 Prabaramee Road, Kalim, Patong, Kathu, Phuket 83150",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Baan+Rim+Pa+Phuket",
+   "official_url": "https://www.baanrimpa.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.baanrimpa.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.thaiholidayguide.com/attraction/baan-rim-pa-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "bangla-road",
+   "name": "Bangla Road",
+   "district": "patong",
+   "category": "nightlife",
+   "categories": [
+    "nightlife"
+   ],
+   "short_description": "Bangla Road — это 400-метровая улица в центре Патонга, которая каждый вечер становится пешеходной: неон, музыка, уличные артисты.",
+   "why_visit": "Сюда идут на вечернюю прогулку, чтобы увидеть самую известную ночную улицу Пхукета; часть заведений на улице — только для 20+, гид их не рекламирует.",
+   "address": "Bangla Road (Soi Bangla), Patong, Kathu, Phuket 83150",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bangla+Road+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "16+",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/soi-bangla/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "jungceylon",
+   "name": "Jungceylon",
+   "district": "patong",
+   "category": "shopping",
+   "categories": [
+    "shopping"
+   ],
+   "short_description": "Jungceylon — это большой торговый центр в сердце Патонга рядом с пляжем.",
+   "why_visit": "Сюда едут ради магазинов, еды, кинотеатра и нескольких тематических зон.",
+   "address": "Jungceylon, central Patong (Rat-U-Thit 200 Pee Rd), Kathu, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jungceylon+Phuket",
+   "official_url": "https://www.jungceylon.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.jungceylon.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "lets-relax-spa-patong",
+   "name": "Let's Relax Spa Patong (2nd Street)",
+   "district": "patong",
+   "category": "wellness",
+   "categories": [
+    "wellness"
+   ],
+   "short_description": "Let's Relax Spa Patong (2nd Street) — это филиал тайской сети дневных спа на улице Рат-У-Тхит 200 Пи с тайским массажем, ароматерапией, рефлексотерапией стоп и травяными компрессами.",
+   "why_visit": "Сюда едут на сеансы расслабляющего массажа и спа-процедур.",
+   "address": "209/22-24 Raj-U-Thid Road (Patong 2nd Street), Patong, Kathu, Phuket 83150",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Let%27s+Relax+Spa+Patong+%282nd+Street%29+Phuket",
+   "official_url": "https://letsrelaxspa.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://letsrelaxspa.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket.net/directory/profile/lets-relax-spa-patong/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/lets-relax-spa-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "patong-beach",
+   "name": "Patong Beach",
+   "district": "patong",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Patong Beach — это главный пляж Патонга с длинной песчаной бухтой и оживленным городом позади.",
+   "why_visit": "Сюда едут ради многочисленных водных развлечений и ресторанов вдоль пляжной дороги.",
+   "address": "Patong Beach, Patong, Kathu, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Patong+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/patong-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "patong-hospital",
+   "name": "Patong Hospital",
+   "district": "patong",
+   "category": "services",
+   "categories": [
+    "services"
+   ],
+   "short_description": "Patong Hospital — это единственная государственная больница Патонга на Sainamyen Road, в пяти минутах от Bangla Road; работает круглосуточно.",
+   "why_visit": "Сюда обращаются за быстрой помощью в Патонге; в серьёзных случаях пациентов переводят в больницы Пхукет-Тауна.",
+   "address": "57 Sainamyen Rd, Patong, Kathu District, Phuket 83150",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Patong+Hospital+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/phuket-hospitals/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "phuket-thai-cooking-academy",
+   "name": "Phuket Thai Cooking Academy",
+   "district": "patong",
+   "category": "activities",
+   "categories": [
+    "activities"
+   ],
+   "short_description": "Phuket Thai Cooking Academy — это место для кулинарных мастер-классов по тайской кухне.",
+   "why_visit": "Сюда едут на занятия в небольших группах и экскурсию на рынок.",
+   "address": "104/5 Soi Namtok, Kathu, Phuket 83120",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Thai+Cooking+Academy+Phuket",
+   "official_url": "https://phuketthaicookingacademy.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://phuketthaicookingacademy.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/phuket-thai-cooking-academy/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "savoey-seafood-patong",
+   "name": "Savoey Seafood",
+   "district": "patong",
+   "category": "food",
+   "categories": [
+    "food"
+   ],
+   "short_description": "Savoey Seafood — это давний ресторан морепродуктов с выбором улова на пляжной дороге.",
+   "why_visit": "Сюда едут попробовать свежие морепродукты, которые продаются на вес.",
+   "address": "136 Thaweewong Road, Patong, Kathu, Phuket 83150",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Savoey+Seafood+Phuket",
+   "official_url": "https://www.savoeyseafoodpatong.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.savoeyseafoodpatong.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/savoey-seafood/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "wat-suwan-khiri-wong",
+   "name": "Wat Suwan Khiri Wong (Wat Patong)",
+   "district": "patong",
+   "category": "attractions",
+   "categories": [
+    "attractions"
+   ],
+   "short_description": "Wat Suwan Khiri Wong — это исторический буддийский храм у подножия холма Патонг.",
+   "why_visit": "Сюда едут ради спокойной атмосферы храмового комплекса, соблюдая скромный дресс-код.",
+   "address": "Phra Barami Road, Patong, Kathu, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Suwan+Khiri+Wong+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/wat-suwan-kiriwong/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.lonelyplanet.com/points-of-interest/wat-suwan-khiri-wong/1162719",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "infinite-luxury-spa-kata-rocks",
+   "name": "Infinite Luxury Spa at Kata Rocks",
+   "district": "karon-kata",
+   "category": "wellness",
+   "categories": [
+    "wellness"
+   ],
+   "short_description": "Infinite Luxury Spa at Kata Rocks — это спа-центр внутри курорта Kata Rocks на улице Кок Таноде на пляже Ката с фирменными массажами и процедурами.",
+   "why_visit": "Сюда едут за качественным уходом, отмеченным региональной наградой World Luxury Spa Awards.",
+   "address": "Kata Rocks, 186/22 Kok Tanode Road, Kata Beach, Phuket 83100",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Infinite+Luxury+Spa+at+Kata+Rocks+Phuket",
+   "official_url": "https://www.katarocks.com/category/infinite-luxury-spa/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.katarocks.com/category/infinite-luxury-spa/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/infinite-luxury-spa-at-kata-rocks/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "karon-beach",
+   "name": "Karon Beach",
+   "district": "karon-kata",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Karon Beach — это длинный широкий песчаный пляж с расслабленной атмосферой.",
+   "why_visit": "Сюда едут за простором широкого пляжа и более спокойной атмосферой, чем в Патонге.",
+   "address": "Karon Beach, Karon, Mueang Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karon+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/karon-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "karon-temple-market",
+   "name": "Karon Temple Market",
+   "district": "karon-kata",
+   "category": "nightlife",
+   "categories": [
+    "nightlife"
+   ],
+   "short_description": "Karon Temple Market — это вечерний рынок на территории храма Ват Карон на улице Патак, который работает по вторникам и пятницам.",
+   "why_visit": "Сюда идут за местной уличной едой, одеждой и сувенирами.",
+   "address": "Patak Rd, Karon, Mueang Phuket District, Phuket 83100",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karon+Temple+Market+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/karon-temple-market/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "karon-viewpoint",
+   "name": "Karon Viewpoint",
+   "district": "karon-kata",
+   "category": "nature-viewpoints",
+   "categories": [
+    "nature-viewpoints"
+   ],
+   "short_description": "Karon Viewpoint — это бесплатная смотровая площадка на южной дороге.",
+   "why_visit": "Сюда едут ради панорамных видов на три живописные бухты.",
+   "address": "Route 4233, Karon, Mueang Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karon+Viewpoint+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/karon-viewpoint/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "kata-beach",
+   "name": "Kata Beach",
+   "district": "karon-kata",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Kata Beach — это популярная семейная бухта с возможностью заняться серфингом.",
+   "why_visit": "Сюда едут всей семьей для отдыха у моря и занятий водными видами спорта.",
+   "address": "Kata Beach, Karon, Mueang Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kata+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/kata-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "kata-night-market",
+   "name": "Kata Night Market",
+   "district": "karon-kata",
+   "category": "markets",
+   "categories": [
+    "markets"
+   ],
+   "short_description": "Kata Night Market — это вечерний рынок с уличной едой и сувенирами.",
+   "why_visit": "Сюда едут попробовать местные закуски и купить одежду.",
+   "address": "Muang Patak Rd, Karon, Mueang Phuket 83100",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kata+Night+Market+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/kata-night-market/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "on-the-rock-karon",
+   "name": "On The Rock",
+   "district": "karon-kata",
+   "category": "dinner",
+   "categories": [
+    "dinner"
+   ],
+   "short_description": "On The Rock — это ресторан тайской кухни и морепродуктов на прибрежных скалах.",
+   "why_visit": "Сюда едут ради ужина над морем на закате.",
+   "address": "Marina Phuket Resort, 47 Karon Road, Karon, Phuket 83100",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=On+The+Rock+Phuket",
+   "official_url": "https://www.marinaphuket.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.marinaphuket.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/on-the-rock-restaurant/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "super-surf-kata",
+   "name": "Super Surf Kata (ex Surf House Phuket)",
+   "district": "karon-kata",
+   "category": "activities",
+   "categories": [
+    "activities"
+   ],
+   "short_description": "Super Surf Kata — это установка с искусственной волной для серфинга.",
+   "why_visit": "Сюда едут кататься и брать уроки для начинающих.",
+   "address": "4 Soi Pakbang, Karon, Mueang Phuket 83100",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Super+Surf+Kata+Phuket",
+   "official_url": "https://supersurfkata.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "needs_verification",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/surf-house-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://supersurfkata.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://phuket-insider.com/en/places/super-surf-kata/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "nai-harn-beach",
+   "name": "Nai Harn Beach",
+   "district": "rawai-nai-harn",
+   "category": "beaches",
+   "categories": [
+    "beaches"
+   ],
+   "short_description": "Nai Harn Beach — это красивый пляж на юге Пхукета среди холмов.",
+   "why_visit": "Сюда едут ради спокойной и менее застроенной пляжной зоны.",
+   "address": "Nai Harn Beach, Rawai, Mueang Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nai+Harn+Beach+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/nai-harn-beach/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "nai-harn-lake",
+   "name": "Nai Harn Lake",
+   "district": "rawai-nai-harn",
+   "category": "sports-fitness",
+   "categories": [
+    "sports-fitness"
+   ],
+   "short_description": "Nai Harn Lake — это парковая зона с озером позади пляжа Най Харн.",
+   "why_visit": "Сюда едут для прогулок, пробежек и катания на велосипеде.",
+   "address": "Nai Harn Lake, Rawai, Mueang Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nai+Harn+Lake+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/where-to-run-in-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.thephuketnews.com/nai-harn-lake-makeover-ready-by-february-94835.php",
+     "title": null,
+     "type": "other",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "promthep-cape",
+   "name": "Promthep Cape",
+   "district": "rawai-nai-harn",
+   "category": "nature-viewpoints",
+   "categories": [
+    "nature-viewpoints"
+   ],
+   "short_description": "Promthep Cape — южная оконечность Пхукета со смотровой площадкой, маяком и святилищем.",
+   "why_visit": "Сюда едут встречать закат у маяка и храма.",
+   "address": "Promthep Cape, Rawai, Mueang Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Promthep+Cape+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/promthep-cape/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "rawai-seafood-market",
+   "name": "Rawai Seafood Market",
+   "district": "rawai-nai-harn",
+   "category": "markets",
+   "categories": [
+    "markets"
+   ],
+   "short_description": "Rawai Seafood Market — это рынок морепродуктов у пляжа Раваи.",
+   "why_visit": "Сюда едут покупать свежий улов, который приготовят в соседних кафе.",
+   "address": "22/9 Wiset Road (Route 4233), Rawai, Mueang Phuket 83100",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rawai+Seafood+Market+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/rawai-seafood-market/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "wat-nai-harn",
+   "name": "Wat Nai Harn",
+   "district": "rawai-nai-harn",
+   "category": "attractions",
+   "categories": [
+    "attractions"
+   ],
+   "short_description": "Wat Nai Harn — это местный буддийский храм рядом с озером.",
+   "why_visit": "Сюда едут познакомиться с местной культурой и тихой атмосферой.",
+   "address": "Wat Nai Harn, Rawai, Mueang Phuket 83100",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Nai+Harn+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/wat-nai-harn/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "windmill-viewpoint",
+   "name": "Windmill Viewpoint",
+   "district": "rawai-nai-harn",
+   "category": "instagrammable",
+   "categories": [
+    "instagrammable"
+   ],
+   "short_description": "Windmill Viewpoint — это смотровая площадка с ветряной турбиной на юге.",
+   "why_visit": "Сюда едут ради красивых видов на бухты и удачных фотографий.",
+   "address": "Windmill Viewpoint, Rawai (between Nai Harn and Ya Nui), Mueang Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Windmill+Viewpoint+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "needs_verification",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/windmill-viewpoint/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.thaiholidayguide.com/attraction/windmill-viewpoint/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.bookingmentor.com/windmill-viewpoint-phuket",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "yoga-by-niti",
+   "name": "Yoga by Niti",
+   "district": "rawai-nai-harn",
+   "category": "wellness",
+   "categories": [
+    "wellness"
+   ],
+   "short_description": "Yoga by Niti — это небольшая студия йоги и практик восстановления на Sai Yuan Road в Раваи, недалеко от пляжа Най Харн; основательница — Тачина «Нити» Нитикарн.",
+   "why_visit": "Сюда идут на занятия йогой и медитацию с поющими чашами.",
+   "address": "39/6 Moo 1, Sai Yuan Road, Rawai, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yoga+by+Niti+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/10-great-yoga-studios-in-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "5-elements-hot-yoga",
+   "name": "5 Elements Hot Yoga",
+   "district": "chalong",
+   "category": "wellness",
+   "categories": [
+    "wellness"
+   ],
+   "short_description": "5 Elements Hot Yoga — это студия горячей йоги и небольшой велнес-курорт на улице Сои Та-иад в Чалонге с занятиями силовой йогой, растяжкой и оздоровительными терапиями.",
+   "why_visit": "Сюда идут для занятий йогой и оздоровительных практик.",
+   "address": "45/75 Soi Ta-iad, Chalong, Mueang Phuket District, Phuket 83130",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=5+Elements+Hot+Yoga+Phuket",
+   "official_url": "https://www.fiveelementshotyogaretreat.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/5-elements-hot-yoga/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.fiveelementshotyogaretreat.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "kan-eang-pier",
+   "name": "Kan Eang@Pier",
+   "district": "chalong",
+   "category": "dinner",
+   "categories": [
+    "dinner"
+   ],
+   "short_description": "Kan Eang@Pier — это давний ресторан морепродуктов у пирса Чалонг.",
+   "why_visit": "Сюда едут пообедать или поужинать с видом на залив.",
+   "address": "44/1 Moo 5, Viset Road, Chalong Pier, Rawai, Phuket 83130",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kan+Eang%40Pier+Phuket",
+   "official_url": "https://www.kaneang.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.kaneang.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/kan-eang-pier/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "nakkerd-seaview-cafe",
+   "name": "Nakkerd Seaview Cafe",
+   "district": "chalong",
+   "category": "coffee",
+   "categories": [
+    "coffee"
+   ],
+   "short_description": "Nakkerd Seaview Cafe — это кафе на дороге к Большому Будде.",
+   "why_visit": "Сюда едут отдохнуть с напитками и видом на море.",
+   "address": "Chaofa West Road, Soi Yod Santhan (road to Big Buddha), Chalong, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nakkerd+Seaview+Cafe+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "needs_verification",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/nak-kerd-seaview-cafe-big-buddha-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/restaurants-near-big-buddha-phuket/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://restaurantguru.com/Nark-Kird-Sea-View-Karon",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "phuket-big-buddha",
+   "name": "Phuket Big Buddha",
+   "district": "chalong",
+   "category": "attractions",
+   "categories": [
+    "attractions"
+   ],
+   "short_description": "Phuket Big Buddha — это гигантская статуя Будды на холме Наккерд.",
+   "why_visit": "Сюда едут ради панорамных видов на весь остров и посещения святыни.",
+   "address": "Soi Yot Sane 1, Chaofa West Rd, Nakkerd Hill, Chalong, Phuket",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Big+Buddha+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/phuket-big-buddha/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "robinson-lifestyle-chalong",
+   "name": "Robinson Lifestyle Chalong",
+   "district": "chalong",
+   "category": "shopping",
+   "categories": [
+    "shopping"
+   ],
+   "short_description": "Robinson Lifestyle Chalong — это современный торговый центр на юге.",
+   "why_visit": "Сюда едут за покупками и едой на юге острова, не выезжая в город.",
+   "address": "Robinson Lifestyle Chalong, Chalong, Mueang Phuket 83130",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Robinson+Lifestyle+Chalong+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/robinson-lifestyle-chalong/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "tiger-muay-thai",
+   "name": "Tiger Muay Thai",
+   "district": "chalong",
+   "category": "sports-fitness",
+   "categories": [
+    "sports-fitness"
+   ],
+   "short_description": "Tiger Muay Thai — это крупный лагерь тайского бокса и фитнеса.",
+   "why_visit": "Сюда едут тренироваться — занятия есть для любого уровня подготовки.",
+   "address": "7/35 Moo 5, Soi Ta-iad, Chalong, Phuket 83130",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tiger+Muay+Thai+Phuket",
+   "official_url": "https://www.tigermuaythai.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.tigermuaythai.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/tiger-muay-thai-and-mma-training-camp/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "wat-chalong",
+   "name": "Wat Chalong",
+   "district": "chalong",
+   "category": "attractions",
+   "categories": [
+    "attractions"
+   ],
+   "short_description": "Wat Chalong — один из главных буддийских храмовых комплексов острова.",
+   "why_visit": "Сюда едут посмотреть на высокую чеди и украшенные залы, соблюдая дресс-код.",
+   "address": "70/6 Chao Fah Tawan Tok Road, Chalong, Phuket 83130",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Chalong+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/wat-chalong/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "bangkok-hospital-phuket",
+   "name": "Bangkok Hospital Phuket",
+   "district": "phuket-town",
+   "category": "services",
+   "categories": [
+    "services"
+   ],
+   "short_description": "Bangkok Hospital Phuket — это крупная частная больница на Yaowarat Road в Пхукет-Тауне с международной аккредитацией JCI и круглосуточным приёмным отделением.",
+   "why_visit": "Сюда обращаются при серьёзных проблемах со здоровьем: больница работает напрямую с международными туристическими страховками.",
+   "address": "Yaowarat Road, Talat Yai, Mueang Phuket District, Phuket 83000",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bangkok+Hospital+Phuket+Phuket",
+   "official_url": "https://www.bangkokhospital.com/en/phuket",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.bangkokhospital.com/en/phuket",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/phuket-hospitals/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "chillva-market",
+   "name": "Chillva Market",
+   "district": "phuket-town",
+   "category": "nightlife",
+   "categories": [
+    "nightlife"
+   ],
+   "short_description": "Chillva Market — это открытый в 2014 году на улице Яоварат ночной рынок с разноцветными морскими контейнерами, местной едой, живой музыкой и модной одеждой для молодежи.",
+   "why_visit": "Сюда едут за атмосферой молодежного рынка и разнообразием уличной еды.",
+   "address": "141/2 Yaowarat Road, Phuket 83000",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chillva+Market+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/chillva-market/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "chinpracha-house",
+   "name": "Chinpracha House",
+   "district": "phuket-town",
+   "category": "attractions",
+   "categories": [
+    "attractions"
+   ],
+   "short_description": "Chinpracha House — это исторический китайско-португальский особняк-музей.",
+   "why_visit": "Сюда едут посмотреть на быт прошлой эпохи и архитектуру.",
+   "address": "98 Krabi Road, Talat Nuea, Mueang Phuket 83000",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chinpracha+House+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.thaiholidayguide.com/attraction/chinpracha-house-museum-ban-chinpracha/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://thailandtourismdirectory.go.th/en/attraction/3680",
+     "title": null,
+     "type": "tourism_gov",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/baan-chinpracha/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "khao-rang-viewpoint",
+   "name": "Khao Rang Hill Viewpoint",
+   "district": "phuket-town",
+   "category": "nature-viewpoints",
+   "categories": [
+    "nature-viewpoints"
+   ],
+   "short_description": "Khao Rang Hill Viewpoint — это смотровая площадка на холме над городом.",
+   "why_visit": "Сюда едут ради видов на город и отдыха в парке с ресторанами.",
+   "address": "Khao Rang Hill, Phuket Town",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Khao+Rang+Hill+Viewpoint+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "needs_verification",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/khao-rang-hill-view-point/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.thaiholidayguide.com/attraction/khao-rang/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.visit-thailand.org/cities/24-phuket/phuket-viewpoints",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "one-chun",
+   "name": "One Chun",
+   "district": "phuket-town",
+   "category": "food",
+   "categories": [
+    "food"
+   ],
+   "short_description": "One Chun — местный ресторан в Пхукет-тауне с домашней кухней в южном и перанаканском стиле.",
+   "why_visit": "Сюда едут попробовать местные пхукетские блюда.",
+   "address": "48/1 Thepkrasattri Rd, Talat Yai, Phuket Town 83000",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=One+Chun+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "needs_verification",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/one-chun-restaurant/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/One_Chun",
+     "title": null,
+     "type": "other",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.khaosanroad.com/places/one-chun-cafe-restaurant",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "phuket-old-town",
+   "name": "Phuket Old Town",
+   "district": "phuket-town",
+   "category": "instagrammable",
+   "categories": [
+    "instagrammable"
+   ],
+   "short_description": "Phuket Old Town — это исторический центр города с цветными домами.",
+   "why_visit": "Сюда едут гулять по старинным улочкам и делать яркие снимки.",
+   "address": "Thalang Road / Soi Romanee, Phuket Town",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Old+Town+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Phuket_Old_Town",
+     "title": null,
+     "type": "other",
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.phuket101.net/best-local-thai-restaurants-in-phuket-old-town/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "phuket-sunday-walking-street",
+   "name": "Phuket Sunday Walking Street (Lard Yai)",
+   "district": "phuket-town",
+   "category": "markets",
+   "categories": [
+    "markets"
+   ],
+   "short_description": "Phuket Sunday Walking Street — это воскресная ярмарка на улице Таланг.",
+   "why_visit": "Сюда едут за уличной едой, сувенирами и ремесленными изделиями.",
+   "address": "Thalang Road, Phuket Old Town",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Sunday+Walking+Street+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/phuket-walking-street/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "thai-hua-museum",
+   "name": "Phuket Thai Hua Museum",
+   "district": "phuket-town",
+   "category": "attractions",
+   "categories": [
+    "attractions"
+   ],
+   "short_description": "Phuket Thai Hua Museum — это музей в здании бывшей китайской школы.",
+   "why_visit": "Сюда едут узнать историю китайской общины острова.",
+   "address": "28 Krabi Road, Talat Nuea, Mueang Phuket 83000",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Thai+Hua+Museum+Phuket",
+   "official_url": null,
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-24",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.phuket101.net/thai-hua-museum/",
+     "title": null,
+     "type": "directory",
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "slug": "patong-day-evening",
+   "title": "Патонг: храм, пляж и вечерняя Bangla Road",
+   "district": "patong",
+   "theme": "district",
+   "summary": "Однодневный маршрут по центру Патонга: храм у холма, пляж, торговый центр и ужин из морепродуктов. Заканчивается вечерней прогулкой по Bangla Road — только по самой улице.",
+   "duration_note": null,
+   "transport": "Все точки в пешей доступности друг от друга.",
+   "best_time": "Днём — храм и пляж, вечером — Bangla Road",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 1,
+   "stops": [
+    {
+     "order": 1,
+     "place": "wat-suwan-khiri-wong",
+     "label": null,
+     "note": "Исторический буддийский храм у холма."
+    },
+    {
+     "order": 2,
+     "place": "patong-beach",
+     "label": null,
+     "note": "Главный пляж с длинной бухтой."
+    },
+    {
+     "order": 3,
+     "place": "jungceylon",
+     "label": null,
+     "note": "Большой торговый центр в центре."
+    },
+    {
+     "order": 4,
+     "place": "savoey-seafood-patong",
+     "label": null,
+     "note": "Ресторан морепродуктов на пляжной дороге."
+    },
+    {
+     "order": 5,
+     "place": "bangla-road",
+     "label": null,
+     "note": "Пешеходная вечерняя улица с неоном."
+    }
+   ]
+  },
+  {
+   "slug": "phuket-old-town-walk",
+   "title": "Старый город Пхукета пешком",
+   "district": "phuket-town",
+   "theme": "district",
+   "summary": "Прогулка по историческому центру: цветные дома, музей Thai Hua и особняк Chinpracha, обед в One Chun. Вечером — холм Khao Rang и ночной рынок Chillva.",
+   "duration_note": null,
+   "transport": "В основном пешком; на дальний отрезок удобнее такси или приложение такси (Grab, Bolt).",
+   "best_time": "Понедельник–суббота (Chillva Market по воскресеньям закрыт)",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 2,
+   "stops": [
+    {
+     "order": 1,
+     "place": "phuket-old-town",
+     "label": null,
+     "note": "Исторический центр с цветными домами."
+    },
+    {
+     "order": 2,
+     "place": "thai-hua-museum",
+     "label": null,
+     "note": "Музей в здании бывшей китайской школы."
+    },
+    {
+     "order": 3,
+     "place": "chinpracha-house",
+     "label": null,
+     "note": "Китайско-португальский особняк-музей."
+    },
+    {
+     "order": 4,
+     "place": "one-chun",
+     "label": null,
+     "note": "Местный ресторан с домашней кухней."
+    },
+    {
+     "order": 5,
+     "place": "khao-rang-viewpoint",
+     "label": null,
+     "note": "Смотровая площадка на холме над городом."
+    },
+    {
+     "order": 6,
+     "place": "chillva-market",
+     "label": null,
+     "note": "Ночной рынок с контейнерами и уличной едой."
+    }
+   ]
+  },
+  {
+   "slug": "kamala-surin-family-evening",
+   "title": "Камала: семейный вечер",
+   "district": "kamala-surin",
+   "theme": "family",
+   "summary": "День у моря на пляже Камала и закат на смотровой Laem Singh. Вечером — парки Carnival Magic и Phuket FantaSea с шоу.",
+   "duration_note": null,
+   "transport": "Между точками удобнее ехать на арендованной машине или такси/приложении такси (Grab, Bolt); на скутере — только с правами нужной категории и в шлеме.",
+   "best_time": "Закат и вечер; Carnival Magic открыт только в отдельные дни — уточните на официальном сайте",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 3,
+   "stops": [
+    {
+     "order": 1,
+     "place": "kamala-beach",
+     "label": null,
+     "note": "Тихий пляж среди зеленых холмов."
+    },
+    {
+     "order": 2,
+     "place": "laem-singh-viewpoint",
+     "label": null,
+     "note": "Придорожная смотровая площадка на море."
+    },
+    {
+     "order": 3,
+     "place": "carnival-magic",
+     "label": null,
+     "note": "Семейный ночной парк с иллюминацией."
+    },
+    {
+     "order": 4,
+     "place": "phuket-fantasea",
+     "label": null,
+     "note": "Вечерний культурный парк с шоу."
+    }
+   ]
+  },
+  {
+   "slug": "bangtao-laguna-day",
+   "title": "Банг Тао и Лагуна за день",
+   "district": "bangtao",
+   "theme": "district",
+   "summary": "Пляж Банг Тао, парк активного отдыха Blue Tree и прогулка по Porto de Phuket. По пятницам вечером — рынок у Boat Avenue, ужин в Suay.",
+   "duration_note": null,
+   "transport": "Между точками удобнее ехать на арендованной машине или такси/приложении такси (Grab, Bolt); на скутере — только с правами нужной категории и в шлеме.",
+   "best_time": "Пятница — работает Fun Friday Avenue Market",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 4,
+   "stops": [
+    {
+     "order": 1,
+     "place": "bang-tao-beach",
+     "label": null,
+     "note": "Длинный песчаный пляж на побережье."
+    },
+    {
+     "order": 2,
+     "place": "blue-tree-phuket",
+     "label": null,
+     "note": "Комплекс активного отдыха и водный парк."
+    },
+    {
+     "order": 3,
+     "place": "porto-de-phuket",
+     "label": null,
+     "note": "Открытый торговый комплекс в Чернгталай."
+    },
+    {
+     "order": 4,
+     "place": "fun-friday-avenue-market",
+     "label": null,
+     "note": "Пятничный вечерний рынок у Boat Avenue."
+    },
+    {
+     "order": 5,
+     "place": "suay-cherngtalay",
+     "label": null,
+     "note": "Ресторан современной тайской кухни."
+    }
+   ]
+  },
+  {
+   "slug": "karon-kata-beach-day",
+   "title": "Ката и Карон: пляжный день",
+   "district": "karon-kata",
+   "theme": "district",
+   "summary": "Пляж Ката, искусственная волна Super Surf Kata и пляж Карон. Вечером — рынок у храма Карон и ужин на скалах в On The Rock.",
+   "duration_note": null,
+   "transport": "В основном пешком; на дальний отрезок удобнее такси или приложение такси (Grab, Bolt).",
+   "best_time": "Вторник или пятница — дни Karon Temple Market",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 5,
+   "stops": [
+    {
+     "order": 1,
+     "place": "kata-beach",
+     "label": null,
+     "note": "Популярная семейная бухта для серфинга."
+    },
+    {
+     "order": 2,
+     "place": "super-surf-kata",
+     "label": null,
+     "note": "Установка с искусственной волной."
+    },
+    {
+     "order": 3,
+     "place": "karon-beach",
+     "label": null,
+     "note": "Длинный широкий песчаный пляж."
+    },
+    {
+     "order": 4,
+     "place": "karon-temple-market",
+     "label": null,
+     "note": "Вечерний рынок на территории храма."
+    },
+    {
+     "order": 5,
+     "place": "on-the-rock-karon",
+     "label": null,
+     "note": "Ресторан на прибрежных скалах."
+    }
+   ]
+  },
+  {
+   "slug": "rawai-nai-harn-slow-day",
+   "title": "Най Харн и Раваи: спокойный день",
+   "district": "rawai-nai-harn",
+   "theme": "district",
+   "summary": "Неспешный день на юге: храм Wat Nai Harn, прогулка вокруг озера и пляж Най Харн. Ужин — свежие морепродукты на рынке Раваи.",
+   "duration_note": null,
+   "transport": "Между точками удобнее ехать на арендованной машине или такси/приложении такси (Grab, Bolt); на скутере — только с правами нужной категории и в шлеме.",
+   "best_time": "Днём; ужин — на рынке Раваи",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 6,
+   "stops": [
+    {
+     "order": 1,
+     "place": "wat-nai-harn",
+     "label": null,
+     "note": "Местный буддийский храм у озера."
+    },
+    {
+     "order": 2,
+     "place": "nai-harn-lake",
+     "label": null,
+     "note": "Парковая зона с озером."
+    },
+    {
+     "order": 3,
+     "place": "nai-harn-beach",
+     "label": null,
+     "note": "Красивый пляж среди холмов."
+    },
+    {
+     "order": 4,
+     "place": "rawai-seafood-market",
+     "label": null,
+     "note": "Рынок морепродуктов у пляжа."
+    }
+   ]
+  },
+  {
+   "slug": "chalong-temples-big-buddha",
+   "title": "Чалонг: Wat Chalong и Большой Будда",
+   "district": "chalong",
+   "theme": "district",
+   "summary": "Храмовый комплекс Wat Chalong и подъём на холм Наккерд к Большому Будде, кафе с видом на море по дороге. Ужин — морепродукты у пирса Чалонг.",
+   "duration_note": null,
+   "transport": "Между точками удобнее ехать на арендованной машине или такси/приложении такси (Grab, Bolt); на скутере — только с правами нужной категории и в шлеме.",
+   "best_time": "Днём; ужин — у пирса Чалонг",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 7,
+   "stops": [
+    {
+     "order": 1,
+     "place": "wat-chalong",
+     "label": null,
+     "note": "Храмовый комплекс, один из почитаемых на острове."
+    },
+    {
+     "order": 2,
+     "place": "phuket-big-buddha",
+     "label": null,
+     "note": "Гигантская статуя Будды на холме."
+    },
+    {
+     "order": 3,
+     "place": "nakkerd-seaview-cafe",
+     "label": null,
+     "note": "Кафе на дороге к Большому Будде."
+    },
+    {
+     "order": 4,
+     "place": "kan-eang-pier",
+     "label": null,
+     "note": "Ресторан морепродуктов у пирса."
+    }
+   ]
+  },
+  {
+   "slug": "north-nai-yang-mai-khao",
+   "title": "Север: Най Янг и Май Кхао",
+   "district": "mai-khao-nai-yang",
+   "theme": "district",
+   "summary": "Тихий север острова: национальный парк Sirinat, пляжи Най Янг и Май Кхао с видом на самолёты, заходящие на посадку. Вечером — ужин в Black Ginger, куда добираются на плоту по лагуне.",
+   "duration_note": null,
+   "transport": "Между точками удобнее ехать на арендованной машине или такси/приложении такси (Grab, Bolt); на скутере — только с правами нужной категории и в шлеме.",
+   "best_time": "Днём; Black Ginger работает только вечером",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 8,
+   "stops": [
+    {
+     "order": 1,
+     "place": "sirinat-national-park",
+     "label": null,
+     "note": "Прибрежный национальный парк."
+    },
+    {
+     "order": 2,
+     "place": "nai-yang-beach",
+     "label": null,
+     "note": "Тихий пляж внутри парка."
+    },
+    {
+     "order": 3,
+     "place": "mai-khao-beach",
+     "label": null,
+     "note": "Тихий пляж, видно самолёты на посадке."
+    },
+    {
+     "order": 4,
+     "place": "wat-mai-khao",
+     "label": null,
+     "note": "Скромный местный храм у пляжа."
+    },
+    {
+     "order": 5,
+     "place": "black-ginger",
+     "label": null,
+     "note": "Тайский ужин; добираются на плоту по лагуне."
+    }
+   ]
+  },
+  {
+   "slug": "south-viewpoints-sunset",
+   "title": "Смотровые площадки юга и закат",
+   "district": null,
+   "theme": "viewpoints",
+   "summary": "Поездка по южным смотровым: Karon Viewpoint с видом на три бухты, Windmill Viewpoint и пляж Най Харн. Финиш — закат у маяка на мысе Promthep.",
+   "duration_note": null,
+   "transport": "Между точками удобнее ехать на арендованной машине или такси/приложении такси (Grab, Bolt); на скутере — только с правами нужной категории и в шлеме.",
+   "best_time": "Во второй половине дня, финиш — закат на Promthep Cape",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 9,
+   "stops": [
+    {
+     "order": 1,
+     "place": "karon-viewpoint",
+     "label": null,
+     "note": "Бесплатная смотровая площадка на три бухты."
+    },
+    {
+     "order": 2,
+     "place": "windmill-viewpoint",
+     "label": null,
+     "note": "Смотровая площадка с ветряной турбиной."
+    },
+    {
+     "order": 3,
+     "place": "nai-harn-beach",
+     "label": null,
+     "note": "Красивый пляж на юге среди холмов."
+    },
+    {
+     "order": 4,
+     "place": "promthep-cape",
+     "label": null,
+     "note": "Южная оконечность с маяком и святилищем."
+    }
+   ]
+  },
+  {
+   "slug": "west-coast-beaches",
+   "title": "Пляжи западного побережья",
+   "district": null,
+   "theme": "beaches",
+   "summary": "Поездка вдоль западного побережья с севера Патонга: Камала, смотровая Laem Singh, Сурин, Банг Тао и тихий Лаян у национального парка. Пляжи разные: от оживлённых до спокойных.",
+   "duration_note": null,
+   "transport": "Между точками удобнее ехать на арендованной машине или такси/приложении такси (Grab, Bolt); на скутере — только с правами нужной категории и в шлеме.",
+   "best_time": "Днём; закат — на Laem Singh или Layan",
+   "budget_note": null,
+   "status": "verified",
+   "is_published": false,
+   "last_verified": "2026-11-24",
+   "sort_order": 10,
+   "stops": [
+    {
+     "order": 1,
+     "place": "patong-beach",
+     "label": null,
+     "note": "Главный пляж с длинной бухтой."
+    },
+    {
+     "order": 2,
+     "place": "kamala-beach",
+     "label": null,
+     "note": "Тихий пляж среди зеленых холмов."
+    },
+    {
+     "order": 3,
+     "place": "laem-singh-viewpoint",
+     "label": null,
+     "note": "Придорожная смотровая площадка на море."
+    },
+    {
+     "order": 4,
+     "place": "surin-beach",
+     "label": null,
+     "note": "Песчаный пляж в престижном районе."
+    },
+    {
+     "order": 5,
+     "place": "bang-tao-beach",
+     "label": null,
+     "note": "Длинный песчаный пляж на побережье."
+    },
+    {
+     "order": 6,
+     "place": "layan-beach",
+     "label": null,
+     "note": "Небольшой тихий пляж у парка."
+    }
+   ]
+  }
+ ],
+ "top5": [
+  {
+   "theme": "district-top5",
+   "district": "patong",
+   "title": "Топ-5: Патонг",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "patong-beach",
+     "reason": "Пляж для дня у моря с водными развлечениями и ресторанами."
+    },
+    {
+     "position": 2,
+     "place": "wat-suwan-khiri-wong",
+     "reason": "Исторический буддийский храм для знакомства со спокойной атмосферой."
+    },
+    {
+     "position": 3,
+     "place": "baan-rim-pa",
+     "reason": "Ресторан на скалах для ужина на закате под тайскую кухню."
+    },
+    {
+     "position": 4,
+     "place": "phuket-thai-cooking-academy",
+     "reason": "Кулинарная академия для мастер-классов в небольших группах."
+    },
+    {
+     "position": 5,
+     "place": "bangla-road",
+     "reason": "Пешеходная улица для вечерней прогулки; заведения 20+ гид не рекламирует."
+    }
+   ]
+  },
+  {
+   "theme": "district-top5",
+   "district": "kamala-surin",
+   "title": "Топ-5: Камала и Сурин",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "surin-beach",
+     "reason": "Пляж для спокойного отдыха вдали от суеты Патонга."
+    },
+    {
+     "position": 2,
+     "place": "laem-singh-viewpoint",
+     "reason": "Придорожная смотровая площадка для любования закатами над бухтой."
+    },
+    {
+     "position": 3,
+     "place": "phuket-fantasea",
+     "reason": "Культурный тематический парк для масштабного шоу и ужина."
+    },
+    {
+     "position": 4,
+     "place": "carnival-magic",
+     "reason": "Семейный парк для вечернего просмотра карнавального шествия."
+    },
+    {
+     "position": 5,
+     "place": "oriental-spoon-twinpalms",
+     "reason": "Ресторан при отеле для завтраков или ужинов с восточной кухней."
+    }
+   ]
+  },
+  {
+   "theme": "district-top5",
+   "district": "bangtao",
+   "title": "Топ-5: Банг Тао",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "bang-tao-beach",
+     "reason": "Протяженный пляж для отдыха рядом с курортной инфраструктурой."
+    },
+    {
+     "position": 2,
+     "place": "blue-tree-phuket",
+     "reason": "Комплекс активного отдыха с лагуной и развлечениями для всех."
+    },
+    {
+     "position": 3,
+     "place": "suay-cherngtalay",
+     "reason": "Ресторан для вечерней трапезы с современной тайской кухней."
+    },
+    {
+     "position": 4,
+     "place": "banyan-tree-spa-phuket",
+     "reason": "Спа-комплекс под открытым небом для фирменных травяных процедур."
+    },
+    {
+     "position": 5,
+     "place": "fun-friday-avenue-market",
+     "reason": "Пятничный вечерний рынок для прогулок и уличной еды."
+    }
+   ]
+  },
+  {
+   "theme": "district-top5",
+   "district": "karon-kata",
+   "title": "Топ-5: Карон и Ката",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "kata-beach",
+     "reason": "Семейная бухта для купания и освоения водных видов спорта."
+    },
+    {
+     "position": 2,
+     "place": "karon-viewpoint",
+     "reason": "Смотровая площадка для обзора трех живописных бухт."
+    },
+    {
+     "position": 3,
+     "place": "super-surf-kata",
+     "reason": "Установка с искусственной волной для тренировок по серфингу."
+    },
+    {
+     "position": 4,
+     "place": "on-the-rock-karon",
+     "reason": "Прибрежный ресторан на скалах для ужина над морем."
+    },
+    {
+     "position": 5,
+     "place": "karon-temple-market",
+     "reason": "Храмовый рынок для знакомства с местной едой и сувенирами."
+    }
+   ]
+  },
+  {
+   "theme": "district-top5",
+   "district": "rawai-nai-harn",
+   "title": "Топ-5: Раваи и Най Харн",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "nai-harn-beach",
+     "reason": "Южный пляж для спокойного отдыха среди зеленых холмов."
+    },
+    {
+     "position": 2,
+     "place": "promthep-cape",
+     "reason": "Южная оконечность острова для встречи закатов у маяка."
+    },
+    {
+     "position": 3,
+     "place": "windmill-viewpoint",
+     "reason": "Смотровая с ветряной турбиной — для видов на бухты и фотографий."
+    },
+    {
+     "position": 4,
+     "place": "nai-harn-lake",
+     "reason": "Парковая зона у озера для активных тренировок и прогулок."
+    },
+    {
+     "position": 5,
+     "place": "rawai-seafood-market",
+     "reason": "Рынок для покупки свежего улова с последующим приготовлением."
+    }
+   ]
+  },
+  {
+   "theme": "district-top5",
+   "district": "phuket-town",
+   "title": "Топ-5: Пхукет-таун",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "phuket-old-town",
+     "reason": "Исторический центр для пеших прогулок среди цветных зданий."
+    },
+    {
+     "position": 2,
+     "place": "thai-hua-museum",
+     "reason": "Музей в здании бывшей школы для изучения истории общины."
+    },
+    {
+     "position": 3,
+     "place": "khao-rang-viewpoint",
+     "reason": "Холм со смотровой площадкой для отдыха и видов на город."
+    },
+    {
+     "position": 4,
+     "place": "one-chun",
+     "reason": "Местный ресторан для дегустации блюд в южном стиле."
+    },
+    {
+     "position": 5,
+     "place": "chillva-market",
+     "reason": "Молодежный вечерний рынок для проб уличной еды и прогулок."
+    }
+   ]
+  },
+  {
+   "theme": "district-top5",
+   "district": "chalong",
+   "title": "Топ-5: Чалонг",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "phuket-big-buddha",
+     "reason": "Холм со статуей Будды для панорамного обзора острова."
+    },
+    {
+     "position": 2,
+     "place": "wat-chalong",
+     "reason": "Крупный храмовый комплекс для знакомства с буддийской культурой."
+    },
+    {
+     "position": 3,
+     "place": "nakkerd-seaview-cafe",
+     "reason": "Кафе по пути к святыне для отдыха с морским пейзажем."
+    },
+    {
+     "position": 4,
+     "place": "kan-eang-pier",
+     "reason": "Ресторан у пирса для обедов и ужинов с видом на воду."
+    },
+    {
+     "position": 5,
+     "place": "tiger-muay-thai",
+     "reason": "Спортивный лагерь для тренировок по тайскому боксу."
+    }
+   ]
+  },
+  {
+   "theme": "district-top5",
+   "district": "mai-khao-nai-yang",
+   "title": "Топ-5: Май Кхао и Най Янг",
+   "subtitle": "Editor's Picks / MEG Selection",
+   "shortfall_note": null,
+   "is_published": false,
+   "items": [
+    {
+     "position": 1,
+     "place": "sirinat-national-park",
+     "reason": "Прибрежная зона для прогулок по мангровым тропам."
+    },
+    {
+     "position": 2,
+     "place": "mai-khao-beach",
+     "reason": "Уединенный пляж для наблюдения за посадкой самолетов."
+    },
+    {
+     "position": 3,
+     "place": "nai-yang-beach",
+     "reason": "Пляж на территории парка для отдыха под кронами деревьев."
+    },
+    {
+     "position": 4,
+     "place": "black-ginger",
+     "reason": "Вечерний ужин в ресторане, куда добираются на плоту по лагуне."
+    },
+    {
+     "position": 5,
+     "place": "quan-spa-marriott-nai-yang",
+     "reason": "Курортный спа-центр для расслабляющих процедур и массажа."
+    }
+   ]
+  }
+ ],
+ "practical": [
+  {
+   "slug": "sos",
+   "title": "Экстренные номера",
+   "summary": "Важные телефоны и контакты для экстренных ситуаций и помощи туристам на Пхукете.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_help",
+        "prd_numbers"
+       ],
+       "text_ru": "191 — полиция; по данным МИД Великобритании, по этому номеру можно вызвать и скорую, и пожарных",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_help",
+        "prd_numbers"
+       ],
+       "text_ru": "1669 — скорая медицинская помощь",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_help"
+       ],
+       "text_ru": "199 — пожарная служба",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "prd_numbers"
+       ],
+       "text_ru": "1784 — национальный центр предупреждения о бедствиях",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Экстренные службы"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_help",
+        "prd_numbers"
+       ],
+       "text_ru": "1155 — туристическая полиция (Tourist Police Bureau)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "prd_numbers"
+       ],
+       "text_ru": "1672 — информационный центр TAT для туристов (не экстренный)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "prd_numbers"
+       ],
+       "text_ru": "1178 — иммиграционное бюро (визы и продление)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_help"
+       ],
+       "text_ru": "Приложение Thailand Tourist Police: связь с туристической полицией онлайн, работает без тайской SIM, уведомления о бедствиях и угрозах рядом",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Туристическая и официальная помощь"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_health"
+       ],
+       "text_ru": "При обращении в больницу сразу свяжитесь со своей страховой/ассистансом",
+       "verification": "verified"
+      },
+      {
+       "sources": [],
+       "text_ru": "Больницы в гиде: Bangkok Hospital Phuket (частная, Пхукет-Таун) и Patong Hospital (государственная, Патонг) — см. карточки мест",
+       "verification": "internal"
+      }
+     ],
+     "heading_ru": "Медицина и страхование"
+    }
+   ],
+   "legal_flag": false,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 10,
+   "sources": [
+    {
+     "key": "fcdo_help",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help",
+     "title": "UK FCDO — Thailand: Getting help",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "fcdo_health",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/health",
+     "title": "UK FCDO — Thailand: Health",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "prd_numbers",
+     "type": "official",
+     "url": "https://thailand.prd.go.th/en/content/category/detail/id/2078/iid/447104",
+     "title": "Government PR Department of Thailand — Tourist Assistance Contact Numbers",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "visa-entry",
+   "title": "Въезд и виза: сроки по странам",
+   "summary": "Информация о безвизовом режиме, правилах въезда и требованиях к документам для туристов из разных стран.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "tat_visa2026",
+        "thaiemb_fr_pdf"
+       ],
+       "text_ru": "С 15.09.2026 60-дневный безвизовый режим отменён; срок безвизового пребывания зависит от гражданства",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "thaiemb_moscow",
+        "thaiemb_fr_pdf"
+       ],
+       "text_ru": "Россия (общегражданский паспорт): без визы до 30 дней по двустороннему соглашению",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "govkz_phuket",
+        "thaiemb_fr_pdf"
+       ],
+       "text_ru": "Казахстан: без визы до 30 календарных дней с даты въезда по межправительственному соглашению; суммарно не более 90 дней в каждом 180-дневном периоде; на срок больше 30 дней визу оформляют заранее",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "tat_visa2026",
+        "thaiemb_fr_pdf"
+       ],
+       "text_ru": "Украина: без визы до 30 дней с целью туризма (список 60 стран и территорий)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "tat_visa2026",
+        "thaiemb_fr_pdf"
+       ],
+       "text_ru": "Кыргызстан: без визы до 30 дней с целью туризма (список 60 стран и территорий)",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Сроки безвизового пребывания"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "tat_visa2026"
+       ],
+       "text_ru": "По 30-дневному безвизу из списка 60 стран (Украина, Кыргызстан) через сухопутные пункты пропуска можно въехать, как правило, не более 2 раз в календарный год",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "thaiemb_moscow"
+       ],
+       "text_ru": "Въехавшие до 15.09.2026 остаются до конца срока, указанного в штампе",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "thaievisa",
+        "tat_visa2026"
+       ],
+       "text_ru": "Для других гражданств и для виз — сайт посольства Таиланда в вашей стране и официальная система Thai e-Visa",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_entry",
+        "tat_visa2026"
+       ],
+       "text_ru": "Безвизовый въезд — только для туризма; для работы, учёбы, длительного проживания нужна соответствующая виза до поездки",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_entry",
+        "tdac"
+       ],
+       "text_ru": "С 1 мая 2025 все иностранцы заполняют цифровую карту прибытия TDAC онлайн до прилёта, не раньше чем за 3 дня",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Правила въезда и документы"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_entry"
+       ],
+       "text_ru": "На границе могут попросить подтвердить средства (10 000 бат на человека или 20 000 на семью) и обратный/дальнейший билет",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_entry"
+       ],
+       "text_ru": "Просрочка (overstay): штраф 500 бат в день, максимум 20 000 бат; риск задержания, депортации и запрета въезда",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_entry"
+       ],
+       "text_ru": "Паспорт: МИД Великобритании указывает срок действия не менее 6 месяцев на дату въезда — уточните требования у своей авиакомпании",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_entry"
+       ],
+       "text_ru": "Сигареты: не более 200 шт. на человека, превышение — штраф и конфискация",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "prd_numbers"
+       ],
+       "text_ru": "Вопросы по срокам пребывания и продлению — иммиграционное бюро, 1178",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Контроль, штрафы и ограничения"
+    }
+   ],
+   "legal_flag": true,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 20,
+   "sources": [
+    {
+     "key": "fcdo_entry",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/entry-requirements",
+     "title": "UK FCDO — Thailand: Entry requirements",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "prd_numbers",
+     "type": "official",
+     "url": "https://thailand.prd.go.th/en/content/category/detail/id/2078/iid/447104",
+     "title": "Government PR Department of Thailand — Tourist Assistance Contact Numbers",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "thaiemb_moscow",
+     "type": "official",
+     "url": "https://moscow.thaiembassy.org/ru/publicservice/%D0%B2%D0%B0%D0%B6%D0%BD%D0%BE%D0%B5-%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%B2%D0%B8%D0%B7%D0%BE%D0%B2%D1%8B%D1%85-%D0%BC%D0%B5%D1%80%D0%B0%D1%85-%D1%82%D0%B0%D0%B8%D0%BB%D0%B0%D0%BD",
+     "title": "Посольство Таиланда в Москве — изменения визовых мер с 15.09.2026",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "thaievisa",
+     "type": "official",
+     "url": "https://www.thaievisa.go.th/",
+     "title": "Thai e-Visa (официальная система)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "tdac",
+     "type": "official",
+     "url": "https://tdac.immigration.go.th/",
+     "title": "Thailand Digital Arrival Card (TDAC), Immigration Bureau",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "tat_visa2026",
+     "type": "official",
+     "url": "https://www.tatnews.org/2026/09/thailand-introduces-new-30-day-and-15-day-visa-exemption-rules-from-15-september/",
+     "title": "TAT Newsroom, 01.09.2026 — new 30-day/15-day visa exemption rules from 15.09.2026 (Royal Gazette 31.08.2026)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "thaiemb_fr_pdf",
+     "type": "official",
+     "url": "https://www.thaiembassy.fr/wp-content/uploads/2026/09/Exemption-de-visa-et-VoA-15-sept-2026.pdf",
+     "title": "Royal Thai Embassy Paris — сводка безвизовых режимов с 15.09.2026 (PDF): 30 дней односторонне (вкл. Украину, Кыргызстан), 30 дней по соглашениям (вкл. Россию, Казахстан)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "govkz_phuket",
+     "type": "official",
+     "url": "https://www.gov.kz/org/mfa-phuket/press/news/details/1291568?lang=ru",
+     "title": "Консульство Казахстана на Пхукете (gov.kz), 15.09.2026 — безвиз 30 дней, не более 90 дней за 180",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "money",
+   "title": "Деньги и оплата",
+   "summary": "Основные сведения о тайской валюте, правилах обмена, использовании карт и таможенных лимитах.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "thp"
+       ],
+       "text_ru": "Валюта — тайский бат (THB)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "vt_cards"
+       ],
+       "text_ru": "Если терминал или банкомат предлагает списать в валюте вашей карты — выбирайте баты",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "vt_cards"
+       ],
+       "text_ru": "Наличные по-прежнему нужны: уличная еда, рынки",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "owner"
+       ],
+       "text_ru": "Карты российских банков в Таиланде работают только через UnionPay",
+       "verification": "owner_confirmed"
+      }
+     ],
+     "heading_ru": "Валюта и расчеты"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Пользуйтесь банкоматами в отделениях банков, прикрывайте PIN, не выпускайте карту из виду — бывают скимминг и мошенничество с картами",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "bot_fx"
+       ],
+       "text_ru": "Обменять валюту можно в банке или у лицензированного обменника (Authorized Money Changer): по закону обмен валюты ведут только лица с лицензией Минфина Таиланда",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "phuketanchor_fx"
+       ],
+       "text_ru": "В туристических районах Пхукета (Патонг, Пхукет-Таун, торговые центры) много обменных пунктов; при обмене просят паспорт; сравнивайте итоговую сумму в батах, а не только курс",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Безопасность и обмен валюты"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "thaiemb_london_currency",
+        "customs"
+       ],
+       "text_ru": "Ввоз/вывоз иностранной валюты свыше эквивалента 20 000 USD нужно декларировать на таможне; недекларирование — уголовное правонарушение",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "thaiemb_london_currency"
+       ],
+       "text_ru": "Вывоз бат: до 50 000 бат (в соседние страны — до 500 000) без декларации",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Таможенные правила и лимиты"
+    }
+   ],
+   "legal_flag": true,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 30,
+   "sources": [
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "thaiemb_london_currency",
+     "type": "official",
+     "url": "https://london.thaiembassy.org/en/publicservice/84708-bringing-currency-in-and-out-of-thailand",
+     "title": "Royal Thai Embassy London — Bringing currency in and out of Thailand (upd. 02.11.2026)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "customs",
+     "type": "official",
+     "url": "https://www.customs.go.th/",
+     "title": "Thai Customs Department",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "vt_cards",
+     "type": "secondary",
+     "url": "https://www.visit-thailand.org/plan-your-trip/using-cards-in-thailand",
+     "title": "Visit-Thailand.org — Using cards in Thailand (2026)",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "thp",
+     "type": "official",
+     "url": "https://travelhealthpro.org.uk/country/221/thailand",
+     "title": "TravelHealthPro (NaTHNaC, UK) — Thailand",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "bot_fx",
+     "type": "official",
+     "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/foreign-exchange-business.html",
+     "title": "Bank of Thailand — Types of Foreign Exchange Licenses (обмен только у лицензированных)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "phuketanchor_fx",
+     "type": "secondary",
+     "url": "https://phuketanchor.com/money/currency-exchange-phuket/",
+     "title": "Phuket Anchor, 17.10.2026 — Currency exchange in Phuket (банки и обменники, паспорт)",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "owner",
+     "type": "owner",
+     "url": null,
+     "title": "Владелец проекта (t59u, 24.11.2026 21:04) — подтверждение владельца",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "connectivity",
+   "title": "Связь: SIM и eSIM",
+   "summary": "Правила приобретения и использования местной и зарубежной связи на Пхукете.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "sim_kyc",
+        "sim_60"
+       ],
+       "text_ru": "Тайская туристическая SIM/eSIM (AIS, True/dtac) регистрируется на оригинал паспорта; с 18.08.2025 при регистрации обязательна проверка лица (liveness) (требует проверки)",
+       "verification": "needs_check",
+       "needs_check_note": "Правила NBTC взяты из вторичных источников (CORAL eSIM, OpenSim со ссылкой на PRD/NBTC); официальные страницы AIS/True/NBTC не открыты"
+      },
+      {
+       "sources": [
+        "sim_60",
+        "sim_kyc"
+       ],
+       "text_ru": "Туристическая SIM работает не более 60 дней с активации, пополнение не продлевает; дальше — повторная проверка личности у оператора (требует проверки)",
+       "verification": "needs_check",
+       "needs_check_note": "то же: вторичные источники"
+      },
+      {
+       "sources": [
+        "sim_kyc",
+        "sim_60"
+       ],
+       "text_ru": "Не более 3 номеров на человека у одного оператора; каждому члену семьи нужен свой паспорт (требует проверки)",
+       "verification": "needs_check",
+       "needs_check_note": "то же: вторичные источники"
+      }
+     ],
+     "heading_ru": "Регистрация местной SIM-карты"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "sim_60"
+       ],
+       "text_ru": "Туристическая data-eSIM от зарубежного продавца даёт только интернет, без тайского номера, регистрация в Таиланде обычно не нужна (требует проверки)",
+       "verification": "needs_check",
+       "needs_check_note": "вторичный источник"
+      },
+      {
+       "sources": [
+        "sim_kyc"
+       ],
+       "text_ru": "Не отправляйте фото паспорта и селфи неофициальным продавцам",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_help"
+       ],
+       "text_ru": "Приложение Thailand Tourist Police работает без тайской SIM",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Альтернативная связь и безопасность"
+    }
+   ],
+   "legal_flag": false,
+   "verification_status": "partially_verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 40,
+   "sources": [
+    {
+     "key": "fcdo_help",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help",
+     "title": "UK FCDO — Thailand: Getting help",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "sim_kyc",
+     "type": "secondary",
+     "url": "https://coral-esim.com/en/blog/thailand-local-sim",
+     "title": "CORAL eSIM — Thai tourist SIM rules (ссылается на PRD/NBTC, 09.2026)",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "sim_60",
+     "type": "secondary",
+     "url": "https://www.getopensim.com/resources/thailand-tourist-sim-60-day-limit-2026",
+     "title": "OpenSim — NBTC 60-day tourist SIM rule (2026)",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "transport",
+   "title": "Транспорт и трансфер из аэропорта",
+   "summary": "Способы передвижения по Пхукету и правила использования транспорта из аэропорта.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "phuketnews_touts"
+       ],
+       "text_ru": "В аэропорту пользуйтесь только официальным транспортом из отведённых зон; тарифы установлены Phuket Provincial Land Transport Office, их можно проверить до поездки",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "phuketnews_touts"
+       ],
+       "text_ru": "Аэропорт в ноябре 2026 усилил патрули из-за нелегальных зазывал-таксистов; неофициальный транспорт — риск переплаты и безопасности",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "aot_hkt"
+       ],
+       "text_ru": "Прокат авто — стойки в аэропорту",
+       "verification": "verified"
+      },
+      {
+       "sources": [],
+       "text_ru": "Актуальные расписания и тарифы автобусов смотрите на официальных сайтах — в гиде мы их не дублируем",
+       "verification": "internal"
+      }
+     ],
+     "heading_ru": "Официальный транспорт в аэропорту"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "aot_hkt"
+       ],
+       "text_ru": "Airport Bus: аэропорт — город (Phuket Town), у выхода из зала прилёта",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "aot_hkt"
+       ],
+       "text_ru": "Airport Bus Express: аэропорт — Патонг",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "aot_hkt",
+        "smartbus"
+       ],
+       "text_ru": "Phuket Smart Bus: остановка у внутреннего терминала, маршрут вдоль западного побережья (Surin, Kamala, Patong, Karon, Kata) до Rawai; на сайте есть расписание и GPS-отслеживание",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "aot_hkt"
+       ],
+       "text_ru": "Общественные минивэны из аэропорта до Патонга, Каты и Карона",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Автобусы и минивэны"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "grab",
+        "bolt"
+       ],
+       "text_ru": "Grab и Bolt работают на Пхукете (в Bolt есть категория Taxi)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "В открытом транспорте (тук-тук) берегите вещи; заранее планируйте дорогу домой вечером, не садитесь в нелицензированные машины",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Городские поездки и безопасность"
+    }
+   ],
+   "legal_flag": false,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 50,
+   "sources": [
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "aot_hkt",
+     "type": "official",
+     "url": "https://phuket.airportthai.co.th/",
+     "title": "Phuket International Airport (AOT) — transportation",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "phuketnews_touts",
+     "type": "secondary",
+     "url": "https://www.thephuketnews.com/phuket-airport-apologises-over-illegal-taxi-touts-at-arrivals-102292.php",
+     "title": "The Phuket News, 23.11.2026 — airport on illegal taxi touts",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "smartbus",
+     "type": "official",
+     "url": "https://www.phuketsmartbus.com/",
+     "title": "Phuket Smart Bus (официальный сайт)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "grab",
+     "type": "official",
+     "url": "https://www.grab.com/th/en/transport/",
+     "title": "Grab Thailand — Transport (Phuket listed)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "bolt",
+     "type": "official",
+     "url": "https://bolt.eu/en/cities/phuket/",
+     "title": "Bolt — Phuket",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "scooter",
+   "title": "Скутер: права, шлем, страховка",
+   "summary": "Важные требования и риски при аренде и вождении скутера в Таиланде.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "По закону шлем обязателен",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Нужны действующие национальные права нужной категории и международное водительское удостоверение (МВУ); МИД Великобритании, например, требует МВУ образца 1968 г. — проверьте, какой образец нужен для вашей страны",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Езда без действующих прав может сделать страховку недействительной",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Документы и правила вождения"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Арендные мотоциклы в туристических зонах часто не зарегистрированы и не могут легально ездить по дорогам; читайте договор, проверьте страховку (объём двигателя, категория)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Не оставляйте паспорт в залог — его могут удерживать под предлогом повреждений",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "В Таиланде много ДТП, особенно с мотоциклами (данные ВОЗ)",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Аренда и безопасность"
+    }
+   ],
+   "legal_flag": true,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 60,
+   "sources": [
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "sea-safety",
+   "title": "Море и пляжи: флаги, течения, муссон",
+   "summary": "Правила безопасности на воде, информация о течениях, флагах и погодных условиях на Пхукете.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "phuketnews_drown",
+        "fcdo_safety"
+       ],
+       "text_ru": "Юго-западный муссон на Пхукете — май–октябрь: сильные волны и смертельно опасные отбойные течения (rip currents)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Купайтесь у пляжей со спасателями, соблюдайте флаги; красный флаг — купаться нельзя",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety",
+        "tmd"
+       ],
+       "text_ru": "Сезон дождей в целом май–октябрь; следите за предупреждениями Thai Meteorological Department",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Муссон и течения"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "phuketnews_drown"
+       ],
+       "text_ru": "По данным PPAO, за 2024–2026 гг. на Пхукете утонули 56 человек; больше всего — на Karon (20), затем Kata и Surin (по 5), Patong и Mai Khao (по 4)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Медузы подходят к берегу, особенно в сезон дождей (май–октябрь); ожоги могут быть смертельными — спрашивайте в отеле и дайв-центрах",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Катера и паромы: аварии из-за перегруза, плохого обслуживания и шторма, особенно в муссон",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Статистика и происшествия"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Дайвинг: проверяйте документы оператора, состояние снаряжения, наличие кислорода на лодке, условия страховки",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Дайвинг"
+    }
+   ],
+   "legal_flag": false,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 70,
+   "sources": [
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "phuketnews_drown",
+     "type": "secondary",
+     "url": "https://www.thephuketnews.com/drowning-deaths-spur-phuket-beach-safety-push-100669.php",
+     "title": "The Phuket News, 21.06.2026 — drowning statistics (PPAO)",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "tmd",
+     "type": "official",
+     "url": "https://www.tmd.go.th/en/",
+     "title": "Thai Meteorological Department",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "health-insurance",
+   "title": "Здоровье и страховка",
+   "summary": "Медицинские рекомендации, страхование и риски для здоровья во время поездки.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_health"
+       ],
+       "text_ru": "Оформите страховку на лечение и экстренную эвакуацию",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_health"
+       ],
+       "text_ru": "Больницы требуют гарантию оплаты до лечения",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_health"
+       ],
+       "text_ru": "Частные больницы высокого уровня, но дорогие",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Скутер без прав и экстремальные активности могут не покрываться страховкой — читайте условия",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Медицинское обслуживание"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_health",
+        "thp"
+       ],
+       "text_ru": "Прививки и риски проверьте минимум за 8 недель до поездки (TravelHealthPro)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_health",
+        "thp"
+       ],
+       "text_ru": "Есть риск денге (комары кусают днём); бешенство",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Риски и профилактика"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_health"
+       ],
+       "text_ru": "Статус некоторых лекарств в Таиланде отличается; лекарства с улицы могут быть поддельными",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Отравления метанолом в алкогольных напитках — по вкусу и запаху не определить; при симптомах срочно к врачу",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Лекарства и еда"
+    }
+   ],
+   "legal_flag": false,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 80,
+   "sources": [
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "fcdo_health",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/health",
+     "title": "UK FCDO — Thailand: Health",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "thp",
+     "type": "official",
+     "url": "https://travelhealthpro.org.uk/country/221/thailand",
+     "title": "TravelHealthPro (NaTHNaC, UK) — Thailand",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "safety",
+   "title": "Безопасность: основное",
+   "summary": "Основные правила личной безопасности, документы и законы в Таиланде.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Берегите вещи от карманников и выхватывания сумок с мотоциклов",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Не оставляйте напитки без присмотра, не принимайте напитки от незнакомцев",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Ночью не ходите в одиночку по безлюдным местам",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Личная безопасность"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Полиция может попросить паспорт; обычно достаточно копии страницы с фото, иначе придётся предъявить в участке в течение 24 часов",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Избегайте протестов и политических собраний",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "С 28.08.2026 иностранца могут депортировать без приговора, если власти сочтут поведение противоречащим общественному порядку или морали",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Документы и законы"
+    }
+   ],
+   "legal_flag": true,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 90,
+   "sources": [
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "laws-etiquette",
+   "title": "Законы и этикет",
+   "summary": "Правила поведения, законы и ограничения на Пхукете для туристов.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "vt_temple",
+        "tat_temple"
+       ],
+       "text_ru": "В храмах необходимы закрытые плечи и колени",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "vt_temple",
+        "tat_temple"
+       ],
+       "text_ru": "Обувь снимают перед входом в здания",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "vt_temple",
+        "tat_temple"
+       ],
+       "text_ru": "Ноги не направляют на изображения Будды",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Критика монархии (lèse-majesté) — уголовное преступление, срок большой; касается и публикаций в соцсетях",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Правила в храмах и этикет"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Вейпы, электронные сигареты, жидкости и устройства heat-not-burn запрещены: хранение и использование; штрафы обычно 5 000–30 000 бат, задержание; исключений для туристов нет",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Курение в общественных местах запрещено, штраф до 5 000 бат",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Каннабис — только по медицинскому рецепту Таиланда; рекреационное употребление незаконно; вывоз запрещён",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Наркотики: суровые наказания, вплоть до смертной казни за класс A",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Запреты и ограничения"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Продажа алкоголя ограничена с полуночи до 11:00 (кроме лицензированных отелей, аэропортов и разрешённых заведений)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Дрон нужно зарегистрировать в NBTC в течение 30 дней после въезда",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Нельзя ввозить/иметь при себе более 120 игральных карт",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Публикация фото с алкоголем или в неподобающей одежде может быть незаконной",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Покупка и продажа охраняемых диких животных и их частей без лицензии запрещена",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Алкоголь, транспорт и ввоз"
+    }
+   ],
+   "legal_flag": true,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 100,
+   "sources": [
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "tat_temple",
+     "type": "official",
+     "url": "https://www.tatnews.org/2018/08/observing-temple-and-sacred-site-etiquette-while-in-thailand/",
+     "title": "TAT Newsroom — Temple and sacred site etiquette",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "vt_temple",
+     "type": "secondary",
+     "url": "https://www.visit-thailand.org/culture/temple-etiquette-and-dress-code",
+     "title": "Visit-Thailand.org — Temple etiquette and dress code (2026)",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "scams",
+   "title": "Мошенничество: чего избегать",
+   "summary": "Основные схемы обмана и способы защиты от мошенников на Пхукете.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Аренда гидроцикла или мотоцикла: не оставляйте паспорт в залог, его удерживают под предлогом повреждений",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "phuketnews_touts"
+       ],
+       "text_ru": "Нелегальные зазывалы-таксисты в аэропорту — пользуйтесь официальным транспортом из отведённых зон",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Аренда и транспорт"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Скимминг и мошенничество с картами — банкоматы в отделениях банков, прикрывайте PIN",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "fcdo_safety"
+       ],
+       "text_ru": "Предложения работы «слишком хорошие, чтобы быть правдой» — людей вывозили в соседние страны и принуждали к онлайн-мошенничеству",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "sim_kyc"
+       ],
+       "text_ru": "Не передавайте фото паспорта и селфи неофициальным продавцам SIM",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Финансы и трудоустройство"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_help",
+        "prd_numbers"
+       ],
+       "text_ru": "При спорах с прокатом, такси или заведением звоните в туристическую полицию 1155",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Экстренная помощь"
+    }
+   ],
+   "legal_flag": false,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 110,
+   "sources": [
+    {
+     "key": "fcdo_help",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help",
+     "title": "UK FCDO — Thailand: Getting help",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "fcdo_safety",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/safety-and-security",
+     "title": "UK FCDO — Thailand: Safety and security (incl. laws, swimming, transport)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "prd_numbers",
+     "type": "official",
+     "url": "https://thailand.prd.go.th/en/content/category/detail/id/2078/iid/447104",
+     "title": "Government PR Department of Thailand — Tourist Assistance Contact Numbers",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "sim_kyc",
+     "type": "secondary",
+     "url": "https://coral-esim.com/en/blog/thailand-local-sim",
+     "title": "CORAL eSIM — Thai tourist SIM rules (ссылается на PRD/NBTC, 09.2026)",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "phuketnews_touts",
+     "type": "secondary",
+     "url": "https://www.thephuketnews.com/phuket-airport-apologises-over-illegal-taxi-touts-at-arrivals-102292.php",
+     "title": "The Phuket News, 23.11.2026 — airport on illegal taxi touts",
+     "is_official": false,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "apps",
+   "title": "Полезные приложения и сайты",
+   "summary": "Список официальных сайтов и мобильных приложений для туристов на Пхукете.",
+   "sections": [
+    {
+     "items": [
+      {
+       "sources": [
+        "grab"
+       ],
+       "text_ru": "Grab — такси и доставка, работает на Пхукете",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "bolt"
+       ],
+       "text_ru": "Bolt — заказ машины и такси на Пхукете",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "smartbus"
+       ],
+       "text_ru": "Phuket Smart Bus — расписание и GPS-отслеживание автобуса на официальном сайте",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Транспорт и поездки"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "fcdo_help"
+       ],
+       "text_ru": "Thailand Tourist Police — связь с туристической полицией, работает без тайской SIM",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "tdac"
+       ],
+       "text_ru": "TDAC — официальный сайт цифровой карты прибытия (заполняется онлайн)",
+       "verification": "verified"
+      },
+      {
+       "sources": [
+        "thaievisa"
+       ],
+       "text_ru": "Thai e-Visa — официальная система визовых заявлений",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Документы и безопасность"
+    },
+    {
+     "items": [
+      {
+       "sources": [
+        "tmd"
+       ],
+       "text_ru": "Thai Meteorological Department — официальные предупреждения о погоде",
+       "verification": "verified"
+      }
+     ],
+     "heading_ru": "Погода"
+    }
+   ],
+   "legal_flag": false,
+   "verification_status": "verified",
+   "verified_at": "2026-11-24",
+   "is_published": false,
+   "sort_order": 120,
+   "sources": [
+    {
+     "key": "fcdo_help",
+     "type": "official",
+     "url": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help",
+     "title": "UK FCDO — Thailand: Getting help",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "thaievisa",
+     "type": "official",
+     "url": "https://www.thaievisa.go.th/",
+     "title": "Thai e-Visa (официальная система)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "tdac",
+     "type": "official",
+     "url": "https://tdac.immigration.go.th/",
+     "title": "Thailand Digital Arrival Card (TDAC), Immigration Bureau",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "smartbus",
+     "type": "official",
+     "url": "https://www.phuketsmartbus.com/",
+     "title": "Phuket Smart Bus (официальный сайт)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "grab",
+     "type": "official",
+     "url": "https://www.grab.com/th/en/transport/",
+     "title": "Grab Thailand — Transport (Phuket listed)",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "bolt",
+     "type": "official",
+     "url": "https://bolt.eu/en/cities/phuket/",
+     "title": "Bolt — Phuket",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    },
+    {
+     "key": "tmd",
+     "type": "official",
+     "url": "https://www.tmd.go.th/en/",
+     "title": "Thai Meteorological Department",
+     "is_official": true,
+     "accessed_at": "2026-11-24"
+    }
+   ]
+  }
+ ],
+ "placements": [
+  {
+   "slot": "district:patong:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "patong",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "practical:transport:localrent",
+   "program": "localrent",
+   "type": "practical_page",
+   "district": null,
+   "route": null,
+   "place": null,
+   "practical": "transport",
+   "category": null,
+   "title": "Аренда авто на Пхукете",
+   "body": "Localrent — сервис поиска машин в прокат на Пхукете: можно сравнить предложения прокатчиков.",
+   "cta": "Посмотреть авто",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "route:west-coast-beaches:localrent",
+   "program": "localrent",
+   "type": "route",
+   "district": null,
+   "route": "west-coast-beaches",
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Аренда авто для этого маршрута",
+   "body": "Маршрут удобнее проехать на машине. Сравните предложения прокатчиков на Localrent.",
+   "cta": "Подобрать машину",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "route:south-viewpoints-sunset:localrent",
+   "program": "localrent",
+   "type": "route",
+   "district": null,
+   "route": "south-viewpoints-sunset",
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Аренда авто для этого маршрута",
+   "body": "Маршрут удобнее проехать на машине. Сравните предложения прокатчиков на Localrent.",
+   "cta": "Подобрать машину",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "route:north-nai-yang-mai-khao:localrent",
+   "program": "localrent",
+   "type": "route",
+   "district": null,
+   "route": "north-nai-yang-mai-khao",
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Аренда авто для этого маршрута",
+   "body": "Маршрут удобнее проехать на машине. Сравните предложения прокатчиков на Localrent.",
+   "cta": "Подобрать машину",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "route:chalong-temples-big-buddha:localrent",
+   "program": "localrent",
+   "type": "route",
+   "district": null,
+   "route": "chalong-temples-big-buddha",
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Аренда авто для этого маршрута",
+   "body": "Маршрут удобнее проехать на машине. Сравните предложения прокатчиков на Localrent.",
+   "cta": "Подобрать машину",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "route:rawai-nai-harn-slow-day:localrent",
+   "program": "localrent",
+   "type": "route",
+   "district": null,
+   "route": "rawai-nai-harn-slow-day",
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Аренда авто для этого маршрута",
+   "body": "Маршрут удобнее проехать на машине. Сравните предложения прокатчиков на Localrent.",
+   "cta": "Подобрать машину",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "route:bangtao-laguna-day:localrent",
+   "program": "localrent",
+   "type": "route",
+   "district": null,
+   "route": "bangtao-laguna-day",
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Аренда авто для этого маршрута",
+   "body": "Маршрут удобнее проехать на машине. Сравните предложения прокатчиков на Localrent.",
+   "cta": "Подобрать машину",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "route:kamala-surin-family-evening:localrent",
+   "program": "localrent",
+   "type": "route",
+   "district": null,
+   "route": "kamala-surin-family-evening",
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Аренда авто для этого маршрута",
+   "body": "Маршрут удобнее проехать на машине. Сравните предложения прокатчиков на Localrent.",
+   "cta": "Подобрать машину",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=87&marker=805941&p=2043&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.localrent.com%2Fen%2Fthailand%2Fphuket%2F",
+   "sort_order": 0
+  },
+  {
+   "slot": "practical:connectivity:airalo",
+   "program": "airalo",
+   "type": "practical_page",
+   "district": null,
+   "route": null,
+   "place": null,
+   "practical": "connectivity",
+   "category": null,
+   "title": "eSIM для Таиланда",
+   "body": "eSIM от Airalo покупается и устанавливается онлайн. Проверьте заранее, поддерживает ли ваш телефон eSIM.",
+   "cta": "Выбрать тариф",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://tp.media/r?campaign_id=541&marker=805941&p=8310&sub_id=youtube&trs=601165&u=https%3A%2F%2Fwww.airalo.com%2Fthailand-esim",
+   "sort_order": 0
+  },
+  {
+   "slot": "district:mai-khao-nai-yang:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "mai-khao-nai-yang",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "district:chalong:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "chalong",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "district:phuket-town:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "phuket-town",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "district:rawai-nai-harn:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "rawai-nai-harn",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "district:karon-kata:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "karon-kata",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "district:bangtao:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "bangtao",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "district:kamala-surin:klook",
+   "program": "klook",
+   "type": "district_block",
+   "district": "kamala-surin",
+   "route": null,
+   "place": null,
+   "practical": null,
+   "category": null,
+   "title": "Экскурсии, билеты и активности",
+   "body": "Каталог Klook по всему Пхукету, не только по этому району.",
+   "cta": "Открыть Klook",
+   "label": "Партнёрская ссылка",
+   "disclosure": "Это партнёрская ссылка: если вы оформите заказ, мы можем получить комиссию. Цена для вас не меняется.",
+   "url": "https://klook.tpk.ro/w2g6zKXi",
+   "sort_order": 0
+  },
+  {
+   "slot": "practical:money:owner-exchange",
+   "program": "owner_exchange",
+   "type": "practical_page",
+   "district": null,
+   "route": null,
+   "place": null,
+   "practical": "money",
+   "category": null,
+   "title": "Обмен валюты на Пхукете",
+   "body": "Сервис YELOO (Telegram) принимает RUB, USD, KZT, UAH и USDT. Доступна оплата переводом или наличными, получение бат наличными или снятие в банкомате. Бонус по нашей ссылке: при одном обмене от 106 USD вы получаете 100 бат (начисляются в эквиваленте USD), вывод бонуса — через @yeloo_support по будням 13:00–22:00 по времени Таиланда.",
+   "cta": "Открыть YELOO",
+   "label": "Партнёр",
+   "disclosure": "Этот сервис является партнером путеводителя, и редакция может получать вознаграждение.",
+   "url": "https://t.me/yeloo_webapp_bot?start=reff16689",
+   "sort_order": 10
+  }
+ ],
+ "ui": {
+  "nav_districts": "Районы",
+  "nav_top5": "Топ-5",
+  "nav_routes": "Маршруты",
+  "nav_practical": "Практика",
+  "nav_sos": "SOS",
+  "burger_open_aria": "Открыть меню",
+  "burger_close_aria": "Закрыть меню",
+  "hero_title": [
+   "Пхукет без туристического шума",
+   "Куда поехать на Пхукете сегодня",
+   "Проверенные места на Пхукете"
+  ],
+  "hero_subtitle": [
+   "Районы, пляжи, еда и маршруты — решение за минуту.",
+   "Только проверенные места с датой проверки.",
+   "Выберите район или откройте TOP 5 острова."
+  ],
+  "cta_choose_district": "Выбрать район",
+  "cta_top5": "Смотреть топ-5",
+  "card_btn_map": "Карта",
+  "card_btn_book": "Бронь",
+  "card_btn_site": "Сайт",
+  "card_expand": "Подробнее",
+  "card_collapse": "Свернуть",
+  "card_affiliate_label": "Партнёрская ссылка",
+  "card_seasonal_badge": "Сезонное",
+  "card_meg_badge": "MEG Selection",
+  "card_verified_on": "Проверено: {date}",
+  "category_all": "Все {count} →",
+  "category_empty_title": "В этом районе пока нет проверенных мест",
+  "category_empty_text": "Посмотрите варианты в соседних районах ниже.",
+  "nearby_title": "Рядом с вами",
+  "nearby_subtitle": "Места в соседних районах: {districts}",
+  "nearby_none_text": "Пока нет других проверенных мест поблизости.",
+  "closed_banner_title": "Место закрыто",
+  "closed_banner_text": "По нашим данным на {date} место закрыто.",
+  "closed_alternatives_title": "Альтернативы поблизости",
+  "place_sources_title": "Источники и обновление",
+  "place_report_error": "Сообщить об ошибке",
+  "top5_label": "Editor's Picks · MEG Selection",
+  "top5_disclaimer": "Редакционный выбор, а не рейтинг. Места проверяем лично и по официальным источникам.",
+  "top5_shortfall": "Пока проверено только {count} места — добавим, когда проверим больше.",
+  "route_stops": "{count} остановок",
+  "route_open_map": "Открыть маршрут на карте",
+  "practical_checked": "Проверено: {date}",
+  "sos_title": "Экстренные службы",
+  "sos_call_police": "Полиция · 191",
+  "sos_call_ambulance": "Скорая · 1669",
+  "sos_call_tourist_police": "Туристическая полиция · 1155",
+  "form_feedback_title": "Обратная связь",
+  "form_name": "Имя",
+  "form_email": "Электронная почта",
+  "form_message": "Сообщение",
+  "form_submit": "Отправить",
+  "form_sending": "Отправка...",
+  "form_success": "Спасибо, сообщение отправлено. Мы ответим в ближайшее время.",
+  "form_error_generic": "Что-то пошло не так. Попробуйте отправить форму позже.",
+  "form_error_validation": "Заполните обязательные поля корректно.",
+  "footer_disclaimer": "MoveExploreGrow · Путеводитель по Пхукету 16+. Цены, часы работы и правила меняются — проверяйте перед поездкой.",
+  "footer_affiliate_disclosure": "Некоторые ссылки на сайте являются партнерскими. Редакция получает комиссию без дополнительных затрат для вас.",
+  "notfound_title": "Страница не найдена",
+  "notfound_text": "Возможно, адрес устарел или страница была перемещена. Вернитесь на главную.",
+  "sticky_home": "Выбрать район",
+  "sticky_district": "Карта района",
+  "data_snapshot_note": null
+ }
+}
