@@ -11,6 +11,7 @@ export default function PracticalHub() {
       <h1>Практика</h1>
       <SosBlock />
       <div className="grid3 mt">
+        {practical().length === 0 && <p className="muted">Темы появятся после публикации или на preview с показом черновиков.</p>}
         {practical().map((t) => (
           <Link key={t.slug} href={`/practical/${t.slug}`} className="tile">
             <h3>{t.title}</h3><p className="small clamp">{t.summary}</p>

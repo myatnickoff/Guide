@@ -23,13 +23,51 @@ export default function Home() {
           <h1 className="display">{ui("hero_title")}</h1>
           <p className="lead">{ui("hero_subtitle")}</p>
           <div className="actions">
-            <a className="btn" href="#districts">{ui("cta_choose_district")}</a>
+            <Link className="btn" href="/practical">{ui("nav_practical")}</Link>
+            <a className="btn ghost" href="#districts">{ui("cta_choose_district")}</a>
             <Link className="btn ghost" href="/top-5">{ui("cta_top5")}</Link>
           </div>
         </div>
       </section>
       {/* #vip anchor kept (MUST-KEEP); 21+ promo blocks are off until the 21+ stage */}
       <div id="vip" />
+
+      {/* General Thailand/Phuket info first, then districts (owner, t75u). */}
+      <section className="wrap section" id="practical">
+        <h2>Практика: Таиланд и Пхукет</h2>
+        {pt.length === 0 ? (
+          <p className="muted">Практические темы появятся в этом предпросмотре, если включён показ черновиков. На production они видны только после публикации.</p>
+        ) : (
+          <>
+            <div className="grid3">
+              {pt.map((t) => (
+                <Link key={t.slug} href={`/practical/${t.slug}`} className="tile">
+                  <h3>{t.title}</h3>
+                  <p className="clamp small">{t.summary}</p>
+                  {t.verified_at && <span className="caption ok">{ui("practical_checked", { date: fmtDate(t.verified_at) })}</span>}
+                </Link>
+              ))}
+            </div>
+            <p><Link href="/practical">Вся практика →</Link></p>
+          </>
+        )}
+      </section>
+
+      {rs.length > 0 && (
+        <section className="wrap section">
+          <h2>Маршруты</h2>
+          <div className="grid3">
+            {rs.map((r) => (
+              <Link key={r.slug} href={`/routes/${r.slug}`} className="rcard">
+                <span className="caption">{ui("route_stops", { count: r.stops.length })}</span>
+                <h3>{r.title}</h3>
+                <p className="clamp">{r.summary}</p>
+              </Link>
+            ))}
+          </div>
+          <p><Link href="/routes">Все маршруты →</Link></p>
+        </section>
+      )}
 
       <section className="wrap section" id="districts">
         <h2>Районы Пхукета</h2>
@@ -58,37 +96,6 @@ export default function Home() {
           <div className="hscroll">
             {top5().map((t) => (
               <Link key={t.title} href={`/phuket/${t.district}#top5`} className="chip"><CatIcon slug="attractions" size={16} /> {t.title}</Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {rs.length > 0 && (
-        <section className="wrap section">
-          <h2>Маршруты</h2>
-          <div className="grid3">
-            {rs.map((r) => (
-              <Link key={r.slug} href={`/routes/${r.slug}`} className="rcard">
-                <span className="caption">{ui("route_stops", { count: r.stops.length })}</span>
-                <h3>{r.title}</h3>
-                <p className="clamp">{r.summary}</p>
-              </Link>
-            ))}
-          </div>
-          <p><Link href="/routes">Все маршруты →</Link></p>
-        </section>
-      )}
-
-      {pt.length > 0 && (
-        <section className="wrap section">
-          <h2>Практика: Таиланд и Пхукет</h2>
-          <div className="grid3">
-            {pt.map((t) => (
-              <Link key={t.slug} href={`/practical/${t.slug}`} className="tile">
-                <h3>{t.title}</h3>
-                <p className="clamp small">{t.summary}</p>
-                {t.verified_at && <span className="caption ok">{ui("practical_checked", { date: fmtDate(t.verified_at) })}</span>}
-              </Link>
             ))}
           </div>
         </section>

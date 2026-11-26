@@ -7,3 +7,7 @@
 - 21+ promo, `/21-plus`, concierge block, Privacy Notice: not published (later stages).
 - DB: `supabase/migrations/202611240001_stage9_guide_schema_4_7.sql` + `supabase/seed/01..04` — additive, not yet applied to the live project.
 - `vercel.json` ignoreCommand skips builds for commits that change only `content/snapshot.json`.
+
+## Stage 10.3 preview visibility (26.11.2026)
+
+`PREVIEW_SHOW_UNPUBLISHED=1` must also be set for git branch `stage-10-3-schema-4.8` (Vercel Preview only, never Production). The original flag was scoped to `stage-9-mvp-16plus` only; without a matching flag the 10.3 preview hid all unpublished snapshot rows (district shells still render).
