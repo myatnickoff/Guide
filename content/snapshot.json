@@ -1,18 +1,19 @@
 {
  "meta": {
-  "generated_at": "2026-11-24",
+  "generated_at": "2026-11-26",
   "source": "stage-9 seeds (schema 4.7, local PG17 export)",
   "schema_version": 1,
   "includes_unpublished": true,
   "counts": {
    "districts": 8,
    "categories": 20,
-   "places": 60,
+   "places": 61,
    "routes": 10,
    "top5": 8,
    "practical": 12,
    "placements": 18
-  }
+  },
+  "notion_sync": "2026-11-26: +central-phuket (из Notion), статус 6 мест исправлен на verified"
  },
  "districts": [
   {
@@ -809,7 +810,7 @@
    "price_level": null,
    "opening_hours": null,
    "age_rating": "all",
-   "status": "needs_verification",
+   "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
@@ -1664,7 +1665,7 @@
    "price_level": null,
    "opening_hours": null,
    "age_rating": "all",
-   "status": "needs_verification",
+   "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
@@ -1886,7 +1887,7 @@
    "price_level": null,
    "opening_hours": null,
    "age_rating": "all",
-   "status": "needs_verification",
+   "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
@@ -2046,7 +2047,7 @@
    "price_level": null,
    "opening_hours": null,
    "age_rating": "all",
-   "status": "needs_verification",
+   "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
@@ -2354,7 +2355,7 @@
    "price_level": null,
    "opening_hours": null,
    "age_rating": "all",
-   "status": "needs_verification",
+   "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
@@ -2400,7 +2401,7 @@
    "price_level": null,
    "opening_hours": null,
    "age_rating": "all",
-   "status": "needs_verification",
+   "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
@@ -2534,6 +2535,40 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "slug": "central-phuket",
+   "name": "Central Phuket",
+   "district": "phuket-town",
+   "category": "shopping",
+   "categories": [
+    "shopping"
+   ],
+   "short_description": "Central Phuket — это торговый центр Central Pattana из двух зон: Floresta и Festival.",
+   "why_visit": "Сюда едут за покупками и едой; для туристов на месте оформляют VAT Refund.",
+   "address": "74-75 Moo 5, Vichit, Muang Phuket, Phuket 83000",
+   "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Central+Phuket",
+   "official_url": "https://www.centralphuket.com/",
+   "booking_url": null,
+   "price_level": null,
+   "opening_hours": null,
+   "age_rating": "all",
+   "status": "verified",
+   "verification_status": "verified",
+   "closed_note": null,
+   "replaced_by": null,
+   "is_editor_pick": false,
+   "last_verified": "2026-11-26",
+   "is_published": false,
+   "photo": null,
+   "sources": [
+    {
+     "url": "https://www.centralphuket.com/",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-26"
     }
    ]
   }

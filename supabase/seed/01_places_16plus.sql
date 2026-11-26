@@ -113,7 +113,7 @@ insert into public.place_directions (place_id,direction) select id,'16plus' from
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.portodephuket.com/','official',date '2026-11-24' from public.places where slug='porto-de-phuket';
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.phuket101.net/porto-de-phuket/','directory',date '2026-11-24' from public.places where slug='porto-de-phuket';
 insert into public.places (slug,name,district_id,primary_category_id,short_description,why_visit,address,google_maps_url,official_url,age_rating,status,verification_status,last_verified,is_published)
-select 'suay-cherngtalay','Suay Restaurant Cherngtalay',d.id,c.id,'Suay Restaurant Cherngtalay — это ресторан современной тайской кухни.','Сюда едут на вечерний ужин в приятной обстановке.','177/99 Moo 6, Si Sunthon, Thalang, Phuket 83110','https://www.google.com/maps/search/?api=1&query=Suay+Restaurant+Cherngtalay+Phuket','https://www.suayrestaurant.com/','all','needs_verification','verified',date '2026-11-24',false
+select 'suay-cherngtalay','Suay Restaurant Cherngtalay',d.id,c.id,'Suay Restaurant Cherngtalay — это ресторан современной тайской кухни.','Сюда едут на вечерний ужин в приятной обстановке.','177/99 Moo 6, Si Sunthon, Thalang, Phuket 83110','https://www.google.com/maps/search/?api=1&query=Suay+Restaurant+Cherngtalay+Phuket','https://www.suayrestaurant.com/','all','verified','verified',date '2026-11-24',false
 from public.districts d, public.categories c where d.slug='bangtao' and c.slug='dinner';
 insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='suay-cherngtalay';
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='suay-cherngtalay';
@@ -145,7 +145,7 @@ insert into public.place_directions (place_id,direction) select id,'16plus' from
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.marinaphuket.com/','official',date '2026-11-24' from public.places where slug='on-the-rock-karon';
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.phuket101.net/on-the-rock-restaurant/','directory',date '2026-11-24' from public.places where slug='on-the-rock-karon';
 insert into public.places (slug,name,district_id,primary_category_id,short_description,why_visit,address,google_maps_url,official_url,age_rating,status,verification_status,last_verified,is_published)
-select 'super-surf-kata','Super Surf Kata (ex Surf House Phuket)',d.id,c.id,'Super Surf Kata — это установка с искусственной волной для серфинга.','Сюда едут кататься и брать уроки для начинающих.','4 Soi Pakbang, Karon, Mueang Phuket 83100','https://www.google.com/maps/search/?api=1&query=Super+Surf+Kata+Phuket','https://supersurfkata.com/','all','needs_verification','verified',date '2026-11-24',false
+select 'super-surf-kata','Super Surf Kata (ex Surf House Phuket)',d.id,c.id,'Super Surf Kata — это установка с искусственной волной для серфинга.','Сюда едут кататься и брать уроки для начинающих.','4 Soi Pakbang, Karon, Mueang Phuket 83100','https://www.google.com/maps/search/?api=1&query=Super+Surf+Kata+Phuket','https://supersurfkata.com/','all','verified','verified',date '2026-11-24',false
 from public.districts d, public.categories c where d.slug='karon-kata' and c.slug='activities';
 insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='super-surf-kata';
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='super-surf-kata';
@@ -171,7 +171,7 @@ insert into public.place_categories (place_id,category_id,is_primary) select p.i
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='promthep-cape';
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.phuket101.net/promthep-cape/','directory',date '2026-11-24' from public.places where slug='promthep-cape';
 insert into public.places (slug,name,district_id,primary_category_id,short_description,why_visit,address,google_maps_url,official_url,age_rating,status,verification_status,last_verified,is_published)
-select 'windmill-viewpoint','Windmill Viewpoint',d.id,c.id,'Windmill Viewpoint — это смотровая площадка с ветряной турбиной на юге.','Сюда едут ради красивых видов на бухты и удачных фотографий.','Windmill Viewpoint, Rawai (between Nai Harn and Ya Nui), Mueang Phuket','https://www.google.com/maps/search/?api=1&query=Windmill+Viewpoint+Phuket',null,'all','needs_verification','verified',date '2026-11-24',false
+select 'windmill-viewpoint','Windmill Viewpoint',d.id,c.id,'Windmill Viewpoint — это смотровая площадка с ветряной турбиной на юге.','Сюда едут ради красивых видов на бухты и удачных фотографий.','Windmill Viewpoint, Rawai (between Nai Harn and Ya Nui), Mueang Phuket','https://www.google.com/maps/search/?api=1&query=Windmill+Viewpoint+Phuket',null,'all','verified','verified',date '2026-11-24',false
 from public.districts d, public.categories c where d.slug='rawai-nai-harn' and c.slug='instagrammable';
 insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='windmill-viewpoint';
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='windmill-viewpoint';
@@ -219,7 +219,7 @@ insert into public.place_categories (place_id,category_id,is_primary) select p.i
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='thai-hua-museum';
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.phuket101.net/thai-hua-museum/','directory',date '2026-11-24' from public.places where slug='thai-hua-museum';
 insert into public.places (slug,name,district_id,primary_category_id,short_description,why_visit,address,google_maps_url,official_url,age_rating,status,verification_status,last_verified,is_published)
-select 'khao-rang-viewpoint','Khao Rang Hill Viewpoint',d.id,c.id,'Khao Rang Hill Viewpoint — это смотровая площадка на холме над городом.','Сюда едут ради видов на город и отдыха в парке с ресторанами.','Khao Rang Hill, Phuket Town','https://www.google.com/maps/search/?api=1&query=Khao+Rang+Hill+Viewpoint+Phuket',null,'all','needs_verification','verified',date '2026-11-24',false
+select 'khao-rang-viewpoint','Khao Rang Hill Viewpoint',d.id,c.id,'Khao Rang Hill Viewpoint — это смотровая площадка на холме над городом.','Сюда едут ради видов на город и отдыха в парке с ресторанами.','Khao Rang Hill, Phuket Town','https://www.google.com/maps/search/?api=1&query=Khao+Rang+Hill+Viewpoint+Phuket',null,'all','verified','verified',date '2026-11-24',false
 from public.districts d, public.categories c where d.slug='phuket-town' and c.slug='nature-viewpoints';
 insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='khao-rang-viewpoint';
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='khao-rang-viewpoint';
@@ -227,7 +227,7 @@ insert into public.place_sources (place_id,url,source_type,accessed_at) select i
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.thaiholidayguide.com/attraction/khao-rang/','directory',date '2026-11-24' from public.places where slug='khao-rang-viewpoint';
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.visit-thailand.org/cities/24-phuket/phuket-viewpoints','directory',date '2026-11-24' from public.places where slug='khao-rang-viewpoint';
 insert into public.places (slug,name,district_id,primary_category_id,short_description,why_visit,address,google_maps_url,official_url,age_rating,status,verification_status,last_verified,is_published)
-select 'one-chun','One Chun',d.id,c.id,'One Chun — местный ресторан в Пхукет-тауне с домашней кухней в южном и перанаканском стиле.','Сюда едут попробовать местные пхукетские блюда.','48/1 Thepkrasattri Rd, Talat Yai, Phuket Town 83000','https://www.google.com/maps/search/?api=1&query=One+Chun+Phuket',null,'all','needs_verification','verified',date '2026-11-24',false
+select 'one-chun','One Chun',d.id,c.id,'One Chun — местный ресторан в Пхукет-тауне с домашней кухней в южном и перанаканском стиле.','Сюда едут попробовать местные пхукетские блюда.','48/1 Thepkrasattri Rd, Talat Yai, Phuket Town 83000','https://www.google.com/maps/search/?api=1&query=One+Chun+Phuket',null,'all','verified','verified',date '2026-11-24',false
 from public.districts d, public.categories c where d.slug='phuket-town' and c.slug='food';
 insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='one-chun';
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='one-chun';
@@ -273,7 +273,7 @@ insert into public.place_categories (place_id,category_id,is_primary) select p.i
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='robinson-lifestyle-chalong';
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.phuket101.net/robinson-lifestyle-chalong/','directory',date '2026-11-24' from public.places where slug='robinson-lifestyle-chalong';
 insert into public.places (slug,name,district_id,primary_category_id,short_description,why_visit,address,google_maps_url,official_url,age_rating,status,verification_status,last_verified,is_published)
-select 'nakkerd-seaview-cafe','Nakkerd Seaview Cafe',d.id,c.id,'Nakkerd Seaview Cafe — это кафе на дороге к Большому Будде.','Сюда едут отдохнуть с напитками и видом на море.','Chaofa West Road, Soi Yod Santhan (road to Big Buddha), Chalong, Phuket','https://www.google.com/maps/search/?api=1&query=Nakkerd+Seaview+Cafe+Phuket',null,'all','needs_verification','verified',date '2026-11-24',false
+select 'nakkerd-seaview-cafe','Nakkerd Seaview Cafe',d.id,c.id,'Nakkerd Seaview Cafe — это кафе на дороге к Большому Будде.','Сюда едут отдохнуть с напитками и видом на море.','Chaofa West Road, Soi Yod Santhan (road to Big Buddha), Chalong, Phuket','https://www.google.com/maps/search/?api=1&query=Nakkerd+Seaview+Cafe+Phuket',null,'all','verified','verified',date '2026-11-24',false
 from public.districts d, public.categories c where d.slug='chalong' and c.slug='coffee';
 insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='nakkerd-seaview-cafe';
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='nakkerd-seaview-cafe';
@@ -398,4 +398,11 @@ from public.districts d, public.categories c where d.slug='patong' and c.slug='s
 insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='patong-hospital';
 insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='patong-hospital';
 insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.phuket101.net/phuket-hospitals/','directory',date '2026-11-24' from public.places where slug='patong-hospital';
+-- 26.11: импорт из Notion (sync), проверено по официальному сайту
+insert into public.places (slug,name,district_id,primary_category_id,short_description,why_visit,address,google_maps_url,official_url,age_rating,status,verification_status,last_verified,is_published)
+select 'central-phuket','Central Phuket',d.id,c.id,'Central Phuket — это торговый центр Central Pattana из двух зон: Floresta и Festival.','Сюда едут за покупками и едой; для туристов на месте оформляют VAT Refund.','74-75 Moo 5, Vichit, Muang Phuket, Phuket 83000','https://www.google.com/maps/search/?api=1&query=Central+Phuket','https://www.centralphuket.com/','all','verified','verified',date '2026-11-26',false
+from public.districts d, public.categories c where d.slug='phuket-town' and c.slug='shopping';
+insert into public.place_categories (place_id,category_id,is_primary) select p.id,p.primary_category_id,true from public.places p where p.slug='central-phuket';
+insert into public.place_directions (place_id,direction) select id,'16plus' from public.places where slug='central-phuket';
+insert into public.place_sources (place_id,url,source_type,accessed_at) select id,'https://www.centralphuket.com/','official',date '2026-11-26' from public.places where slug='central-phuket';
 commit;
