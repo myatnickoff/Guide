@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { PlaceCard } from "@/components/place-card";
 import { Crumbs } from "@/components/breadcrumbs";
 import { allPlaces, fmtDate, getCategory, getDistrict, getPlace, placementsFor, places, ui } from "@/lib/content";
+import { mapsUrl } from "@/lib/config";
 import { AffiliateBlock } from "@/components/affiliate-block";
 
 export const dynamicParams = false;
@@ -42,7 +43,7 @@ export default async function PlacePage({ params }: { params: Promise<{ slug: st
         {p.opening_hours && <><dt>Часы</dt><dd>{p.opening_hours}</dd></>}
       </dl>
       <div className="actions">
-        {p.google_maps_url && <a className="btn" href={p.google_maps_url} target="_blank" rel="noopener noreferrer">{ui("card_btn_map")}</a>}
+        {<a className="btn" href={mapsUrl(p)} target="_blank" rel="noopener noreferrer">{ui("card_btn_map")}</a>}
         {p.official_url && <a className="btn ghost" href={p.official_url} target="_blank" rel="noopener noreferrer">{ui("card_btn_site")}</a>}
         {p.booking_url && <a className="btn ghost" href={p.booking_url} target="_blank" rel="noopener noreferrer">{ui("card_btn_book")}</a>}
       </div>

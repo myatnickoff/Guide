@@ -1,24 +1,34 @@
-// Content layer (stage 9). Source: content/snapshot.json (exported from Supabase schema 4.7 seeds).
+// Content layer. Source: content/snapshot.json (schema 4.8 fields; values still from stage-9 seeds, no invented facts).
 // Visibility: production shows only is_published rows; preview may show unpublished drafts
 // when PREVIEW_SHOW_UNPUBLISHED=1 (set only for Preview env in Vercel).
 import snapshot from "@/content/snapshot.json";
 
 export type Source = { url: string | null; title?: string | null; type?: string | null; accessed_at?: string | null; is_official?: boolean; key?: string | null };
-export type District = { slug: string; name: string; name_ru: string; tagline: string; intro: string; sort_order: number; is_published: boolean; neighbors: string[] };
+export type District = { slug: string; name: string; name_ru: string; tagline: string; intro: string; sort_order: number; is_published: boolean; neighbors: string[]; owner_approved: boolean; owner_approved_at: string | null };
 export type Category = { slug: string; label_ru: string; icon: string | null; sort_order: number; is_published: boolean };
+export type Photo = {
+  url: string | null; local_path?: string | null; author?: string | null; credit?: string | null;
+  license?: string | null; license_url?: string | null; source_url?: string | null; alt?: string | null;
+  depicts_place?: boolean;
+};
+export type Social = { network: string; url: string; source_url?: string | null; accessed_at?: string | null };
 export type Place = {
   slug: string; name: string; district: string; category: string; categories: string[] | null;
-  short_description: string | null; why_visit: string | null; address: string | null; google_maps_url: string | null;
-  official_url: string | null; booking_url: string | null; price_level: number | null; opening_hours: string | null;
-  age_rating: string; status: string; verification_status: string; closed_note: string | null; replaced_by: string | null;
+  subcategory: string | null; short_description: string | null; why_visit: string | null;
+  address: string | null; lat: number | null; lng: number | null; google_maps_url: string | null;
+  official_url: string | null; booking_url: string | null; phone: string | null; phone_checked_at: string | null;
+  price_level: number | null; opening_hours: string | null; socials: Social[];
+  age_rating: string; status: string; verification_status: string;
+  owner_approved: boolean; owner_approved_at: string | null;
+  closed_note: string | null; replaced_by: string | null;
   is_editor_pick: boolean; last_verified: string | null; is_published: boolean;
-  photo: { url: string; credit: string | null; license: string | null; source_url: string | null; alt: string | null } | null;
+  photo: Photo | null; photos: Photo[];
   sources: Source[];
 };
-export type Route = { slug: string; title: string; district: string | null; theme: string | null; summary: string | null; duration_note: string | null; transport: string | null; best_time: string | null; budget_note: string | null; status: string; is_published: boolean; last_verified: string | null; sort_order: number; stops: { order: number; place: string | null; label: string | null; note: string | null }[] };
-export type Top5 = { theme: string; district: string | null; title: string; subtitle: string | null; shortfall_note: string | null; is_published: boolean; items: { position: number; place: string; reason: string | null }[] };
+export type Route = { slug: string; title: string; district: string | null; theme: string | null; summary: string | null; duration_note: string | null; transport: string | null; best_time: string | null; budget_note: string | null; status: string; is_published: boolean; last_verified: string | null; owner_approved: boolean; owner_approved_at: string | null; sort_order: number; stops: { order: number; place: string | null; label: string | null; note: string | null }[] };
+export type Top5 = { theme: string; district: string | null; title: string; subtitle: string | null; shortfall_note: string | null; is_published: boolean; owner_approved: boolean; owner_approved_at: string | null; items: { position: number; place: string; reason: string | null }[] };
 export type PracticalItem = { text_ru: string; sources: string[]; verification: string; needs_check_note?: string };
-export type Practical = { slug: string; title: string; summary: string | null; sections: { heading_ru: string; items: PracticalItem[] }[]; legal_flag: boolean; verification_status: string; verified_at: string | null; is_published: boolean; sort_order: number; sources: Source[] };
+export type Practical = { slug: string; title: string; summary: string | null; sections: { heading_ru: string; items: PracticalItem[] }[]; legal_flag: boolean; verification_status: string; verified_at: string | null; is_published: boolean; owner_approved: boolean; owner_approved_at: string | null; sort_order: number; sources: Source[] };
 export type Placement = { slot: string; program: string; type: string; district: string | null; route: string | null; place: string | null; practical: string | null; category: string | null; title: string; body: string | null; cta: string; label: string; disclosure: string; url: string; sort_order: number };
 
 type Snapshot = { meta: Record<string, unknown>; districts: District[]; categories: Category[]; places: Place[]; routes: Route[]; top5: Top5[]; practical: Practical[]; placements: Placement[]; ui: Record<string, unknown> };

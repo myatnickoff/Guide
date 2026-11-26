@@ -5,3 +5,20 @@ export const VAPE_TEXT =
 
 export const gmaps = (query: string) =>
   `https://www.google.com/maps/search/?api=1&query=${query.trim().replace(/\s+/g, "+")}`;
+
+/** Schema 4.8: coordinates first, else a stored Maps URL, else name + address. */
+export type MapsTarget = {
+  name: string;
+  address?: string | null;
+  lat?: number | null;
+  lng?: number | null;
+  google_maps_url?: string | null;
+};
+
+export function mapsUrl(p: MapsTarget): string {
+  if (p.lat != null && p.lng != null) {
+    return `https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}`;
+  }
+  if (p.google_maps_url) return p.google_maps_url;
+  return gmaps([p.name, p.address].filter(Boolean).join(" "));
+}

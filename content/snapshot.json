@@ -1,8 +1,8 @@
 {
  "meta": {
   "generated_at": "2026-11-26",
-  "source": "stage-9 seeds (schema 4.7, local PG17 export)",
-  "schema_version": 1,
+  "source": "stage-9 seeds (schema 4.7) + stage 10.3 field defaults (schema 4.8); no invented coordinates, photos, phones, socials or approvals",
+  "schema_version": 2,
   "includes_unpublished": true,
   "counts": {
    "districts": 8,
@@ -13,7 +13,9 @@
    "practical": 12,
    "placements": 18
   },
-  "notion_sync": "2026-11-26: +central-phuket (из Notion), статус 6 мест исправлен на verified"
+  "notion_sync": "2026-11-26: +central-phuket (из Notion), статус 6 мест исправлен на verified",
+  "schema_rev": "4.8",
+  "notes": "2026-11-26 10.3: added 4.8 fields with empty/false defaults; owner_approved not imported from Notion yet"
  },
  "districts": [
   {
@@ -28,7 +30,9 @@
    "name_ru": "Май Кхао и Най Янг",
    "tagline": "Тихий север Пхукета с национальным парком и длинными пляжами",
    "intro": "Mai Khao Beach — это длинный тихий пляж на самом севере Пхукета. Рядом находится Sirinat National Park — это прибрежный национальный парк на севере.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "bangtao",
@@ -42,7 +46,9 @@
    "name_ru": "Банг Тао",
    "tagline": "Длинные пляжи, торговые улицы и просторные курортные зоны",
    "intro": "Bang Tao Beach — это длинный песчаный пляж на западном побережье. Porto de Phuket — это открытый торговый комплекс в районе Чернгталай.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "kamala-surin",
@@ -56,7 +62,9 @@
    "name_ru": "Камала и Сурин",
    "tagline": "Пляжи среди зелёных холмов и тематические парки",
    "intro": "Surin Beach — это песчаный пляж на западном побережье. Kamala Beach — это тихий и спокойный пляж на западном побережье среди зеленых холмов.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "patong",
@@ -71,7 +79,9 @@
    "name_ru": "Патонг",
    "tagline": "Оживленный центр развлечений, магазинов и пляжного отдыха",
    "intro": "Patong Beach — это главный пляж Патонга с длинной песчаной бухтой и оживленным городом позади. Jungceylon — это большой торговый центр в сердце Патонга рядом с пляжем.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "karon-kata",
@@ -86,7 +96,9 @@
    "name_ru": "Карон и Ката",
    "tagline": "Широкие пляжи, семейные бухты и панорамные смотровые площадки",
    "intro": "Karon Beach — это длинный широкий песчаный пляж с расслабленной атмосферой. Kata Beach — это популярная семейная бухта с возможностью заняться серфингом.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "rawai-nai-harn",
@@ -100,7 +112,9 @@
    "name_ru": "Раваи и Най Харн",
    "tagline": "Живописные южные бухты, озера и атмосферные мысы",
    "intro": "Nai Harn Beach — это пляж на юге Пхукета среди холмов. Promthep Cape — южная оконечность Пхукета со смотровой площадкой, маяком и святилищем.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "chalong",
@@ -115,7 +129,9 @@
    "name_ru": "Чалонг",
    "tagline": "Культурные достопримечательности, храмы и спортивные лагеря",
    "intro": "Wat Chalong — один из главных буддийских храмовых комплексов острова. Phuket Big Buddha — это гигантская статуя Будды на холме Наккерд.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "phuket-town",
@@ -129,7 +145,9 @@
    "name_ru": "Пхукет-Таун",
    "tagline": "Историческая архитектура, музеи и колоритные городские рынки",
    "intro": "Phuket Old Town — это исторический центр города с цветными домами. Chinpracha House — это исторический китайско-португальский особняк-музей.",
-   "text_origin": "gemini-flash-lite-latest + editor"
+   "text_origin": "gemini-flash-lite-latest + editor",
+   "owner_approved": false,
+   "owner_approved_at": null
   }
  ],
  "categories": [
@@ -313,7 +331,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "mai-khao-beach",
@@ -347,7 +374,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "nai-yang-beach",
@@ -381,7 +417,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "quan-spa-marriott-nai-yang",
@@ -421,7 +466,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "sirinat-national-park",
@@ -455,7 +509,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "good-view-nai-yang",
@@ -495,7 +558,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "wat-mai-khao",
@@ -529,7 +601,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "bang-tao-beach",
@@ -563,7 +644,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "banyan-tree-spa-phuket",
@@ -603,7 +693,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "blue-tree-phuket",
@@ -637,7 +736,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "fun-friday-avenue-market",
@@ -677,7 +785,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "laguna-golf-phuket",
@@ -717,7 +834,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "layan-beach",
@@ -751,7 +877,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "porto-de-phuket",
@@ -791,7 +926,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "suay-cherngtalay",
@@ -831,7 +975,16 @@
      "type": "official",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "carnival-magic",
@@ -871,7 +1024,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "kamala-beach",
@@ -905,7 +1067,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "laem-singh-viewpoint",
@@ -945,7 +1116,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "oriental-spoon-twinpalms",
@@ -979,7 +1159,16 @@
      "type": "official",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "phuket-fantasea",
@@ -1020,7 +1209,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "surin-beach",
@@ -1054,7 +1252,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "baan-rim-pa",
@@ -1094,7 +1301,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "bangla-road",
@@ -1128,7 +1344,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "jungceylon",
@@ -1162,7 +1387,16 @@
      "type": "official",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "lets-relax-spa-patong",
@@ -1208,7 +1442,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "patong-beach",
@@ -1242,7 +1485,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "patong-hospital",
@@ -1276,7 +1528,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "phuket-thai-cooking-academy",
@@ -1316,7 +1577,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "savoey-seafood-patong",
@@ -1356,7 +1626,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "wat-suwan-khiri-wong",
@@ -1396,7 +1675,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "infinite-luxury-spa-kata-rocks",
@@ -1436,7 +1724,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "karon-beach",
@@ -1470,7 +1767,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "karon-temple-market",
@@ -1504,7 +1810,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "karon-viewpoint",
@@ -1538,7 +1853,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "kata-beach",
@@ -1572,7 +1896,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "kata-night-market",
@@ -1606,7 +1939,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "on-the-rock-karon",
@@ -1646,7 +1988,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "super-surf-kata",
@@ -1692,7 +2043,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "nai-harn-beach",
@@ -1726,7 +2086,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "nai-harn-lake",
@@ -1766,7 +2135,16 @@
      "type": "other",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "promthep-cape",
@@ -1800,7 +2178,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "rawai-seafood-market",
@@ -1834,7 +2221,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "wat-nai-harn",
@@ -1868,7 +2264,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "windmill-viewpoint",
@@ -1914,7 +2319,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "yoga-by-niti",
@@ -1948,7 +2362,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "5-elements-hot-yoga",
@@ -1988,7 +2411,16 @@
      "type": "official",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "kan-eang-pier",
@@ -2028,7 +2460,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "nakkerd-seaview-cafe",
@@ -2074,7 +2515,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "phuket-big-buddha",
@@ -2108,7 +2558,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "robinson-lifestyle-chalong",
@@ -2142,7 +2601,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "tiger-muay-thai",
@@ -2182,7 +2650,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "wat-chalong",
@@ -2216,7 +2693,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "bangkok-hospital-phuket",
@@ -2256,7 +2742,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "chillva-market",
@@ -2290,7 +2785,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "chinpracha-house",
@@ -2336,7 +2840,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "khao-rang-viewpoint",
@@ -2382,7 +2895,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "one-chun",
@@ -2428,7 +2950,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "phuket-old-town",
@@ -2468,7 +2999,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "phuket-sunday-walking-street",
@@ -2502,7 +3042,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "thai-hua-museum",
@@ -2536,7 +3085,16 @@
      "type": "directory",
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   },
   {
    "slug": "central-phuket",
@@ -2570,7 +3128,16 @@
      "type": "official",
      "accessed_at": "2026-11-26"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null,
+   "lat": null,
+   "lng": null,
+   "subcategory": null,
+   "socials": [],
+   "phone": null,
+   "phone_checked_at": null,
+   "photos": []
   }
  ],
  "routes": [
@@ -2619,7 +3186,9 @@
      "label": null,
      "note": "Пешеходная вечерняя улица с неоном."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "phuket-old-town-walk",
@@ -2672,7 +3241,9 @@
      "label": null,
      "note": "Ночной рынок с контейнерами и уличной едой."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "kamala-surin-family-evening",
@@ -2713,7 +3284,9 @@
      "label": null,
      "note": "Вечерний культурный парк с шоу."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "bangtao-laguna-day",
@@ -2760,7 +3333,9 @@
      "label": null,
      "note": "Ресторан современной тайской кухни."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "karon-kata-beach-day",
@@ -2807,7 +3382,9 @@
      "label": null,
      "note": "Ресторан на прибрежных скалах."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "rawai-nai-harn-slow-day",
@@ -2848,7 +3425,9 @@
      "label": null,
      "note": "Рынок морепродуктов у пляжа."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "chalong-temples-big-buddha",
@@ -2889,7 +3468,9 @@
      "label": null,
      "note": "Ресторан морепродуктов у пирса."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "north-nai-yang-mai-khao",
@@ -2936,7 +3517,9 @@
      "label": null,
      "note": "Тайский ужин; добираются на плоту по лагуне."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "south-viewpoints-sunset",
@@ -2977,7 +3560,9 @@
      "label": null,
      "note": "Южная оконечность с маяком и святилищем."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "west-coast-beaches",
@@ -3030,7 +3615,9 @@
      "label": null,
      "note": "Небольшой тихий пляж у парка."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   }
  ],
  "top5": [
@@ -3067,7 +3654,9 @@
      "place": "bangla-road",
      "reason": "Пешеходная улица для вечерней прогулки; заведения 20+ гид не рекламирует."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "theme": "district-top5",
@@ -3102,7 +3691,9 @@
      "place": "oriental-spoon-twinpalms",
      "reason": "Ресторан при отеле для завтраков или ужинов с восточной кухней."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "theme": "district-top5",
@@ -3137,7 +3728,9 @@
      "place": "fun-friday-avenue-market",
      "reason": "Пятничный вечерний рынок для прогулок и уличной еды."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "theme": "district-top5",
@@ -3172,7 +3765,9 @@
      "place": "karon-temple-market",
      "reason": "Храмовый рынок для знакомства с местной едой и сувенирами."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "theme": "district-top5",
@@ -3207,7 +3802,9 @@
      "place": "rawai-seafood-market",
      "reason": "Рынок для покупки свежего улова с последующим приготовлением."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "theme": "district-top5",
@@ -3242,7 +3839,9 @@
      "place": "chillva-market",
      "reason": "Молодежный вечерний рынок для проб уличной еды и прогулок."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "theme": "district-top5",
@@ -3277,7 +3876,9 @@
      "place": "tiger-muay-thai",
      "reason": "Спортивный лагерь для тренировок по тайскому боксу."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "theme": "district-top5",
@@ -3312,7 +3913,9 @@
      "place": "quan-spa-marriott-nai-yang",
      "reason": "Курортный спа-центр для расслабляющих процедур и массажа."
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   }
  ],
  "practical": [
@@ -3438,7 +4041,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "visa-entry",
@@ -3644,7 +4249,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "money",
@@ -3801,7 +4408,9 @@
      "is_official": false,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "connectivity",
@@ -3898,7 +4507,9 @@
      "is_official": false,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "transport",
@@ -4045,7 +4656,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "scooter",
@@ -4119,7 +4732,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "sea-safety",
@@ -4223,7 +4838,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "health-insurance",
@@ -4334,7 +4951,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "safety",
@@ -4408,7 +5027,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "laws-etiquette",
@@ -4555,7 +5176,9 @@
      "is_official": false,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "scams",
@@ -4667,7 +5290,9 @@
      "is_official": false,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   },
   {
    "slug": "apps",
@@ -4801,7 +5426,9 @@
      "is_official": true,
      "accessed_at": "2026-11-24"
     }
-   ]
+   ],
+   "owner_approved": false,
+   "owner_approved_at": null
   }
  ],
  "placements": [

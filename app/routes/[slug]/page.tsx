@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Crumbs } from "@/components/breadcrumbs";
 import { AffiliateBlock } from "@/components/affiliate-block";
 import { getDistrict, getPlace, getRoute, placementsFor, routes, ui, fmtDate } from "@/lib/content";
+import { mapsUrl } from "@/lib/config";
 export const dynamicParams = false;
 export function generateStaticParams() { return routes().map((r) => ({ slug: r.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -31,7 +32,7 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
           <li key={s.order}>
             <strong>{p ? <Link href={`/place/${p.slug}`}>{p.name}</Link> : s.label}</strong>
             {s.note && <p className="small">{s.note}</p>}
-            {p?.google_maps_url && <a className="small" href={p.google_maps_url} target="_blank" rel="noopener noreferrer">{ui("card_btn_map")}</a>}
+            {p && <a className="small" href={mapsUrl(p)} target="_blank" rel="noopener noreferrer">{ui("card_btn_map")}</a>}
           </li>); })}
       </ol>
       {r.last_verified && <p className="caption ok">{ui("card_verified_on", { date: fmtDate(r.last_verified) })}</p>}
