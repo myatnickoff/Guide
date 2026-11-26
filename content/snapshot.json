@@ -15,7 +15,7 @@
   },
   "notion_sync": "2026-11-26: +central-phuket (из Notion), статус 6 мест исправлен на verified",
   "schema_rev": "4.8",
-  "notes": "2026-11-26 10.3: added 4.8 fields with empty/false defaults; owner_approved not imported from Notion yet"
+  "notes": "2026-11-26 10.3: added 4.8 fields with empty/false defaults; owner_approved not imported from Notion yet; 2026-11-26 10.3: rewritten short_description and why_visit for 61 places (original RU, no Google verbatim); coords from OSM where match was confident; hours only with a dated source"
  },
  "districts": [
   {
@@ -301,21 +301,21 @@
    "categories": [
     "dinner"
    ],
-   "short_description": "Black Ginger — это тайский ресторан при отеле в Най Янг.",
-   "why_visit": "Сюда едут на вечерний ужин, добираясь к нему на плоту по лагуне.",
+   "short_description": "На территории отеля The Slate в Най Янг ресторан занимает традиционный тайский особняк над лагуной и готовит южнотайскую кухню по местным рецептам. Кухню ведёт шеф Анонграт Меклай (Piak): в меню классика вроде сом тама, том яма и пананг, а также блюда с южнотайским характером. До отеля от аэропорта Пхукета около десяти минут езды.",
+   "why_visit": "Бронирование обязательно: столиков немного, на официальной странице The Slate указан невозвратный депозит — 1000 бат с человека в апреле–сентябре и 2000 бат в октябре–марте, он вычитается из счёта. Дресс-код smart casual: шорты допустимы, майки, пляжная одежда, спортивный костюм и шлёпанцы — нет, иначе могут не пустить. Ужин по официальной странице — с 17:30 до 23:00 (проверено 26.11.2026).",
    "address": "The Slate, 116 Moo 1, Sakhu, Thalang, Phuket 83110 (Nai Yang)",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Black+Ginger+Phuket",
    "official_url": "https://www.theslatephuket.com/",
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "17:30–23:00, ужин (официальная страница The Slate, 26.11.2026)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -330,12 +330,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.theslatephuket.com/dining/black-ginger.html",
+     "title": null,
+     "type": "official",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/3742625420",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.0851673,
+   "lng": 98.2982889,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -350,8 +362,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Mai Khao Beach — это длинный тихий пляж на самом севере Пхукета.",
-   "why_visit": "Сюда едут за тишиной длинного пляжа и видом на самолёты, заходящие на посадку.",
+   "short_description": "Май Кхао — длинный северный пляж Пхукета, часть береговой линии рядом с национальным парком Сиринат. Песок и открытое Андаманское море, без плотной застройки, характерной для западных курортных бухт. Пляж тянется вдоль района Май Кхао в ампхе Тхаланг.",
+   "why_visit": "Здесь спокойнее, чем в Патонге или Кароне, но берег открытый: в сезон волнения купание может быть некомфортным, ориентируйтесь на флаги и состояние моря. Возьмите воду и тень с собой — инфраструктуры меньше, чем на центральных пляжах. Координаты береговой линии есть в OpenStreetMap (обращение 26.11.2026).",
    "address": "Mai Khao Beach, Mai Khao, Thalang, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mai+Khao+Beach+Phuket",
    "official_url": null,
@@ -364,7 +376,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -373,12 +385,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/16031134",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.1455601,
+   "lng": 98.2971785,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -393,8 +411,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Nai Yang Beach — это тихий пляж на севере внутри национального парка.",
-   "why_visit": "Сюда едут отдохнуть в тени деревьев и попробовать местную еду.",
+   "short_description": "Най Янг — тихий пляж на севере острова, у границы национального парка Сиринат. Берег с песком и деревьями, рядом деревня Саху и дорога к аэропорту. Это один из ближайших к прилёту полноценных пляжей.",
+   "why_visit": "Удобно заехать в день прилёта или вылета, не пересекая весь остров. Часть берега относится к парку — уточняйте зоны и правила на стендах у входа в Сиринат. Для купания смотрите флаги и волны, как на любом западном/северном пляже Андамана.",
    "address": "Nai Yang Beach, Sakhu, Thalang, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nai+Yang+Beach+Phuket",
    "official_url": null,
@@ -407,7 +425,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -416,12 +434,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1020477061",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.0903515,
+   "lng": 98.2977303,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -436,8 +460,8 @@
    "categories": [
     "wellness"
    ],
-   "short_description": "Quan Spa — это спа курорта Phuket Marriott Resort and Spa на пляже Най Янг с массажами и процедурами для тела.",
-   "why_visit": "Сюда идут на спа-процедуры; спа принимает и гостей не из отеля.",
+   "short_description": "Quan Spa находится на территории Phuket Marriott Resort and Spa на пляже Най Янг. Это спа курорта: массаж и процедуры для тела на территории отеля у северного пляжа.",
+   "why_visit": "На сайте спа в этой итерации отдельную страницу часов получить не удалось — расписание и доступ для гостей не из отеля лучше уточнить на стойке курорта или по контактам отеля. Отель стоит в Саху, Тхаланг, рядом с Най Янг. Рейтинг и часы Google Maps в открытом виде не сняли.",
    "address": "Phuket Marriott Resort and Spa, 92, 92/1 Moo 3, Sakhu, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Quan+Spa+at+Phuket+Marriott+Nai+Yang+Phuket",
    "official_url": null,
@@ -450,7 +474,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -465,12 +489,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1135084709",
+     "title": "OpenStreetMap (nominatim: Phuket Marriott Resort (spa on grounds, not a separate OSM node))",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.081796,
+   "lng": 98.288562,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -485,8 +515,8 @@
    "categories": [
     "nature-viewpoints"
    ],
-   "short_description": "Sirinat National Park — это прибрежный национальный парк на севере.",
-   "why_visit": "Сюда едут на прогулки по мангровым тропам и пляжам.",
+   "short_description": "Национальный парк Сиринат занимает север Пхукета: и суша, и морская акватория. Здесь пляжи Май Кхао и Най Янг, прибрежный лес и охраняемая береговая линия у аэропорта. Это официальная охраняемая территория, а не городской парк.",
+   "why_visit": "На входе обычно действует плата за посещение парка — сумму и часы лучше смотреть на стенде или у кассы, мы не фиксировали актуальный тариф 26.11.2026. Держитесь размеченных троп, не оставляйте мусор и не беспокойте гнездовья, если они обозначены. Координаты парка есть в OpenStreetMap и в карточке Wikipedia (обращение 26.11.2026).",
    "address": "89 Sakhu, Thalang, Phuket 83140",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sirinat+National+Park+Phuket",
    "official_url": null,
@@ -499,7 +529,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -508,12 +538,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sirinat_National_Park",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/243010403",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.1148786,
+   "lng": 98.2782752,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -528,8 +570,8 @@
    "categories": [
     "food"
    ],
-   "short_description": "The Good View Restaurant — это простое заведение с тайской кухней.",
-   "why_visit": "Сюда едут перекусить с видом на море на пляже Най Янг.",
+   "short_description": "The Good View — тайской кухни ресторан на пляже Най Янг (точка есть в OpenStreetMap). Стоит у берега в Саху, на севере острова, недалеко от парка Сиринат.",
+   "why_visit": "Статус места в гиде — needs_verification: часы, меню и принадлежат ли столики именно пляжной линии, по официальному сайту в этой итерации не подтвердили. Перед визитом имеет смысл уточнить режим и бронирование на месте или в актуальных картах. Не полагайтесь на устаревшие отзывы без даты.",
    "address": "Nai Yang Beach, Sakhu, Thalang, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Good+View+Restaurant+Phuket",
    "official_url": null,
@@ -542,7 +584,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -557,12 +599,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/13271797681",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.0890168,
+   "lng": 98.2974005,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -577,8 +625,8 @@
    "categories": [
     "attractions"
    ],
-   "short_description": "Wat Mai Khao — это скромный местный храм недалеко от пляжа.",
-   "why_visit": "Сюда едут познакомиться с тихой духовной жизнью местных жителей.",
+   "short_description": "Ват Май Кхао — буддийский храм в районе Май Кхао, в северной части острова. Комплекс стоит у жилой застройки Сай Май Кхао, не на самой кромке пляжа.",
+   "why_visit": "Как в любом храме Таиланда: плечи и колени закрыты, обувь снимают перед убранством зала, ведите себя тихо. Часы и возможные дни церемоний лучше уточнить на месте — отдельного официального сайта не нашли. Точка есть в OpenStreetMap (26.11.2026).",
    "address": "146/7 Mai Khao, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Mai+Khao+Phuket",
    "official_url": null,
@@ -591,7 +639,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -600,12 +648,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/4208449400",
+     "title": "OpenStreetMap (nominatim วัดไม้ขาว)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.1257903,
+   "lng": 98.306307,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -620,8 +674,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Bang Tao Beach — это длинный песчаный пляж на западном побережье.",
-   "why_visit": "Сюда едут ради пляжных клубов, ресторанов и близости к курортной зоне.",
+   "short_description": "Банг Тао — длинный песчаный пляж на западном берегу в Чернгтале, один из протяжённых пляжей Тхаланга. За линией песка — курортная зона Лагуны и дорога вдоль бухты. В OpenStreetMap берег отмечен как песчаный.",
+   "why_visit": "Пляж большой: южная и северная части ощущаются по-разному по застройке и ветру. Для купания смотрите флаги и прибой, особенно в сезон муссона. Рядом есть выход к Лагуне, гольфу и спа, но сам берег — общественный пляж.",
    "address": "Bang Tao Beach, Choeng Thale, Thalang, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bang+Tao+Beach+Phuket",
    "official_url": null,
@@ -634,7 +688,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -643,12 +697,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/150298518",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.0083024,
+   "lng": 98.2922391,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -663,8 +723,8 @@
    "categories": [
     "wellness"
    ],
-   "short_description": "Banyan Tree Spa Phuket — это открытый в 1994 году в Лагуне Пхукет спа-комплекс с павильонами под открытым небом и тайскими травяными процедурами.",
-   "why_visit": "Сюда едут в отмеченный наградами спа-центр, который также является учебной академией.",
+   "short_description": "Banyan Tree Spa Phuket — спа курорта Banyan Tree в Чернгтале, на территории лагуны Банг Тао. Официальная страница спа есть на домене banyantree.com (в эту дату отдала отказ 403 при автоматической загрузке, адрес страницы сохраняем как официальный источник).",
+   "why_visit": "Часы, прайс и запись для гостей не из отеля с страницы 26.11.2026 автоматически не считали — уточняйте на официальном сайте или у консьержа курорта. Курорт стоит у пляжа Банг Тао, в Тхаланге. Не путайте с другими спа Banyan Tree вне Пхукета.",
    "address": "33 Moo 4, Srisoonthorn Road, Cherngtalay, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Banyan+Tree+Spa+Phuket+Phuket",
    "official_url": "https://www.banyantree.com/spa/banyan-tree-spa-phuket",
@@ -677,7 +737,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -685,19 +745,25 @@
      "url": "https://www.banyantree.com/spa/banyan-tree-spa-phuket",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/banyan-tree-spa-phuket/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/611776234",
+     "title": "OpenStreetMap (nominatim Banyan Tree Spa Sanctuary)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.0098856,
+   "lng": 98.2939562,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -712,21 +778,21 @@
    "categories": [
     "kids-family"
    ],
-   "short_description": "Blue Tree Phuket — это комплекс активного отдыха и водный парк.",
-   "why_visit": "Сюда едут ради лагуны и разнообразных развлечений для детей и взрослых.",
+   "short_description": "Blue Tree — аквапарк в Чернгтале, на Шрисунтхон-роуд, между Банг Тао и внутренней частью острова. В OpenStreetMap отмечен как water park, на точке указан официальный сайт bluetree.fun.",
+   "why_visit": "По данным OpenStreetMap на 26.11.2026 парк открыт со вторника по воскресенье с 10:00 до 18:00; понедельника в этой записи нет — перед поездкой сверьтесь с bluetree.fun, расписание сезонное. Берите купальник, полотенце и уточняйте, нужен ли онлайн-билет. Рейтинг Google Maps автоматически не снимали.",
    "address": "4/2 Srisoonthorn Rd, Cherngtalay, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blue+Tree+Phuket+Phuket",
    "official_url": null,
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Вт–Вс 10:00–18:00 (OpenStreetMap, 26.11.2026; уточняйте на официальном сайте)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -735,12 +801,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/897610595",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9898179,
+   "lng": 98.3199102,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -755,8 +827,8 @@
    "categories": [
     "nightlife"
    ],
-   "short_description": "Fun Friday Avenue Market — это небольшой еженедельный пятничный вечерний рынок у Boat Avenue рядом с Лагуной Пхукет с уличной едой и торговыми рядами.",
-   "why_visit": "Сюда идут ради расслабленной вечерней атмосферы в районе Банг Тао.",
+   "short_description": "Fun Friday Avenue Market проходит в зоне Boat Avenue на Бандон–Чернгталай роуд в Чернгтале, рядом с Порто де Пхукет. Это локальный рыночный формат в западной курортной части Тхаланга, не центральный ночной рынок Патонга.",
+   "why_visit": "Точных дней и часов по официальному сайту или карте OSM в этой итерации нет — не считайте, что рынок открыт каждый день или только в пятницу, пока не уточните актуальную афишу на месте или в соцсетях комплекса. Рядом удобно совместить с визитом в Porto de Phuket.",
    "address": "Boat Avenue, 1 Bandon-Cherngtalay Rd, Cherngtalay, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fun+Friday+Avenue+Market+Phuket",
    "official_url": null,
@@ -769,7 +841,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -804,8 +876,8 @@
    "categories": [
     "sports-fitness"
    ],
-   "short_description": "Laguna Golf Phuket — это курортное поле для гольфа.",
-   "why_visit": "Сюда едут играть в гольф на территории крупного комплекса.",
+   "short_description": "Laguna Golf Phuket — поле для гольфа в Чернгтале, в курортной зоне Лагуны у Банг Тао. На официальном сайте — игра, академия с PGA-тренерами, драйвинг-рейндж, короткая игра, про-шоп и клубный дом. Поле с бункерами и водой, как описывает клуб.",
+   "why_visit": "Время стартов и пакеты Stay & Play смотрите в бронировании на lagunagolfphuket.com: без актуального tee time на поле не попасть. Играйте в часы меньшей жары, берите головной убор и воду. Кадди на поле, по отзывам на сайте клуба, обычно сопровождают игру.",
    "address": "34 Moo 4, Choeng Thale, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Laguna+Golf+Phuket+Phuket",
    "official_url": "https://www.lagunagolfphuket.com/",
@@ -818,7 +890,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -826,19 +898,25 @@
      "url": "https://www.lagunagolfphuket.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/laguna-golf-phuket/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/611340189",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.0078607,
+   "lng": 98.2996301,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -853,8 +931,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Layan Beach — это небольшой тихий пляж на северной оконечности Банг Тао.",
-   "why_visit": "Сюда едут ради природы и близости к национальному парку.",
+   "short_description": "Лайан — песчаный пляж севернее Банг Тао, в Чернгтале. Бухта короче соседнего Банг Тао, берег отмечен в OpenStreetMap, застройки на самой кромке меньше, чем у большой лагунной линии.",
+   "why_visit": "Удобно, если хотите тише, чем на Банг Тао, и остаётесь на севере-западе острова. Проезд — вдоль побережья Чернгтале. Как везде на западе, в волну смотрите флаги; тени и сервиса может быть меньше, чем на длинных курортных пляжах.",
    "address": "Layan Beach, Choeng Thale, Thalang, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Layan+Beach+Phuket",
    "official_url": null,
@@ -867,7 +945,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -876,12 +954,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/150299345",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 8.0346279,
+   "lng": 98.2843289,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -896,8 +980,8 @@
    "categories": [
     "shopping"
    ],
-   "short_description": "Porto de Phuket — это открытый торговый комплекс в районе Чернгталай.",
-   "why_visit": "Сюда едут погулять по магазинам, заглянуть в кафе и рестораны.",
+   "short_description": "Porto de Phuket — торгово-досуговый комплекс в Чернгтале, на Бандон–Чернгталай роуд. На официальном сайте — магазины, кафе, рестораны, события и сервисы вроде охраны и парковки. В OpenStreetMap у площадки указан сайт portodephuket.com.",
+   "why_visit": "Ежедневные часы всего комплекса на главной странице 26.11.2026 явно не вынесены: для отдельного супермаркета в OSM указано 10:00–22:00, это нельзя автоматически считать часами всего Porto. Афишу событий смотрите на официальном сайте. Удобная остановка, если вы в Банг Тао или Лагуне.",
    "address": "19 Baan Don-Cherngtalay Road, Cherngtalay, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Porto+de+Phuket+Phuket",
    "official_url": "https://www.portodephuket.com/",
@@ -910,7 +994,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -918,19 +1002,25 @@
      "url": "https://www.portodephuket.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/porto-de-phuket/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1028561010",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9918274,
+   "lng": 98.3053101,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -945,8 +1035,8 @@
    "categories": [
     "dinner"
    ],
-   "short_description": "Suay Restaurant Cherngtalay — это ресторан современной тайской кухни.",
-   "why_visit": "Сюда едут на вечерний ужин в приятной обстановке.",
+   "short_description": "SUAY в Чернгтале — современная тайской кухни ресторация шефа Таммасака Чхутонга. Первый SUAY он открыл в Пхукет-тауне в 2010 году, здесь, по официальному сайту, флагман: европейская техника и тайская кладовая, 26 столов среди пальм и орхидей. На сайте указано, что ресторан восемь лет подряд отмечается Michelin Plate.",
+   "why_visit": "Это вечерний формат: меню в PDF на suayrestaurant.com, столик лучше бронировать заранее. Часы работы на главной 26.11.2026 отдельной строкой не вытащены — смотрите актуальную страницу Visit us / Reserve. Не путать с первым адресом в Пхукет-тауне.",
    "address": "177/99 Moo 6, Si Sunthon, Thalang, Phuket 83110",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Suay+Restaurant+Cherngtalay+Phuket",
    "official_url": "https://www.suayrestaurant.com/",
@@ -959,7 +1049,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -973,13 +1063,19 @@
      "url": "https://www.suayrestaurant.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/11396063965",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9913696,
+   "lng": 98.3057755,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -994,8 +1090,8 @@
    "categories": [
     "kids-family"
    ],
-   "short_description": "Carnival Magic — это семейный ночной тематический парк с иллюминацией.",
-   "why_visit": "Сюда едут посмотреть карнавальное шествие в выбранные дни недели.",
+   "short_description": "Carnival Magic — парк вечерних аттракционов в Камале, по адресу 999 Moo 3, рядом с зоной Phuket FantaSea. Официальный сайт carnivalmagic.fun; в OpenStreetMap объект отмечен как theme park.",
+   "why_visit": "Часы и дни работы лучше брать только с официального сайта в день визита: запись в OSM о нескольких вечерах в неделю может устареть, автоматически с сайта 26.11.2026 расписание не загрузилось. Билеты и возрастные ограничения уточняйте перед поездкой. Это вечерний формат, не дневной аквапарк.",
    "address": "999 Moo 3, Kamala, Kathu, Phuket 83150",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Carnival+Magic+Phuket",
    "official_url": "https://www.carnivalmagic.fun/",
@@ -1008,7 +1104,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1016,19 +1112,25 @@
      "url": "https://www.carnivalmagic.fun/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/carnival-magic-phuket/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1194106561",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9579531,
+   "lng": 98.2870493,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1043,8 +1145,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Kamala Beach — это тихий и спокойный пляж на западном побережье среди зеленых холмов.",
-   "why_visit": "Сюда едут отдыхать всей семьей благодаря спокойной обстановке.",
+   "short_description": "Камала — песчаный пляж на западном берегу в районе Катху, между Сурином и Патонгом. В OpenStreetMap берег отмечен как sand; бухта спокойнее Патонга, с курортной полосой и видом на Андаманское море.",
+   "why_visit": "Северная и южная части пляжа отличаются по ширине ленты и волне. В сезон волнения на западном побережье купание зависит от флагов. Удобная база, если хотите западный закат, но не центр Патонга.",
    "address": "Kamala Beach, Kamala, Kathu, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kamala+Beach+Phuket",
    "official_url": null,
@@ -1057,7 +1159,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1066,12 +1168,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/6892478",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9500701,
+   "lng": 98.2789517,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1086,8 +1194,8 @@
    "categories": [
     "nature-viewpoints"
    ],
-   "short_description": "Laem Singh Viewpoint — это придорожная смотровая площадка на Андаманское море.",
-   "why_visit": "Сюда едут любоваться закатами над бухтой Лаем Сингх.",
+   "short_description": "Лаем Синг — смотровая точка на мысу между Камалой и Сурином, на западном берегу. В OpenStreetMap отмечена как viewpoint; отсюда видна линия побережья, а не городская панорама Пхукет-тауна.",
+   "why_visit": "Остановка по пути вдоль западной дороги между двумя пляжами, не отдельный парк с кассой — режим и парковку смотрите на месте. Обувь с нормальной подошвой удобнее, чем сланцы, если спускаетесь ближе к обрыву. Часов и рейтинга Maps в этой итерации нет.",
    "address": "Laem Singh, between Kamala and Surin, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Laem+Singh+Viewpoint+Phuket",
    "official_url": null,
@@ -1100,7 +1208,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1115,12 +1223,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/3983421103",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9700561,
+   "lng": 98.2793891,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1135,21 +1249,21 @@
    "categories": [
     "food"
    ],
-   "short_description": "Oriental Spoon — это ресторан при отеле Twinpalms Surin Beach.",
-   "why_visit": "Сюда приходят на завтрак или ужин с меню, сочетающим восточную и западную кухню.",
+   "short_description": "Oriental Spoon — ресторан курорта Twinpalms на Сурин-бич: восточная и западная кухня в зале с высокими потолками, приподнятыми площадками и крытой террасой. Утром — завтрак с живыми станциями и выпечкой, вечером — тайское меню и западные блюда, включая пасту и стейки.",
+   "why_visit": "По официальному сайту Twinpalms (26.11.2026): завтрак 7:00–10:30, ужин 18:00–22:00, последний заказ в 21:30. Ресторан внутри курорта, не на самой кромке песка; удобно, если вы живёте на Сурине или Чернгтале. Столик на ужин лучше бронировать на сайте отеля.",
    "address": "Twinpalms Surin Beach, 106/46 Moo 3, Surin Beach Road, Choeng Thale, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Oriental+Spoon+Phuket",
    "official_url": "https://www.twinpalmshotelsresorts.com/surin-beach-phuket/restaurant-oriental-spoon/",
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Завтрак 07:00–10:30, ужин 18:00–22:00, последний заказ 21:30 (официальный сайт Twinpalms, 26.11.2026)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1157,7 +1271,7 @@
      "url": "https://www.twinpalmshotelsresorts.com/surin-beach-phuket/restaurant-oriental-spoon/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
@@ -1179,8 +1293,8 @@
     "attractions",
     "nightlife"
    ],
-   "short_description": "Phuket FantaSea — это вечерний культурный тематический парк с грандиозным шоу.",
-   "why_visit": "Сюда едут ради масштабного сценического представления о культуре Таиланда и ужина-буфета.",
+   "short_description": "Phuket FantaSea — вечерний культурный тематический парк в Камале. На официальном сайте его называют nighttime cultural theme park; в Wikipedia указаны координаты площадки на западе острова. Рядом — Carnival Magic, это соседние, но разные объекты.",
+   "why_visit": "Это вечерняя программа, а не пляжный день: время шоу, пакеты билетов (иногда с ужином) и трансфер смотрите только на phuket-fantasea.com в день поездки. Автоматически расписание с сайта 26.11.2026 не загрузилось. Закладывайте время на дорогу из Патонга или Карона — Камала севернее.",
    "address": "99 Moo 3, Kamala, Kathu, Phuket 83150",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+FantaSea+Phuket",
    "official_url": "https://www.phuket-fantasea.com/",
@@ -1193,7 +1307,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1201,19 +1315,31 @@
      "url": "https://www.phuket-fantasea.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/phuket-fantasea/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Phuket_FantaSea",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1268307618",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9564879,
+   "lng": 98.2860805,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1228,8 +1354,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Surin Beach — это песчаный пляж на западном побережье в престижном районе.",
-   "why_visit": "Сюда едут ради спокойной атмосферы по сравнению с Патонгом.",
+   "short_description": "Сурин — песчаный пляж на западном берегу, у границы Чернгтале и Камалы. В OpenStreetMap берег отмечен как sand, есть карточка Wikidata. Бухта компактнее Банг Тао, с привычной курортной линией кафе у песка.",
+   "why_visit": "Удобен как «западный» пляж без масштаба Патонга. Прибой зависит от сезона — смотрите флаги. Рядом отели вроде Twinpalms, но сам пляж общественный.",
    "address": "Surin Beach, Choeng Thale, Thalang, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Surin+Beach+Phuket",
    "official_url": null,
@@ -1242,7 +1368,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1251,12 +1377,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/14010442",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9760428,
+   "lng": 98.278356,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1271,21 +1403,21 @@
    "categories": [
     "dinner"
    ],
-   "short_description": "Baan Rim Pa — это ресторан королевской тайской кухни в тиковском доме на скалах Калима.",
-   "why_visit": "Сюда едут ради видов на море и ужина на закате.",
+   "short_description": "Baan Rim Pa на Прабарами-роуд в Калиме, у северной кромки Патонга — ресторан королевской тайской кухни в традиционном тиковом доме. С площадки, по официальному сайту, открывается широкий вид на море примерно на 180 градусов. Есть винная карта и зал The Cellar.",
+   "why_visit": "С 1 ноября 2026, по уведомлению на официальном сайте (проверено 26.11.2026), ресторан работает с 13:00 до 23:00. Столик, особенно к закату, лучше бронировать заранее. Дресс-код на главной явно не разобран — уточните при бронировании, это не пляжная веранда.",
    "address": "249/4-5 Prabaramee Road, Kalim, Patong, Kathu, Phuket 83150",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Baan+Rim+Pa+Phuket",
    "official_url": "https://www.baanrimpa.com/",
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "13:00–23:00 с 1 ноября 2026 (официальный сайт, 26.11.2026)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1293,19 +1425,25 @@
      "url": "https://www.baanrimpa.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.thaiholidayguide.com/attraction/baan-rim-pa-phuket/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/5926486485",
+     "title": "OpenStreetMap (nominatim restaurant with cuisine=thai on Phra Barami)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9166953,
+   "lng": 98.2838474,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1320,8 +1458,8 @@
    "categories": [
     "nightlife"
    ],
-   "short_description": "Bangla Road — это 400-метровая улица в центре Патонга, которая каждый вечер становится пешеходной: неон, музыка, уличные артисты.",
-   "why_visit": "Сюда идут на вечернюю прогулку, чтобы увидеть самую известную ночную улицу Пхукета; часть заведений на улице — только для 20+, гид их не рекламирует.",
+   "short_description": "Бангла-роуд — короткая оживлённая улица в центре Патонга, в OpenStreetMap отмечена как достопримечательность. Здесь бары, витрины, еда и вечерняя толпа; это туристическая артерия района, а не отдельный «парк».",
+   "why_visit": "Для гида 16+: улица общественная и открыта днём и вечером, но ночью здесь шумно, много алкоголя и рекламы заведений для взрослых — держитесь основной улицы, не заходите в заведения 21+. Днём это просто плотная торговая пешеходная зона. До пляжа Патонг — несколько минут пешком.",
    "address": "Bangla Road (Soi Bangla), Patong, Kathu, Phuket 83150",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bangla+Road+Phuket",
    "official_url": null,
@@ -1334,7 +1472,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1343,12 +1481,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/30760367",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8935993,
+   "lng": 98.2965579,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1363,21 +1507,21 @@
    "categories": [
     "shopping"
    ],
-   "short_description": "Jungceylon — это большой торговый центр в сердце Патонга рядом с пляжем.",
-   "why_visit": "Сюда едут ради магазинов, еды, кинотеатра и нескольких тематических зон.",
+   "short_description": "Jungceylon — большой торговый центр в центре Патонга, на Rat-U-Thit 200 Pee Road. На официальном сайте — магазины, еда и сервисы моллы; в OpenStreetMap указаны сайт jungceylon.com и часы.",
+   "why_visit": "По OpenStreetMap на 26.11.2026 мол работает ежедневно 11:00–22:00; сверьте с jungceylon.com, часы якорных магазинов могут отличаться. Удобная точка в жару: кондиционер, туалеты, еда. Это не ночной рынок и не аутлет за городом.",
    "address": "Jungceylon, central Patong (Rat-U-Thit 200 Pee Rd), Kathu, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jungceylon+Phuket",
    "official_url": "https://www.jungceylon.com/",
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Ежедневно 11:00–22:00 (OpenStreetMap, 26.11.2026; уточняйте на официальном сайте)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1385,13 +1529,19 @@
      "url": "https://www.jungceylon.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/8869853",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8903579,
+   "lng": 98.2998182,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1406,8 +1556,8 @@
    "categories": [
     "wellness"
    ],
-   "short_description": "Let's Relax Spa Patong (2nd Street) — это филиал тайской сети дневных спа на улице Рат-У-Тхит 200 Пи с тайским массажем, ароматерапией, рефлексотерапией стоп и травяными компрессами.",
-   "why_visit": "Сюда едут на сеансы расслабляющего массажа и спа-процедур.",
+   "short_description": "Let’s Relax Spa на Второй улице Патонга (Raj-U-Thid / Rat Uthit) — дневной спа-салон сети, на официальном сайте сеть называет себя boutique day spa. В OpenStreetMap есть точка Let’s Relax Spa на Rat Uthit 200 Pi Road.",
+   "why_visit": "Часы, меню массажа и нужно ли бронирование смотрите на letsrelaxspa.com — с главной 26.11.2026 конкретный слот этой студии автоматически не вытащен. Уточняйте, что записываетесь именно в отделение на 2nd Street, у сети несколько адресов. Это легальный массаж/спа, не услуга 21+.",
    "address": "209/22-24 Raj-U-Thid Road (Patong 2nd Street), Patong, Kathu, Phuket 83150",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Let%27s+Relax+Spa+Patong+%282nd+Street%29+Phuket",
    "official_url": "https://letsrelaxspa.com/",
@@ -1420,7 +1570,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1428,7 +1578,7 @@
      "url": "https://letsrelaxspa.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket.net/directory/profile/lets-relax-spa-patong/",
@@ -1441,12 +1591,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/3296373816",
+     "title": "OpenStreetMap (nominatim Let's Relax Spa Rat Uthit)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8867828,
+   "lng": 98.2952841,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1461,8 +1617,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Patong Beach — это главный пляж Патонга с длинной песчаной бухтой и оживленным городом позади.",
-   "why_visit": "Сюда едут ради многочисленных водных развлечений и ресторанов вдоль пляжной дороги.",
+   "short_description": "Патонг — главный курортный пляж и одноимённый посёлок на западном берегу Пхукета. По Wikipedia, это основной туристический центр острова: длинная песчаная бухта и плотный город сразу за набережной. В OpenStreetMap берег отмечен как beach, есть карточка Wikidata.",
+   "why_visit": "Здесь больше всего сервиса, транспорта и вечернего шума. Для купания смотрите флаги: это открытое западное побережье. Если ищете тишину, лучше соседние Камала, Карон или северные пляжи — Патонг выбирают ради удобства и оживлённой набережной.",
    "address": "Patong Beach, Patong, Kathu, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Patong+Beach+Phuket",
    "official_url": null,
@@ -1475,7 +1631,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1484,12 +1640,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Patong",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/14018589",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.896632,
+   "lng": 98.2954295,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1504,8 +1672,8 @@
    "categories": [
     "services"
    ],
-   "short_description": "Patong Hospital — это единственная государственная больница Патонга на Sainamyen Road, в пяти минутах от Bangla Road; работает круглосуточно.",
-   "why_visit": "Сюда обращаются за быстрой помощью в Патонге; в серьёзных случаях пациентов переводят в больницы Пхукет-Тауна.",
+   "short_description": "Patong Hospital — государственная больница Министерства здравоохранения Таиланда в Патонге, на Sainamyen Road. В OpenStreetMap указаны оператор Ministry of Public Health и сайт patonghospital.com, есть карточка Wikidata.",
+   "why_visit": "Это не частная международная клиника вроде Bangkok Hospital: для экстренных случаев в Патонге это ближайший государственный стационар. Часы приёмного отделения и какие услуги доступны иностранцам уточняйте на месте или по официальным контактам. Для плановой помощи и страховки часто выбирают частные госпитали в Пхукет-тауне — решайте по полису.",
    "address": "57 Sainamyen Rd, Patong, Kathu District, Phuket 83150",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Patong+Hospital+Phuket",
    "official_url": null,
@@ -1518,7 +1686,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1527,12 +1695,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/639893301",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8958819,
+   "lng": 98.3014405,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1547,8 +1721,8 @@
    "categories": [
     "activities"
    ],
-   "short_description": "Phuket Thai Cooking Academy — это место для кулинарных мастер-классов по тайской кухне.",
-   "why_visit": "Сюда едут на занятия в небольших группах и экскурсию на рынок.",
+   "short_description": "Phuket Thai Cooking Academy проводит кулинарные классы: вы сами выбираете блюда, к занятию входит тур по местному рынку и трансфер от отеля (покрытие зон — на сайте). По официальному сайту школа работает с 2015 года; есть форматы для начинающих, вегетарианский класс и частные занятия.",
+   "why_visit": "На сайте 26.11.2026 указан популярный формат: около 3,5 часов, 4 блюда, 2300 бат — цену и слоты всегда сверяйте при бронировании, они меняются. Классы, по сайту, часто заполняются, лучше записываться заранее. Адрес: Soi Namtok, Катху, не на самом пляже Патонга.",
    "address": "104/5 Soi Namtok, Kathu, Phuket 83120",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Thai+Cooking+Academy+Phuket",
    "official_url": "https://phuketthaicookingacademy.com/",
@@ -1561,7 +1735,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1569,7 +1743,7 @@
      "url": "https://phuketthaicookingacademy.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/phuket-thai-cooking-academy/",
@@ -1596,8 +1770,8 @@
    "categories": [
     "food"
    ],
-   "short_description": "Savoey Seafood — это давний ресторан морепродуктов с выбором улова на пляжной дороге.",
-   "why_visit": "Сюда едут попробовать свежие морепродукты, которые продаются на вес.",
+   "short_description": "Savoey Seafood — ресторан морепродуктов на Thaweewong Road, то есть на пляжной дороге Патонга. По официальному сайту заведение открыто в ноябре 1988 года. Это одно из давно работающих мест с морепродуктами на набережной, не новый pop-up.",
+   "why_visit": "Часы и нужно ли бронировать столик у заката, на главной 26.11.2026 отдельной строкой не вытащены — смотрите savoeyseafoodpatong.com или уточняйте в день визита. Имейте в виду туристические наценки на пляжной линии: смотрите цены в меню до заказа. Рейтинг Google Maps автоматически не снимали.",
    "address": "136 Thaweewong Road, Patong, Kathu, Phuket 83150",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Savoey+Seafood+Phuket",
    "official_url": "https://www.savoeyseafoodpatong.com/",
@@ -1610,7 +1784,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1618,7 +1792,7 @@
      "url": "https://www.savoeyseafoodpatong.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/savoey-seafood/",
@@ -1645,8 +1819,8 @@
    "categories": [
     "attractions"
    ],
-   "short_description": "Wat Suwan Khiri Wong — это исторический буддийский храм у подножия холма Патонг.",
-   "why_visit": "Сюда едут ради спокойной атмосферы храмового комплекса, соблюдая скромный дресс-код.",
+   "short_description": "Ват Суван Кхири Вонг, его же называют Wat Patong, — буддийский храм на Прабарами-роуд в Патонге. Точка есть в OpenStreetMap; это действующий храм у жилой и гостиничной застройки, не пляжная достопримечательность на песке.",
+   "why_visit": "Одежда закрывает плечи и колени, обувь снимают перед залом, не мешайте службам. Отдельного сайта и часов в этой итерации нет. Удобно зайти, если вы в Патонге и хотите храм без поездки в Чалонг.",
    "address": "Phra Barami Road, Patong, Kathu, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Suwan+Khiri+Wong+Phuket",
    "official_url": null,
@@ -1659,7 +1833,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1674,12 +1848,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/498132462",
+     "title": "OpenStreetMap (nominatim Wat Suwan Khiriwong Phra Barami)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.902245,
+   "lng": 98.3105373,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1694,8 +1874,8 @@
    "categories": [
     "wellness"
    ],
-   "short_description": "Infinite Luxury Spa at Kata Rocks — это спа-центр внутри курорта Kata Rocks на улице Кок Таноде на пляже Ката с фирменными массажами и процедурами.",
-   "why_visit": "Сюда едут за качественным уходом, отмеченным региональной наградой World Luxury Spa Awards.",
+   "short_description": "Infinite Luxury Spa находится на территории курорта Kata Rocks, на Kok Tanode Road у Каты. Официальная страница спа — в разделе katarocks.com; 26.11.2026 автоматическая загрузка вернула 403, поэтому часы с сайта не разобраны.",
+   "why_visit": "Запись, доступ для гостей не из отеля и прайс уточняйте на официальном сайте курорта. Курорт стоит на каменистом мысу между бухтами Каты, это не уличный салон в посёлке. Рейтинг Google Maps автоматически не снимали.",
    "address": "Kata Rocks, 186/22 Kok Tanode Road, Kata Beach, Phuket 83100",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Infinite+Luxury+Spa+at+Kata+Rocks+Phuket",
    "official_url": "https://www.katarocks.com/category/infinite-luxury-spa/",
@@ -1708,7 +1888,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1716,7 +1896,7 @@
      "url": "https://www.katarocks.com/category/infinite-luxury-spa/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/infinite-luxury-spa-at-kata-rocks/",
@@ -1743,8 +1923,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Karon Beach — это длинный широкий песчаный пляж с расслабленной атмосферой.",
-   "why_visit": "Сюда едут за простором широкого пляжа и более спокойной атмосферой, чем в Патонге.",
+   "short_description": "Карон — длинный пляж и посёлок на западном берегу Пхукета. По Wikipedia, это и берег, и посёлок рядом; в OpenStreetMap песчаный beach, есть карточка Wikidata. Южнее — Ката, севернее начинается путь к Патонгу.",
+   "why_visit": "Пляж протяжённый: вдоль него удобно гулять, сервиса меньше, чем в Патонге, но больше, чем на северных диких берегах. Для купания — флаги и волны. Карон удобен как «средний» западный берег: не главный партийный центр и не совсем тихая южная бухта.",
    "address": "Karon Beach, Karon, Mueang Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karon+Beach+Phuket",
    "official_url": null,
@@ -1757,7 +1937,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1766,12 +1946,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Karon_Beach",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/134394729",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8439575,
+   "lng": 98.2934247,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1786,21 +1978,21 @@
    "categories": [
     "nightlife"
    ],
-   "short_description": "Karon Temple Market — это вечерний рынок на территории храма Ват Карон на улице Патак, который работает по вторникам и пятницам.",
-   "why_visit": "Сюда идут за местной уличной едой, одеждой и сувенирами.",
+   "short_description": "Karon Temple Market — рынок у храма на Patak Road в Кароне. В OpenStreetMap отмечен как marketplace и достопримечательность.",
+   "why_visit": "По OpenStreetMap на 26.11.2026 рынок указан во вторник и пятницу с 16:00 до 22:00. Дни иногда меняются — если едете целенаправленно, уточните на месте в день визита. Это вечерний локальный рынок, не круглосуточный мол.",
    "address": "Patak Rd, Karon, Mueang Phuket District, Phuket 83100",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karon+Temple+Market+Phuket",
    "official_url": null,
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Вт и Пт 16:00–22:00 (OpenStreetMap, 26.11.2026; уточняйте на месте)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1809,12 +2001,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/4628471097",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8480156,
+   "lng": 98.2978062,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1829,8 +2027,8 @@
    "categories": [
     "nature-viewpoints"
    ],
-   "short_description": "Karon Viewpoint — это бесплатная смотровая площадка на южной дороге.",
-   "why_visit": "Сюда едут ради панорамных видов на три живописные бухты.",
+   "short_description": "Karon Viewpoint — смотровая площадка на дороге 4233 (в части источников её называют 4030) над западным берегом. С площадки, по обзору, ссылающемуся на TAT (ноябрь 2026), в одном кадре видны бухты Ката Ной, Ката и Карон. В OpenStreetMap точка отмечена как viewpoint.",
+   "why_visit": "По тому же обзору со ссылкой на TAT входной платы нет, у площадки есть парковка. Лучше остановиться на рассвете или вне часа пик, когда автобусы занимают карман. Держитесь ограждений: это обрыв над бухтами, не городской парк.",
    "address": "Route 4233, Karon, Mueang Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karon+Viewpoint+Phuket",
    "official_url": null,
@@ -1843,7 +2041,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1852,12 +2050,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.visit-thailand.org/cities/24-phuket/phuket-viewpoints",
+     "title": "Phuket viewpoints overview citing TAT (Nov 2026)",
+     "type": "tourism_gov",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/1562239992",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.7972523,
+   "lng": 98.3021839,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1872,8 +2082,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Kata Beach — это популярная семейная бухта с возможностью заняться серфингом.",
-   "why_visit": "Сюда едут всей семьей для отдыха у моря и занятий водными видами спорта.",
+   "short_description": "Ката — пляж на западном берегу длиной около 1,5 км, по статье Wikipedia «Hat Kata». В OpenStreetMap берег песчаный, есть карточка Wikidata. Рядом посёлок и южнее — отдельная бухта Ката Ной.",
+   "why_visit": "По сравнению с Патонгом бухта спокойнее, но это всё же развитый туристический пляж со сервисом. В сезон волн смотрите флаги; в Кате также работают сёрф-школы (отдельно в гиде — Super Surf Kata). Удобно совмещать с Кароном по той же западной дороге.",
    "address": "Kata Beach, Karon, Mueang Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kata+Beach+Phuket",
    "official_url": null,
@@ -1886,7 +2096,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1895,12 +2105,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hat_Kata",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/4235947",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.81936,
+   "lng": 98.29805,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1915,8 +2137,8 @@
    "categories": [
     "markets"
    ],
-   "short_description": "Kata Night Market — это вечерний рынок с уличной едой и сувенирами.",
-   "why_visit": "Сюда едут попробовать местные закуски и купить одежду.",
+   "short_description": "Kata Night Market — ночной рынок на Muang Patak Road в Кароне/Кате. В OpenStreetMap есть торговая площадка (marketplace) в этой зоне.",
+   "why_visit": "Часы в OSM на 26.11.2026 указаны как 11:00–23:00 ежедневно — для «ночного» рынка это может относиться к более широкой торговой зоне, а не к вечернему ряду. Не опирайтесь на эти часы без проверки на месте. Приходите ближе к вечеру и уточняйте, работает ли рядок в этот день.",
    "address": "Muang Patak Rd, Karon, Mueang Phuket 83100",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kata+Night+Market+Phuket",
    "official_url": null,
@@ -1929,7 +2151,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1938,12 +2160,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/20745348",
+     "title": "OpenStreetMap (nominatim marketplace area)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8246443,
+   "lng": 98.2982168,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -1958,8 +2186,8 @@
    "categories": [
     "dinner"
    ],
-   "short_description": "On The Rock — это ресторан тайской кухни и морепродуктов на прибрежных скалах.",
-   "why_visit": "Сюда едут ради ужина над морем на закате.",
+   "short_description": "On The Rock — ресторан на территории Marina Phuket Resort, 47 Karon Road, на Кароне. Официальная «крыша» — сайт курорта marinaphuket.com; точка ресторана есть в OpenStreetMap.",
+   "why_visit": "Часы, меню и нужно ли бронирование с главной страницы курорта 26.11.2026 не разобраны — уточняйте на marinaphuket.com или в ресепшене. Это ресторан при отеле, не уличная забегаловка на Patak Road. Рейтинг Google Maps автоматически не снимали.",
    "address": "Marina Phuket Resort, 47 Karon Road, Karon, Phuket 83100",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=On+The+Rock+Phuket",
    "official_url": "https://www.marinaphuket.com/",
@@ -1972,7 +2200,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -1980,19 +2208,25 @@
      "url": "https://www.marinaphuket.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/on-the-rock-restaurant/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/5202320825",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8291515,
+   "lng": 98.2938128,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2007,8 +2241,8 @@
    "categories": [
     "activities"
    ],
-   "short_description": "Super Surf Kata — это установка с искусственной волной для серфинга.",
-   "why_visit": "Сюда едут кататься и брать уроки для начинающих.",
+   "short_description": "Super Surf Kata (ранее Surf House Phuket) — сёрф-школа у Каты, адрес 4 Soi Pakbang, Карон. Официальный сайт supersurfkata.com; 26.11.2026 автоматическая загрузка сайта оборвалась по SSL, поэтому часы и цены с страницы не фиксируем.",
+   "why_visit": "Перед занятием смотрите актуальные слоты, уровень групп и состояние моря на официальном сайте. Сёрф на западном берегу зависит от сезона волн: даже школа не выведет в воду при опасном флаге. Не бронируйте «с колёс», не сверив условия.",
    "address": "4 Soi Pakbang, Karon, Mueang Phuket 83100",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Super+Surf+Kata+Phuket",
    "official_url": "https://supersurfkata.com/",
@@ -2021,7 +2255,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2035,7 +2269,7 @@
      "url": "https://supersurfkata.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://phuket-insider.com/en/places/super-surf-kata/",
@@ -2062,8 +2296,8 @@
    "categories": [
     "beaches"
    ],
-   "short_description": "Nai Harn Beach — это красивый пляж на юге Пхукета среди холмов.",
-   "why_visit": "Сюда едут ради спокойной и менее застроенной пляжной зоны.",
+   "short_description": "Най Харн — песчаный пляж на юге острова, в районе Раваи, с карточкой Wikidata и точкой в OpenStreetMap. Бухта на южной оконечности, недалеко от мыса Промтеп и озера Най Харн. Это один из главных южных пляжей, не западная «полоса» Карона–Патонга.",
+   "why_visit": "Юг острова часто выбирают ради формы бухты и относительно спокойного характера по сравнению с Патонгом, но волны всё равно зависят от сезона и флагов. Рядом озеро и дорога на Промтеп — удобно соединить в одну поездку на юг. Сервиса меньше, чем в Патонге, больше, чем на совсем диких берегах.",
    "address": "Nai Harn Beach, Rawai, Mueang Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nai+Harn+Beach+Phuket",
    "official_url": null,
@@ -2076,7 +2310,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2085,12 +2319,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/relation/6162518",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.7757065,
+   "lng": 98.3058248,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2105,8 +2345,8 @@
    "categories": [
     "sports-fitness"
    ],
-   "short_description": "Nai Harn Lake — это парковая зона с озером позади пляжа Най Харн.",
-   "why_visit": "Сюда едут для прогулок, пробежек и катания на велосипеде.",
+   "short_description": "Озеро Най Харн лежит сразу за одноимённым пляжем в Раваи: пресноводный водоём, в OpenStreetMap отмечен как water. Это не морская лагуна и не пляж, а озёрная котловина у южной бухты.",
+   "why_visit": "Сюда приходят пройтись вокруг воды и посмотреть на фон озера с холмами, а не купаться как на море — правила и дорожки смотрите на месте. Удобно совместить с пляжем Най Харн или поездкой на Промтеп. Часов как у заведения нет.",
    "address": "Nai Harn Lake, Rawai, Mueang Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nai+Harn+Lake+Phuket",
    "official_url": null,
@@ -2119,7 +2359,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2134,12 +2374,18 @@
      "title": null,
      "type": "other",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/217503082",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.778204,
+   "lng": 98.3095874,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2154,8 +2400,8 @@
    "categories": [
     "nature-viewpoints"
    ],
-   "short_description": "Promthep Cape — южная оконечность Пхукета со смотровой площадкой, маяком и святилищем.",
-   "why_visit": "Сюда едут встречать закат у маяка и храма.",
+   "short_description": "Мыс Промтеп (Laem Phromthep) — южная оконечность острова, в районе Раваи, между Най Харн и Раваи. Обзор ноября 2026 со ссылкой на Управление по туризму Таиланда (TAT) описывает его как известную закатную точку острова, с маяком, видом на Ко Кэо и, в ясную погоду, на острова Рача. Это юг Пхукета, а не юг всего Таиланда.",
+   "why_visit": "По тому же обзору TAT не указывает входную плату за мыс; кафе и возможная парковка — отдельно, имейте мелкие деньги. К закату бывает тесно, лучше приехать заранее; время заката смотрите на табло у маяка, а не «на глаз». Часы работы в источниках расходятся (кто пишет «круглосуточно», кто указывает дневной интервал) — не фиксируем их как факт.",
    "address": "Promthep Cape, Rawai, Mueang Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Promthep+Cape+Phuket",
    "official_url": null,
@@ -2168,7 +2414,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2177,6 +2423,12 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.visit-thailand.org/cities/24-phuket/phuket-viewpoints",
+     "title": "Phuket viewpoints overview citing TAT (Nov 2026)",
+     "type": "tourism_gov",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
@@ -2197,8 +2449,8 @@
    "categories": [
     "markets"
    ],
-   "short_description": "Rawai Seafood Market — это рынок морепродуктов у пляжа Раваи.",
-   "why_visit": "Сюда едут покупать свежий улов, который приготовят в соседних кафе.",
+   "short_description": "Rawai Seafood Market — место с тайской и морской кухней на Wiset Road (4233) в Раваи. В OpenStreetMap точка указана как restaurant с кухней thai, у дороги южного побережья, не в Пхукет-тауне.",
+   "why_visit": "Часы и формат (рынок прилавков или ресторанный зал) по официальному сайту не подтверждены — смотрите актуальный режим на месте. Как везде на «seafood market» для туристов, сверяйте цену до заказа. Удобно после Промтепа или пляжей Раваи.",
    "address": "22/9 Wiset Road (Route 4233), Rawai, Mueang Phuket 83100",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rawai+Seafood+Market+Phuket",
    "official_url": null,
@@ -2211,7 +2463,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2220,12 +2472,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/1562225024",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.7757205,
+   "lng": 98.3287994,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2240,8 +2498,8 @@
    "categories": [
     "attractions"
    ],
-   "short_description": "Wat Nai Harn — это местный буддийский храм рядом с озером.",
-   "why_visit": "Сюда едут познакомиться с местной культурой и тихой атмосферой.",
+   "short_description": "Ват Най Харн — буддийский храм у пляжа Най Харн в Раваи. В OpenStreetMap отмечен как place of worship, рядом с берегом южной бухты, не крупный храмовый комплекс масштаба Чалонга.",
+   "why_visit": "Плечи и колени закрыты, обувь снимают, не мешайте службам. Часы и сайт в этой итерации не найдены. Можно зайти по пути на пляж или на мыс Промтеп, не планируя отдельную «храмовую» экспедицию.",
    "address": "Wat Nai Harn, Rawai, Mueang Phuket 83100",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Nai+Harn+Phuket",
    "official_url": null,
@@ -2254,7 +2512,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2263,12 +2521,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/242421255",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.7766845,
+   "lng": 98.3068135,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2283,8 +2547,8 @@
    "categories": [
     "instagrammable"
    ],
-   "short_description": "Windmill Viewpoint — это смотровая площадка с ветряной турбиной на юге.",
-   "why_visit": "Сюда едут ради красивых видов на бухты и удачных фотографий.",
+   "short_description": "Windmill Viewpoint — смотровая точка в Раваи, между Най Харн и Я Нуи, в OpenStreetMap отмечена как viewpoint. Это южный берег, ближе к мысу Промтеп, чем к Патонгу.",
+   "why_visit": "Небольшая остановка по дороге вдоль юга: вид на берег и море, без отдельной кассы в наших источниках. Часы не указаны. Можно совместить с Най Харн и Промтепом за одну поездку, если не задерживаться к пику заката только на мысе.",
    "address": "Windmill Viewpoint, Rawai (between Nai Harn and Ya Nui), Mueang Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Windmill+Viewpoint+Phuket",
    "official_url": null,
@@ -2297,7 +2561,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2318,12 +2582,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/2513821648",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.769654,
+   "lng": 98.3062833,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2338,8 +2608,8 @@
    "categories": [
     "wellness"
    ],
-   "short_description": "Yoga by Niti — это небольшая студия йоги и практик восстановления на Sai Yuan Road в Раваи, недалеко от пляжа Най Харн; основательница — Тачина «Нити» Нитикарн.",
-   "why_visit": "Сюда идут на занятия йогой и медитацию с поющими чашами.",
+   "short_description": "Yoga by Niti — йога-студия по адресу 39/6 Moo 1, Sai Yuan Road, Раваи. В гиде она числится как wellness-место на юге острова; отдельного официального сайта и точки OSM в этой итерации не нашли.",
+   "why_visit": "Расписание классов, стиль йоги и нужна ли запись — только напрямую у студии, мы не фиксируем часы без источника. Не путайте с горячей йогой 5 Elements в Чалонге: это разные адреса. Рейтинг Google Maps автоматически не снимали.",
    "address": "39/6 Moo 1, Sai Yuan Road, Rawai, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yoga+by+Niti+Phuket",
    "official_url": null,
@@ -2352,7 +2622,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2381,8 +2651,8 @@
    "categories": [
     "wellness"
    ],
-   "short_description": "5 Elements Hot Yoga — это студия горячей йоги и небольшой велнес-курорт на улице Сои Та-иад в Чалонге с занятиями силовой йогой, растяжкой и оздоровительными терапиями.",
-   "why_visit": "Сюда идут для занятий йогой и оздоровительных практик.",
+   "short_description": "5 Elements Hot Yoga — студия горячей йоги в Чалонге, 45/75 Soi Ta-iad. Официальный сайт fiveelementshotyogaretreat.com; 26.11.2026 автоматическая загрузка оборвалась по SSL, поэтому расписание с страницы не разбираем.",
+   "why_visit": "Слоты, температура зала и запись — только с официального сайта в день визита. Студия в Чалонге, не на пляже Каты и не Yoga by Niti в Раваи. Берите воду и уточняйте уровень группы.",
    "address": "45/75 Soi Ta-iad, Chalong, Mueang Phuket District, Phuket 83130",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=5+Elements+Hot+Yoga+Phuket",
    "official_url": "https://www.fiveelementshotyogaretreat.com/",
@@ -2395,7 +2665,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2409,7 +2679,7 @@
      "url": "https://www.fiveelementshotyogaretreat.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
@@ -2430,8 +2700,8 @@
    "categories": [
     "dinner"
    ],
-   "short_description": "Kan Eang@Pier — это давний ресторан морепродуктов у пирса Чалонг.",
-   "why_visit": "Сюда едут пообедать или поужинать с видом на залив.",
+   "short_description": "Kan Eang@Pier — ресторан морепродуктов у пирса Чалонг, на Viset Road. Так его позиционирует официальный сайт kaneang.com: seafood restaurant at Chalong Pier, не «пляж Чалонг». Пирс Чалонг есть в OpenStreetMap отдельно от ресторана.",
+   "why_visit": "Часы и бронирование смотрите на kaneang.com: с главной 26.11.2026 интервал работы автоматически не вытащен. Удобно, если вы уже едете к пирсу или в Чалонг, в том числе после Ват Чалонг или Большого Будды. Как в любом припирсном seafood, смотрите цены в меню до заказа.",
    "address": "44/1 Moo 5, Viset Road, Chalong Pier, Rawai, Phuket 83130",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kan+Eang%40Pier+Phuket",
    "official_url": "https://www.kaneang.com/",
@@ -2444,7 +2714,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2452,7 +2722,7 @@
      "url": "https://www.kaneang.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/kan-eang-pier/",
@@ -2479,8 +2749,8 @@
    "categories": [
     "coffee"
    ],
-   "short_description": "Nakkerd Seaview Cafe — это кафе на дороге к Большому Будде.",
-   "why_visit": "Сюда едут отдохнуть с напитками и видом на море.",
+   "short_description": "Nakkerd Seaview Cafe стоит на Чаофа Вест-роуд, в сои Йот Сантан — на подъёме к Большому Будде в Чалонге. Отдельного официального сайта и уверенной точки OSM в этой итерации нет, поэтому описываем только проверенный адрес.",
+   "why_visit": "Часы, меню и действительно ли с террасы открывается заявленный вид, без источника не утверждаем. Имеет смысл как остановка по дороге к Большому Будде, если кафе окажется открытым. Рейтинг и часы Google Maps автоматически не снимали.",
    "address": "Chaofa West Road, Soi Yod Santhan (road to Big Buddha), Chalong, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nakkerd+Seaview+Cafe+Phuket",
    "official_url": null,
@@ -2493,7 +2763,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2534,8 +2804,8 @@
    "categories": [
     "attractions"
    ],
-   "short_description": "Phuket Big Buddha — это гигантская статуя Будды на холме Наккерд.",
-   "why_visit": "Сюда едут ради панорамных видов на весь остров и посещения святыни.",
+   "short_description": "Большой Будда Пхукета (официальное имя — Phra Phutta Ming Mongkol Eknakiri, или Ming Mongkol Buddha) — сидящая статуя на холме Наккерд над Чалонгом. По Wikipedia, строительство началось в 2004 году; это одна из самых высоких статуй Таиланда. Есть официальный сайт phuket-big-buddha.com и точка в OpenStreetMap.",
+   "why_visit": "Подъём на холм по извилистой дороге: заложите время и не планируйте визит вслепую к закату без запаса. В храмовой зоне — закрытые плечи и колени. Часы и пожертвования смотрите на официальном сайте или на стендах у входа, отдельную сумму мы не фиксировали. Рядом по той же дороге — Nakkerd Seaview Cafe.",
    "address": "Soi Yot Sane 1, Chaofa West Rd, Nakkerd Hill, Chalong, Phuket",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Big+Buddha+Phuket",
    "official_url": null,
@@ -2548,7 +2818,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2557,12 +2827,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Phuket_Big_Buddha",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/242673270",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8277355,
+   "lng": 98.3128113,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2577,8 +2859,8 @@
    "categories": [
     "shopping"
    ],
-   "short_description": "Robinson Lifestyle Chalong — это современный торговый центр на юге.",
-   "why_visit": "Сюда едут за покупками и едой на юге острова, не выезжая в город.",
+   "short_description": "Robinson Lifestyle Chalong — торговый центр в Чалонге. В OpenStreetMap отмечен как mall; это районный мол южной части острова, не Central в Пхукет-тауне и не Jungceylon в Патонге.",
+   "why_visit": "Часы работы в OSM и на официальной странице в этой итерации не зафиксированы — уточняйте перед поездкой. Удобен, если вы живёте в Чалонге, Раваи или Кароне и нужны магазины без поездки в город. Рейтинг Google Maps автоматически не снимали.",
    "address": "Robinson Lifestyle Chalong, Chalong, Mueang Phuket 83130",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Robinson+Lifestyle+Chalong+Phuket",
    "official_url": null,
@@ -2591,7 +2873,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2600,12 +2882,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1354359992",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8476142,
+   "lng": 98.3500109,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2620,8 +2908,8 @@
    "categories": [
     "sports-fitness"
    ],
-   "short_description": "Tiger Muay Thai — это крупный лагерь тайского бокса и фитнеса.",
-   "why_visit": "Сюда едут тренироваться — занятия есть для любого уровня подготовки.",
+   "short_description": "Tiger Muay Thai — тренировочный лагерь в Чалонге, на Soi Ta-iad: муай-тай, MMA, BJJ, фитнес, йога и другие классы. На официальном сайте указано более 20 типов занятий и более 150 классов в неделю, в том числе параллельные потоки разного уровня. Лагерь подчёркивает традиционный муай-тай, не «разводной» фитнес-вариант.",
+   "why_visit": "Расписание, drop-in это или только недельные пакеты, и что доступно новичкам — только на tigermuaythai.com. Точка кафе/магазина лагеря есть в OpenStreetMap рядом со спортивной инфраструктурой. Это Чалонг, не Патонг: заложите дорогу.",
    "address": "7/35 Moo 5, Soi Ta-iad, Chalong, Phuket 83130",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tiger+Muay+Thai+Phuket",
    "official_url": "https://www.tigermuaythai.com/",
@@ -2634,7 +2922,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2642,19 +2930,25 @@
      "url": "https://www.tigermuaythai.com/",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/tiger-muay-thai-and-mma-training-camp/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/11050411307",
+     "title": "OpenStreetMap (nominatim sports/fightstore at camp)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.7917082,
+   "lng": 98.3173126,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2669,8 +2963,8 @@
    "categories": [
     "attractions"
    ],
-   "short_description": "Wat Chalong — один из главных буддийских храмовых комплексов острова.",
-   "why_visit": "Сюда едут посмотреть на высокую чеди и украшенные залы, соблюдая дресс-код.",
+   "short_description": "Ват Чалонг, официально Wat Chaiyathararam, — главный из 29 буддийских храмов Пхукета, по статье Wikipedia. Комплекс стоит на Chao Fah Tawan Tok Road в Чалонге; в OpenStreetMap есть точка и карточка Wikidata. Это не маленький приходской ват, а крупный храмовый ансамбль юга острова.",
+   "why_visit": "Одежда закрывает плечи и колени, обувь снимают, не мешайте молящимся. Часы лучше уточнить на месте или по актуальным справочникам, отдельный часовой факт 26.11.2026 мы не фиксировали. Удобно соединить с Большим Буддой: оба объекта в Чалонге, но это разные холмы и разные визиты.",
    "address": "70/6 Chao Fah Tawan Tok Road, Chalong, Phuket 83130",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wat+Chalong+Phuket",
    "official_url": null,
@@ -2683,7 +2977,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2692,12 +2986,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wat_Chalong",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/242673271",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8462631,
+   "lng": 98.3374691,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2712,8 +3018,8 @@
    "categories": [
     "services"
    ],
-   "short_description": "Bangkok Hospital Phuket — это крупная частная больница на Yaowarat Road в Пхукет-Тауне с международной аккредитацией JCI и круглосуточным приёмным отделением.",
-   "why_visit": "Сюда обращаются при серьёзных проблемах со здоровьем: больница работает напрямую с международными туристическими страховками.",
+   "short_description": "Bangkok Hospital Phuket — частный госпиталь сети Bangkok Dusit Medical Services на Yaowarat Road в Пхукет-тауне. Официальный сайт bangkokhospital.com в разделе Phuket; в OpenStreetMap указан оператор сети. Это многопрофильный частный стационар, не районная поликлиника Патонга.",
+   "why_visit": "Для страховки и плановых обращений уточняйте, принимает ли госпиталь ваш полис, и записывайтесь через официальный сайт. Экстренные случаи зависят от отделения emergency — часы и порядок мы с главной 26.11.2026 не разобрали. Не путать с государственным Patong Hospital.",
    "address": "Yaowarat Road, Talat Yai, Mueang Phuket District, Phuket 83000",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bangkok+Hospital+Phuket+Phuket",
    "official_url": "https://www.bangkokhospital.com/en/phuket",
@@ -2726,7 +3032,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2734,19 +3040,25 @@
      "url": "https://www.bangkokhospital.com/en/phuket",
      "title": null,
      "type": "official",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     },
     {
      "url": "https://www.phuket101.net/phuket-hospitals/",
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1262489352",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9040749,
+   "lng": 98.3761258,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2761,21 +3073,21 @@
    "categories": [
     "nightlife"
    ],
-   "short_description": "Chillva Market — это открытый в 2014 году на улице Яоварат ночной рынок с разноцветными морскими контейнерами, местной едой, живой музыкой и модной одеждой для молодежи.",
-   "why_visit": "Сюда едут за атмосферой молодежного рынка и разнообразием уличной еды.",
+   "short_description": "Chillva Market — вечерний рынок на Yaowarat Road в Пхукет-тауне. В OpenStreetMap указаны часы, сайт Facebook и тип marketplace. Это городской вечерний маркет, не воскресная Lard Yai на Таланг-роуд.",
+   "why_visit": "По OpenStreetMap на 26.11.2026 рынок указан с понедельника по субботу с 16:00 до 23:00; воскресенья в этой записи нет — сверьте с актуальной страницей Facebook, дни меняются. Приходите ближе к вечеру. Не путать с воскресной пешеходной улицей Старого города.",
    "address": "141/2 Yaowarat Road, Phuket 83000",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chillva+Market+Phuket",
    "official_url": null,
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Пн–Сб 16:00–23:00 (OpenStreetMap, 26.11.2026; уточняйте в Facebook рынка)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2784,12 +3096,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/593275772",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.9073447,
+   "lng": 98.3734774,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2804,21 +3122,21 @@
    "categories": [
     "attractions"
    ],
-   "short_description": "Chinpracha House — это исторический китайско-португальский особняк-музей.",
-   "why_visit": "Сюда едут посмотреть на быт прошлой эпохи и архитектуру.",
+   "short_description": "Chinpracha House — дом-музей на Krabi Road в Талат Ныа, в зоне Старого Пхукета. В OpenStreetMap объект отмечен как museum, вход платный (fee=yes), указаны часы.",
+   "why_visit": "По OpenStreetMap на 26.11.2026 дом открыт ежедневно 09:00–16:30; тариф не указан — смотрите на кассе. Это исторический дом, не картинная галерея: удобно сочетать с прогулкой по Старому городу и музеем Thai Hua на той же Krabi Road. Уточняйте, идёт ли экскурсия только с гидом.",
    "address": "98 Krabi Road, Talat Nuea, Mueang Phuket 83000",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chinpracha+House+Phuket",
    "official_url": null,
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Ежедневно 09:00–16:30 (OpenStreetMap, 26.11.2026)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2839,12 +3157,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/6253270085",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.885829,
+   "lng": 98.3839958,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2859,8 +3183,8 @@
    "categories": [
     "nature-viewpoints"
    ],
-   "short_description": "Khao Rang Hill Viewpoint — это смотровая площадка на холме над городом.",
-   "why_visit": "Сюда едут ради видов на город и отдыха в парке с ресторанами.",
+   "short_description": "Кхао Ранг — холм-парк над Пхукет-тауном. В обзоре ноября 2026 со ссылкой на TAT это городская смотровая точка с широким видом на город и бухту, вечером — на огни. Точную вершину в OpenStreetMap в этой итерации уверенно не привязали, поэтому координаты в карточку не ставим.",
+   "why_visit": "По тому же обзору TAT не указывает входную плату, парковка у холма упоминается. Лучше закладывать свет до заката, если хотите и день, и огни. Это не мыс Промтеп и не Карон-вьюпойнт: вы смотрите на город, а не на три западные бухты.",
    "address": "Khao Rang Hill, Phuket Town",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Khao+Rang+Hill+Viewpoint+Phuket",
    "official_url": null,
@@ -2873,7 +3197,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2891,9 +3215,9 @@
     },
     {
      "url": "https://www.visit-thailand.org/cities/24-phuket/phuket-viewpoints",
-     "title": null,
+     "title": "Phuket viewpoints overview citing TAT (Nov 2026)",
      "type": "directory",
-     "accessed_at": "2026-11-24"
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
@@ -2914,21 +3238,21 @@
    "categories": [
     "food"
    ],
-   "short_description": "One Chun — местный ресторан в Пхукет-тауне с домашней кухней в южном и перанаканском стиле.",
-   "why_visit": "Сюда едут попробовать местные пхукетские блюда.",
+   "short_description": "One Chun — ресторан тайской кухни на Thepkrasattri Road в Талат Яй, Пхукет-таун. Есть карточки Wikidata и Wikipedia, точка в OpenStreetMap с кухней thai.",
+   "why_visit": "По OpenStreetMap на 26.11.2026 указано ежедневно 10:00–22:00; всё равно сверьте в день визита, особенно в праздники. Это городской ресторан, не пляжная веранда. Бронирование и меню — на месте или по актуальным контактам заведения, телефон в карточку не копируем без проверки.",
    "address": "48/1 Thepkrasattri Rd, Talat Yai, Phuket Town 83000",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=One+Chun+Phuket",
    "official_url": null,
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Ежедневно 10:00–22:00 (OpenStreetMap, 26.11.2026)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2949,12 +3273,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/5334944621",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8857805,
+   "lng": 98.3906873,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -2969,8 +3299,8 @@
    "categories": [
     "instagrammable"
    ],
-   "short_description": "Phuket Old Town — это исторический центр города с цветными домами.",
-   "why_visit": "Сюда едут гулять по старинным улочкам и делать яркие снимки.",
+   "short_description": "Старый Пхукет-таун — исторический район города с главными улицами Thalang, Phang Nga и соседними соями, включая Сой Романи. По Wikipedia это зона исторического интереса с сохранившейся застройкой; в OpenStreetMap район отмечен как достопримечательность.",
+   "why_visit": "Имеет смысл гулять пешком днём, чтобы видеть фасады, и отдельно вечером в воскресенье, если работает Walking Street на Таланг-роуд. В жару удобны короткие отрезки и заходы в музеи Thai Hua и Chinpracha House. Это город, не пляж: парковка по краю, дальше лучше пешком.",
    "address": "Thalang Road / Soi Romanee, Phuket Town",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Old+Town+Phuket",
    "official_url": null,
@@ -2983,7 +3313,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -2998,12 +3328,24 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Old_Phuket_Town",
+     "title": "Wikipedia",
+     "type": "other",
+     "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/4395955589",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8847774,
+   "lng": 98.3892206,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -3018,8 +3360,8 @@
    "categories": [
     "markets"
    ],
-   "short_description": "Phuket Sunday Walking Street — это воскресная ярмарка на улице Таланг.",
-   "why_visit": "Сюда едут за уличной едой, сувенирами и ремесленными изделиями.",
+   "short_description": "Phuket Sunday Walking Street, или Lard Yai, — воскресная пешеходная улица на Thalang Road в Старом городе. Само название фиксирует день: воскресенье. Улица Таланг есть в OpenStreetMap как ось Старого города.",
+   "why_visit": "Точный час старта и окончания в официальном источнике 26.11.2026 не закрепили — обычно это вечерний формат, но время лучше уточнить на месте в тот же день. Не путать с Chillva Market на Yaowarat, который в OSM указан в другие дни. Приезжайте с запасом на парковку по краю старого города.",
    "address": "Thalang Road, Phuket Old Town",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Sunday+Walking+Street+Phuket",
    "official_url": null,
@@ -3032,7 +3374,7 @@
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -3061,21 +3403,21 @@
    "categories": [
     "attractions"
    ],
-   "short_description": "Phuket Thai Hua Museum — это музей в здании бывшей китайской школы.",
-   "why_visit": "Сюда едут узнать историю китайской общины острова.",
+   "short_description": "Музей Thai Hua на 28 Krabi Road в Талат Ныа — музей в Старом Пхукете. В OpenStreetMap отмечен как museum, вход платный, есть карточка Wikidata.",
+   "why_visit": "По OpenStreetMap на 26.11.2026 открыт ежедневно 09:00–17:00; цену билета смотрите на кассе, мы её не фиксировали. Удобно соединить с прогулкой по Таланг-роуд и домом Chinpracha на той же Krabi Road. Это музей, заложите час, а не «забег на пять минут».",
    "address": "28 Krabi Road, Talat Nuea, Mueang Phuket 83000",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Phuket+Thai+Hua+Museum+Phuket",
    "official_url": null,
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Ежедневно 09:00–17:00 (OpenStreetMap, 26.11.2026)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
    "closed_note": null,
    "replaced_by": null,
    "is_editor_pick": false,
-   "last_verified": "2026-11-24",
+   "last_verified": "2026-11-26",
    "is_published": false,
    "photo": null,
    "sources": [
@@ -3084,12 +3426,18 @@
      "title": null,
      "type": "directory",
      "accessed_at": "2026-11-24"
+    },
+    {
+     "url": "https://www.openstreetmap.org/way/1020885012",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8856058,
+   "lng": 98.3868672,
    "subcategory": null,
    "socials": [],
    "phone": null,
@@ -3104,14 +3452,14 @@
    "categories": [
     "shopping"
    ],
-   "short_description": "Central Phuket — это торговый центр Central Pattana из двух зон: Floresta и Festival.",
-   "why_visit": "Сюда едут за покупками и едой; для туристов на месте оформляют VAT Refund.",
+   "short_description": "Central Phuket — крупный торговый комплекс в Вичите, у Пхукет-тауна, на официальном сайте разделы Festival и Floresta, магазины, рестораны, туристические сервисы и VAT Refund. Адрес: 74-75 Moo 5, Vichit. Это главный городской мол острова, не Jungceylon в Патонге.",
+   "why_visit": "По официальному сайту на 26.11.2026 комплекс открыт ежедневно с 10:00 до 22:00. На сайте анонсировано расширение (ориентир на сайте — 2028 год) — для визита сейчас важны актуальные часы и карта корпусов. Удобен в дождь и для покупок с tax refund перед вылетом.",
    "address": "74-75 Moo 5, Vichit, Muang Phuket, Phuket 83000",
    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Central+Phuket",
    "official_url": "https://www.centralphuket.com/",
    "booking_url": null,
    "price_level": null,
-   "opening_hours": null,
+   "opening_hours": "Ежедневно 10:00–22:00 (официальный сайт, 26.11.2026)",
    "age_rating": "all",
    "status": "verified",
    "verification_status": "verified",
@@ -3127,12 +3475,18 @@
      "title": null,
      "type": "official",
      "accessed_at": "2026-11-26"
+    },
+    {
+     "url": "https://www.openstreetmap.org/node/6095460889",
+     "title": "OpenStreetMap (nominatim first confident)",
+     "type": "map",
+     "accessed_at": "2026-11-26"
     }
    ],
    "owner_approved": false,
    "owner_approved_at": null,
-   "lat": null,
-   "lng": null,
+   "lat": 7.8911739,
+   "lng": 98.3668714,
    "subcategory": null,
    "socials": [],
    "phone": null,
